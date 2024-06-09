@@ -838,33 +838,33 @@
 <pin name="VDDA" x="22.86" y="40.64" length="middle" direction="in" rot="R180"/>
 <pin name="LNA_IN" x="22.86" y="0" length="middle" rot="R180"/>
 <pin name="VDDA3P3" x="22.86" y="38.1" length="middle" direction="in" rot="R180"/>
-<pin name="SENSOR_VP" x="-22.86" y="17.78" length="middle" direction="in"/>
-<pin name="SENSOR_CAPP" x="-22.86" y="25.4" length="middle" direction="in"/>
-<pin name="SENSOR_CAPN" x="-22.86" y="22.86" length="middle" direction="in"/>
-<pin name="SENSOR_VN" x="-22.86" y="15.24" length="middle" direction="in"/>
+<pin name="SENS_VP" x="-22.86" y="17.78" length="middle" direction="in"/>
+<pin name="SENS_CAPP" x="-22.86" y="25.4" length="middle" direction="in"/>
+<pin name="SENS_CAPN" x="-22.86" y="22.86" length="middle" direction="in"/>
+<pin name="SENS_VN" x="-22.86" y="15.24" length="middle" direction="in"/>
 <pin name="EN" x="-22.86" y="10.16" length="middle" direction="in"/>
-<pin name="IO34" x="-22.86" y="5.08" length="middle" direction="in"/>
-<pin name="IO35" x="-22.86" y="2.54" length="middle" direction="in"/>
+<pin name="IO34(INP)" x="-22.86" y="5.08" length="middle" direction="in"/>
+<pin name="IO35(INP)" x="-22.86" y="2.54" length="middle" direction="in"/>
 <pin name="IO32" x="22.86" y="-17.78" length="middle" rot="R180"/>
 <pin name="IO33" x="22.86" y="-20.32" length="middle" rot="R180"/>
 <pin name="IO25" x="22.86" y="-10.16" length="middle" rot="R180"/>
 <pin name="IO26" x="22.86" y="-12.7" length="middle" rot="R180"/>
 <pin name="IO27" x="22.86" y="-15.24" length="middle" rot="R180"/>
 <pin name="IO14" x="-22.86" y="-20.32" length="middle"/>
-<pin name="IO12/MTDI(DNC)" x="-22.86" y="-15.24" length="middle"/>
+<pin name="IO12/MTDI" x="-22.86" y="-15.24" length="middle"/>
 <pin name="VDD3P3_RTC" x="22.86" y="35.56" length="middle" direction="in" rot="R180"/>
 <pin name="IO13" x="-22.86" y="-17.78" length="middle"/>
-<pin name="IO15/MTDO(LOW)" x="-22.86" y="-22.86" length="middle"/>
-<pin name="IO2(DNC)" x="-22.86" y="-7.62" length="middle"/>
+<pin name="IO15/MTDO" x="-22.86" y="-22.86" length="middle"/>
+<pin name="IO2" x="-22.86" y="-7.62" length="middle"/>
 <pin name="IO0(BOOT)" x="-22.86" y="-5.08" length="middle"/>
 <pin name="IO4" x="-22.86" y="-10.16" length="middle"/>
 <pin name="IO16" x="-22.86" y="-25.4" length="middle"/>
 <pin name="VDD_SDIO" x="22.86" y="30.48" length="middle" direction="in" rot="R180"/>
 <pin name="IO17" x="-22.86" y="-27.94" length="middle"/>
-<pin name="SD2" x="22.86" y="12.7" length="middle" rot="R180"/>
-<pin name="SD3" x="22.86" y="10.16" length="middle" rot="R180"/>
-<pin name="CMD" x="22.86" y="2.54" length="middle" rot="R180"/>
-<pin name="CLK" x="22.86" y="5.08" length="middle" function="clk" rot="R180"/>
+<pin name="SD2/IO9" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="SD3/IO10" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="CMD" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="CLK" x="22.86" y="7.62" length="middle" function="clk" rot="R180"/>
 <pin name="SD0" x="22.86" y="17.78" length="middle" rot="R180"/>
 <pin name="SD1" x="22.86" y="15.24" length="middle" rot="R180"/>
 <pin name="IO5" x="-22.86" y="-12.7" length="middle"/>
@@ -873,8 +873,8 @@
 <pin name="VDD3P3_CPU" x="22.86" y="33.02" length="middle" direction="in" rot="R180"/>
 <pin name="IO19" x="-22.86" y="-33.02" length="middle"/>
 <pin name="IO22" x="22.86" y="-5.08" length="middle" rot="R180"/>
-<pin name="U0RXD" x="22.86" y="22.86" length="middle" rot="R180"/>
-<pin name="U0TXD" x="22.86" y="25.4" length="middle" rot="R180"/>
+<pin name="U0RXD(IO3)" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="U0TXD(IO1)" x="22.86" y="25.4" length="middle" rot="R180"/>
 <pin name="IO21" x="-22.86" y="-35.56" length="middle"/>
 <pin name="GND" x="22.86" y="-40.64" length="middle" direction="in" rot="R180"/>
 <pin name="XTAL_N_NC" x="22.86" y="-35.56" length="middle" direction="nc" rot="R180"/>
@@ -1050,15 +1050,15 @@
 <connect gate="G$1" pin="EN" pad="9"/>
 <connect gate="G$1" pin="GND" pad="49"/>
 <connect gate="G$1" pin="IO0(BOOT)" pad="23"/>
-<connect gate="G$1" pin="IO12/MTDI(DNC)" pad="18"/>
+<connect gate="G$1" pin="IO12/MTDI" pad="18"/>
 <connect gate="G$1" pin="IO13" pad="20"/>
 <connect gate="G$1" pin="IO14" pad="17"/>
-<connect gate="G$1" pin="IO15/MTDO(LOW)" pad="21"/>
+<connect gate="G$1" pin="IO15/MTDO" pad="21"/>
 <connect gate="G$1" pin="IO16" pad="25"/>
 <connect gate="G$1" pin="IO17" pad="27"/>
 <connect gate="G$1" pin="IO18" pad="35"/>
 <connect gate="G$1" pin="IO19" pad="38"/>
-<connect gate="G$1" pin="IO2(DNC)" pad="22"/>
+<connect gate="G$1" pin="IO2" pad="22"/>
 <connect gate="G$1" pin="IO21" pad="42"/>
 <connect gate="G$1" pin="IO22" pad="39"/>
 <connect gate="G$1" pin="IO23" pad="36"/>
@@ -1067,21 +1067,21 @@
 <connect gate="G$1" pin="IO27" pad="16"/>
 <connect gate="G$1" pin="IO32" pad="12"/>
 <connect gate="G$1" pin="IO33" pad="13"/>
-<connect gate="G$1" pin="IO34" pad="10"/>
-<connect gate="G$1" pin="IO35" pad="11"/>
+<connect gate="G$1" pin="IO34(INP)" pad="10"/>
+<connect gate="G$1" pin="IO35(INP)" pad="11"/>
 <connect gate="G$1" pin="IO4" pad="24"/>
 <connect gate="G$1" pin="IO5" pad="34"/>
 <connect gate="G$1" pin="LNA_IN" pad="2"/>
 <connect gate="G$1" pin="SD0" pad="32"/>
 <connect gate="G$1" pin="SD1" pad="33"/>
-<connect gate="G$1" pin="SD2" pad="28"/>
-<connect gate="G$1" pin="SD3" pad="29"/>
-<connect gate="G$1" pin="SENSOR_CAPN" pad="7"/>
-<connect gate="G$1" pin="SENSOR_CAPP" pad="6"/>
-<connect gate="G$1" pin="SENSOR_VN" pad="8"/>
-<connect gate="G$1" pin="SENSOR_VP" pad="5"/>
-<connect gate="G$1" pin="U0RXD" pad="40"/>
-<connect gate="G$1" pin="U0TXD" pad="41"/>
+<connect gate="G$1" pin="SD2/IO9" pad="28"/>
+<connect gate="G$1" pin="SD3/IO10" pad="29"/>
+<connect gate="G$1" pin="SENS_CAPN" pad="7"/>
+<connect gate="G$1" pin="SENS_CAPP" pad="6"/>
+<connect gate="G$1" pin="SENS_VN" pad="8"/>
+<connect gate="G$1" pin="SENS_VP" pad="5"/>
+<connect gate="G$1" pin="U0RXD(IO3)" pad="40"/>
+<connect gate="G$1" pin="U0TXD(IO1)" pad="41"/>
 <connect gate="G$1" pin="VDD3P3_CPU" pad="37"/>
 <connect gate="G$1" pin="VDD3P3_RTC" pad="19"/>
 <connect gate="G$1" pin="VDDA" pad="1 43 46"/>
@@ -1976,11 +1976,15 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 <wire x1="-0.5" y1="0.65" x2="0.9" y2="0.65" width="0.2032" layer="21"/>
 <wire x1="-0.9" y1="-0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
 <wire x1="-0.5" y1="-0.65" x2="0.9" y2="-0.65" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.65" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0.65" x2="-0.5" y2="0" width="0.2032" layer="21"/>
 <smd name="1" x="-1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
 <smd name="2" x="1.15" y="0" dx="0.63" dy="0.83" layer="1"/>
 <text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-0.5" y1="0" x2="-0.5" y2="-0.65" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0" x2="0.1" y2="0.3" width="0.127" layer="21"/>
+<wire x1="0.1" y1="0.3" x2="0.1" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="0.1" y1="-0.3" x2="-0.5" y2="0" width="0.127" layer="21"/>
 </package>
 <package name="1X07">
 <wire x1="14.605" y1="1.27" x2="15.875" y2="1.27" width="0.2032" layer="21"/>
@@ -2200,38 +2204,38 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 <pad name="7" x="6" y="0" drill="0.8" diameter="1.5" shape="octagon"/>
 </package>
 <package name="1X05">
-<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="8.89" y1="0.635" x2="9.525" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="9.525" y1="1.27" x2="10.795" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="1.27" x2="11.43" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="-0.635" x2="10.795" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="-1.27" x2="9.525" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="9.525" y1="-1.27" x2="8.89" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="0.635" x2="11.43" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="51"/>
+<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="8.89" y1="0.635" x2="9.525" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="9.525" y1="1.27" x2="10.795" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="10.795" y1="1.27" x2="11.43" y2="0.635" width="0.2032" layer="51"/>
+<wire x1="11.43" y1="-0.635" x2="10.795" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="10.795" y1="-1.27" x2="9.525" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="9.525" y1="-1.27" x2="8.89" y2="-0.635" width="0.2032" layer="51"/>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="51"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="51"/>
+<wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="51"/>
+<wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="51"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="51"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="51"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="11.43" y1="0.635" x2="11.43" y2="-0.635" width="0.2032" layer="51"/>
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
@@ -3405,7 +3409,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="R3" library="shrew-common" deviceset="RESISTOR" device="0402-RES" value="10K"/>
 <part name="P+15" library="shrew-common" deviceset="+24V" device=""/>
 <part name="GND22" library="shrew-common" deviceset="GND" device=""/>
-<part name="C17" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n"/>
+<part name="C17" library="shrew-common" deviceset="CAP" device="0402-CAP" value="470n"/>
 <part name="EDGE1" library="shrew-common" deviceset="M07" device="-2MM-TH"/>
 <part name="GND16" library="shrew-common" deviceset="GND" device=""/>
 <part name="P+7" library="shrew-common" deviceset="3.3V" device=""/>
@@ -3419,13 +3423,15 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C11" library="shrew-common" deviceset="CAP" device="0805" value="10uF 25V"/>
 <part name="P+9" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="GND20" library="shrew-common" deviceset="GND" device=""/>
-<part name="C12" library="shrew-common" deviceset="CAP" device="0402-CAP" value="470n"/>
+<part name="C12" library="shrew-common" deviceset="CAP" device="0402-CAP" value="DNP"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="17.78" y="10.16" size="1.27" layer="97">actually only for tweezers to squeeze</text>
 <text x="43.18" y="-10.16" size="1.27" layer="97" rot="R180">not actually +24V</text>
+<text x="43.18" y="43.18" size="1.27" layer="97" rot="R180">LOW = Quiet Boot</text>
+<text x="243.84" y="114.3" size="1.27" layer="97" rot="R180">not actually +24V</text>
 </plain>
 <instances>
 <instance part="U2" gate="A" x="261.62" y="66.04"/>
@@ -3438,8 +3444,8 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="P+1" gate="G$1" x="114.3" y="114.3"/>
 <instance part="GND1" gate="1" x="45.72" y="38.1"/>
 <instance part="GND2" gate="1" x="114.3" y="20.32"/>
-<instance part="R1" gate="G$1" x="38.1" y="83.82" rot="R90"/>
-<instance part="P+2" gate="G$1" x="38.1" y="91.44"/>
+<instance part="R1" gate="G$1" x="48.26" y="83.82" rot="R90"/>
+<instance part="P+2" gate="G$1" x="48.26" y="91.44"/>
 <instance part="ANT1" gate="G$1" x="134.62" y="73.66"/>
 <instance part="FL1" gate="G$1" x="350.52" y="58.42"/>
 <instance part="ANT2" gate="G$1" x="363.22" y="71.12"/>
@@ -3477,8 +3483,8 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND16" gate="1" x="274.32" y="106.68"/>
 <instance part="P+7" gate="G$1" x="259.08" y="109.22"/>
 <instance part="C10" gate="G$1" x="129.54" y="104.14"/>
-<instance part="C13" gate="G$1" x="27.94" y="71.12" rot="R180"/>
-<instance part="GND17" gate="1" x="27.94" y="60.96"/>
+<instance part="C13" gate="G$1" x="40.64" y="71.12" rot="R180"/>
+<instance part="GND17" gate="1" x="40.64" y="60.96"/>
 <instance part="EDGE2" gate="G$1" x="312.42" y="121.92" rot="R180"/>
 <instance part="P+8" gate="1" x="251.46" y="116.84"/>
 <instance part="GND18" gate="1" x="302.26" y="111.76"/>
@@ -3532,7 +3538,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="238.76" y1="55.88" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="IO15/MTDO(LOW)"/>
+<pinref part="U1" gate="G$1" pin="IO15/MTDO"/>
 <wire x1="66.04" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="43.18" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -3622,7 +3628,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
 <pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="63.5" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="63.5" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="EDGE2" gate="G$1" pin="5"/>
@@ -3681,7 +3687,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="P+2" gate="G$1" pin="3.3V"/>
-<wire x1="38.1" y1="88.9" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="88.9" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="Y1" gate="G$1" pin="VCC"/>
@@ -3736,7 +3742,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="U0TXD" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="U0TXD"/>
+<pinref part="U1" gate="G$1" pin="U0TXD(IO1)"/>
 <wire x1="111.76" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
 <label x="119.38" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -3748,7 +3754,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="U0RXD" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="U0RXD"/>
+<pinref part="U1" gate="G$1" pin="U0RXD(IO3)"/>
 <wire x1="111.76" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
 <label x="119.38" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -3762,15 +3768,15 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="U1" gate="G$1" pin="EN"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="76.2" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
-<label x="20.32" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="66.04" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="76.2" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<label x="30.48" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="73.66" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
-<junction x="27.94" y="76.2"/>
-<junction x="38.1" y="76.2"/>
+<wire x1="40.64" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="73.66" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<junction x="40.64" y="76.2"/>
+<junction x="48.26" y="76.2"/>
 </segment>
 </net>
 <net name="RGBLED" class="0">
@@ -4034,7 +4040,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="269.24" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="SD3"/>
+<pinref part="U1" gate="G$1" pin="SD3/IO10"/>
 <wire x1="111.76" y1="76.2" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
 <label x="116.84" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -4046,7 +4052,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="269.24" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="SD2"/>
+<pinref part="U1" gate="G$1" pin="SD2/IO9"/>
 <wire x1="111.76" y1="78.74" x2="116.84" y2="78.74" width="0.1524" layer="91"/>
 <label x="116.84" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>

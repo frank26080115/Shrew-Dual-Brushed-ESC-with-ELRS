@@ -2181,33 +2181,33 @@
 <pin name="VDDA" x="22.86" y="40.64" length="middle" direction="in" rot="R180"/>
 <pin name="LNA_IN" x="22.86" y="0" length="middle" rot="R180"/>
 <pin name="VDDA3P3" x="22.86" y="38.1" length="middle" direction="in" rot="R180"/>
-<pin name="SENSOR_VP" x="-22.86" y="17.78" length="middle" direction="in"/>
-<pin name="SENSOR_CAPP" x="-22.86" y="25.4" length="middle" direction="in"/>
-<pin name="SENSOR_CAPN" x="-22.86" y="22.86" length="middle" direction="in"/>
-<pin name="SENSOR_VN" x="-22.86" y="15.24" length="middle" direction="in"/>
+<pin name="SENS_VP" x="-22.86" y="17.78" length="middle" direction="in"/>
+<pin name="SENS_CAPP" x="-22.86" y="25.4" length="middle" direction="in"/>
+<pin name="SENS_CAPN" x="-22.86" y="22.86" length="middle" direction="in"/>
+<pin name="SENS_VN" x="-22.86" y="15.24" length="middle" direction="in"/>
 <pin name="EN" x="-22.86" y="10.16" length="middle" direction="in"/>
-<pin name="IO34" x="-22.86" y="5.08" length="middle" direction="in"/>
-<pin name="IO35" x="-22.86" y="2.54" length="middle" direction="in"/>
+<pin name="IO34(INP)" x="-22.86" y="5.08" length="middle" direction="in"/>
+<pin name="IO35(INP)" x="-22.86" y="2.54" length="middle" direction="in"/>
 <pin name="IO32" x="22.86" y="-17.78" length="middle" rot="R180"/>
 <pin name="IO33" x="22.86" y="-20.32" length="middle" rot="R180"/>
 <pin name="IO25" x="22.86" y="-10.16" length="middle" rot="R180"/>
 <pin name="IO26" x="22.86" y="-12.7" length="middle" rot="R180"/>
 <pin name="IO27" x="22.86" y="-15.24" length="middle" rot="R180"/>
 <pin name="IO14" x="-22.86" y="-20.32" length="middle"/>
-<pin name="IO12/MTDI(DNC)" x="-22.86" y="-15.24" length="middle"/>
+<pin name="IO12/MTDI" x="-22.86" y="-15.24" length="middle"/>
 <pin name="VDD3P3_RTC" x="22.86" y="35.56" length="middle" direction="in" rot="R180"/>
 <pin name="IO13" x="-22.86" y="-17.78" length="middle"/>
-<pin name="IO15/MTDO(LOW)" x="-22.86" y="-22.86" length="middle"/>
-<pin name="IO2(DNC)" x="-22.86" y="-7.62" length="middle"/>
+<pin name="IO15/MTDO" x="-22.86" y="-22.86" length="middle"/>
+<pin name="IO2" x="-22.86" y="-7.62" length="middle"/>
 <pin name="IO0(BOOT)" x="-22.86" y="-5.08" length="middle"/>
 <pin name="IO4" x="-22.86" y="-10.16" length="middle"/>
 <pin name="IO16" x="-22.86" y="-25.4" length="middle"/>
 <pin name="VDD_SDIO" x="22.86" y="30.48" length="middle" direction="in" rot="R180"/>
 <pin name="IO17" x="-22.86" y="-27.94" length="middle"/>
-<pin name="SD2" x="22.86" y="12.7" length="middle" rot="R180"/>
-<pin name="SD3" x="22.86" y="10.16" length="middle" rot="R180"/>
-<pin name="CMD" x="22.86" y="2.54" length="middle" rot="R180"/>
-<pin name="CLK" x="22.86" y="5.08" length="middle" function="clk" rot="R180"/>
+<pin name="SD2/IO9" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="SD3/IO10" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="CMD" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="CLK" x="22.86" y="7.62" length="middle" function="clk" rot="R180"/>
 <pin name="SD0" x="22.86" y="17.78" length="middle" rot="R180"/>
 <pin name="SD1" x="22.86" y="15.24" length="middle" rot="R180"/>
 <pin name="IO5" x="-22.86" y="-12.7" length="middle"/>
@@ -2216,8 +2216,8 @@
 <pin name="VDD3P3_CPU" x="22.86" y="33.02" length="middle" direction="in" rot="R180"/>
 <pin name="IO19" x="-22.86" y="-33.02" length="middle"/>
 <pin name="IO22" x="22.86" y="-5.08" length="middle" rot="R180"/>
-<pin name="U0RXD" x="22.86" y="22.86" length="middle" rot="R180"/>
-<pin name="U0TXD" x="22.86" y="25.4" length="middle" rot="R180"/>
+<pin name="U0RXD(IO3)" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="U0TXD(IO1)" x="22.86" y="25.4" length="middle" rot="R180"/>
 <pin name="IO21" x="-22.86" y="-35.56" length="middle"/>
 <pin name="GND" x="22.86" y="-40.64" length="middle" direction="in" rot="R180"/>
 <pin name="XTAL_N_NC" x="22.86" y="-35.56" length="middle" direction="nc" rot="R180"/>
@@ -2698,15 +2698,15 @@
 <connect gate="G$1" pin="EN" pad="9"/>
 <connect gate="G$1" pin="GND" pad="49"/>
 <connect gate="G$1" pin="IO0(BOOT)" pad="23"/>
-<connect gate="G$1" pin="IO12/MTDI(DNC)" pad="18"/>
+<connect gate="G$1" pin="IO12/MTDI" pad="18"/>
 <connect gate="G$1" pin="IO13" pad="20"/>
 <connect gate="G$1" pin="IO14" pad="17"/>
-<connect gate="G$1" pin="IO15/MTDO(LOW)" pad="21"/>
+<connect gate="G$1" pin="IO15/MTDO" pad="21"/>
 <connect gate="G$1" pin="IO16" pad="25"/>
 <connect gate="G$1" pin="IO17" pad="27"/>
 <connect gate="G$1" pin="IO18" pad="35"/>
 <connect gate="G$1" pin="IO19" pad="38"/>
-<connect gate="G$1" pin="IO2(DNC)" pad="22"/>
+<connect gate="G$1" pin="IO2" pad="22"/>
 <connect gate="G$1" pin="IO21" pad="42"/>
 <connect gate="G$1" pin="IO22" pad="39"/>
 <connect gate="G$1" pin="IO23" pad="36"/>
@@ -2715,21 +2715,21 @@
 <connect gate="G$1" pin="IO27" pad="16"/>
 <connect gate="G$1" pin="IO32" pad="12"/>
 <connect gate="G$1" pin="IO33" pad="13"/>
-<connect gate="G$1" pin="IO34" pad="10"/>
-<connect gate="G$1" pin="IO35" pad="11"/>
+<connect gate="G$1" pin="IO34(INP)" pad="10"/>
+<connect gate="G$1" pin="IO35(INP)" pad="11"/>
 <connect gate="G$1" pin="IO4" pad="24"/>
 <connect gate="G$1" pin="IO5" pad="34"/>
 <connect gate="G$1" pin="LNA_IN" pad="2"/>
 <connect gate="G$1" pin="SD0" pad="32"/>
 <connect gate="G$1" pin="SD1" pad="33"/>
-<connect gate="G$1" pin="SD2" pad="28"/>
-<connect gate="G$1" pin="SD3" pad="29"/>
-<connect gate="G$1" pin="SENSOR_CAPN" pad="7"/>
-<connect gate="G$1" pin="SENSOR_CAPP" pad="6"/>
-<connect gate="G$1" pin="SENSOR_VN" pad="8"/>
-<connect gate="G$1" pin="SENSOR_VP" pad="5"/>
-<connect gate="G$1" pin="U0RXD" pad="40"/>
-<connect gate="G$1" pin="U0TXD" pad="41"/>
+<connect gate="G$1" pin="SD2/IO9" pad="28"/>
+<connect gate="G$1" pin="SD3/IO10" pad="29"/>
+<connect gate="G$1" pin="SENS_CAPN" pad="7"/>
+<connect gate="G$1" pin="SENS_CAPP" pad="6"/>
+<connect gate="G$1" pin="SENS_VN" pad="8"/>
+<connect gate="G$1" pin="SENS_VP" pad="5"/>
+<connect gate="G$1" pin="U0RXD(IO3)" pad="40"/>
+<connect gate="G$1" pin="U0TXD(IO1)" pad="41"/>
 <connect gate="G$1" pin="VDD3P3_CPU" pad="37"/>
 <connect gate="G$1" pin="VDD3P3_RTC" pad="19"/>
 <connect gate="G$1" pin="VDDA" pad="1 43 46"/>
