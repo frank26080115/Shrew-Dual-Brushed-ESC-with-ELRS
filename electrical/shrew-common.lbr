@@ -8843,7 +8843,7 @@ Standard adjustable voltage regulator but in SMD form. Spark Fun Electronics SKU
 </device>
 </devices>
 </deviceset>
-<deviceset name="V_REG_SOT89" prefix="IC" uservalue="yes">
+<deviceset name="V_REG_SOT" prefix="IC" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="V_REG_SOT89" x="0" y="0"/>
 </gates>
@@ -8854,6 +8854,17 @@ Standard adjustable voltage regulator but in SMD form. Spark Fun Electronics SKU
 <connect gate="G$1" pin="IN" pad="3"/>
 <connect gate="G$1" pin="TAB" pad="4"/>
 <connect gate="G$1" pin="VO" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SOT223" package="SOT223">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="TAB" pad="4"/>
+<connect gate="G$1" pin="VO" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
