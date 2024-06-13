@@ -39,7 +39,7 @@
 	(cons 'visible #f)
 	(cons 'color #(65535 32639 29555))
 )
-(define-layer! 0 (cons 'filename "shrew-mini-0-excellon_drill.TXT")
+(define-layer! 0 (cons 'filename "shrew-mini-0-excellon_drill.XLN")
 	(cons 'visible #t)
 	(cons 'color #(29555 29555 57054))
 	(cons 'attribs (list
