@@ -1729,6 +1729,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="U1" gate="A" pin="ISEN"/>
 <wire x1="45.72" y1="17.78" x2="48.26" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="17.78" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
+<junction x="48.26" y="15.24"/>
+<junction x="48.26" y="12.7"/>
 </segment>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
@@ -1741,6 +1743,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="U2" gate="A" pin="ISEN"/>
 <wire x1="45.72" y1="53.34" x2="48.26" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="53.34" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+<junction x="48.26" y="50.8"/>
+<junction x="48.26" y="48.26"/>
 </segment>
 <segment>
 <pinref part="X6" gate="G$1" pin="P$1"/>
@@ -1869,7 +1873,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="157.48" y1="99.06" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="MOTOR3" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="OUT1"/>
 <pinref part="X1" gate="G$1" pin="P$1"/>
@@ -1882,7 +1886,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="55.88" y="58.42"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="MOTOR4" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="OUT2"/>
 <pinref part="X2" gate="G$1" pin="P$1"/>
@@ -1895,7 +1899,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="55.88" y="71.12"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="MOTOR1" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="OUT1"/>
 <pinref part="X3" gate="G$1" pin="P$1"/>
@@ -1908,7 +1912,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="55.88" y="22.86"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="MOTOR2" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="OUT2"/>
 <pinref part="X4" gate="G$1" pin="P$1"/>
@@ -1969,7 +1973,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="127" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="V-ADC" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="3"/>
 <pinref part="R1" gate="G$1" pin="1"/>
