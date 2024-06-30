@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="14" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -72,6 +72,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -292,7 +293,7 @@
 <wire x1="0.1" y1="1.4" x2="-0.1" y2="1.4" width="0" layer="41"/>
 <wire x1="0.5" y1="1.9" x2="0.5" y2="2.1" width="0" layer="41"/>
 <wire x1="-1" y1="1.9" x2="-1" y2="2.1" width="0" layer="41"/>
-<rectangle x1="-2.2" y1="1.7" x2="-1.7" y2="2.2" layer="21"/>
+<rectangle x1="-2.4" y1="1.7" x2="-1.7" y2="2.4" layer="21"/>
 </package>
 <package name="QFN24_4X4_SEM-M">
 <smd name="1" x="-2.0193" y="1.25" dx="0.254" dy="0.8636" layer="1" rot="R270"/>
@@ -732,7 +733,7 @@
 <smd name="47" x="-2.25" y="3.265" dx="0.45" dy="0.35" layer="1" roundness="25" rot="R90"/>
 <smd name="48" x="-2.75" y="3.265" dx="0.45" dy="0.35" layer="1" roundness="25" rot="R90"/>
 <smd name="49" x="0" y="0" dx="5.4" dy="5.4" layer="1" cream="no"/>
-<rectangle x1="-3.6" y1="3.2" x2="-3.2" y2="3.6" layer="21"/>
+<rectangle x1="-3.8" y1="3.2" x2="-3.2" y2="3.8" layer="21"/>
 <wire x1="-0.1" y1="-2.8" x2="0.1" y2="-2.8" width="0" layer="41"/>
 <wire x1="2.8" y1="0.1" x2="2.8" y2="-0.1" width="0" layer="41"/>
 <wire x1="-0.1" y1="2.7" x2="0.1" y2="2.7" width="0" layer="41"/>
@@ -753,9 +754,9 @@
 <smd name="1" x="-0.6" y="0" dx="0.55" dy="0.55" layer="1"/>
 <smd name="3" x="0.6" y="0" dx="0.55" dy="0.55" layer="1"/>
 <smd name="4" x="0" y="0.35" dx="0.3" dy="0.5" layer="1"/>
-<wire x1="-0.7" y1="0.6" x2="-1.2" y2="0.6" width="0.2" layer="21"/>
-<wire x1="-1.2" y1="0.6" x2="-1.2" y2="-0.6" width="0.2" layer="21"/>
-<wire x1="-1.2" y1="-0.6" x2="-0.7" y2="-0.6" width="0.2" layer="21"/>
+<wire x1="-0.4" y1="0.6" x2="-1.125" y2="0.6" width="0.2" layer="21"/>
+<wire x1="-1.125" y1="0.6" x2="-1.125" y2="-0.6" width="0.2" layer="21"/>
+<wire x1="-1.125" y1="-0.6" x2="-0.4" y2="-0.6" width="0.2" layer="21"/>
 </package>
 <package name="LED_SK6812">
 <wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
@@ -2421,6 +2422,24 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-3.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="1.54" y="1.27" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="0402-REV">
+<description>0402 (1005 Metric)  
+
+Nick Garner - TeleSense</description>
+<wire x1="-0.254" y1="0.219" x2="0.27" y2="0.219" width="0.1524" layer="51"/>
+<wire x1="0.271" y1="-0.229" x2="-0.26" y2="-0.229" width="0.1524" layer="51"/>
+<wire x1="-1" y1="0.483" x2="1" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1" y1="0.483" x2="1" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1" y1="-0.483" x2="-1" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1" y1="-0.483" x2="-1" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.5" y="0" dx="0.6" dy="0.7" layer="1"/>
+<smd name="2" x="0.5" y="0" dx="0.6" dy="0.7" layer="1"/>
+<text x="-0.635" y="0.535" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.635" y="-1.405" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="GND">
@@ -2769,6 +2788,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <technology name=""/>
 </technologies>
 </device>
+<device name="0402-REV" package="0402-REV">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="ANTENNA2">
@@ -2936,6 +2964,15 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </technologies>
 </device>
 <device name="KIT" package="CAP-PTH-SMALL-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0402-REV" package="0402-REV">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -3375,46 +3412,46 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="P+1" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="GND1" library="shrew-common" deviceset="GND" device=""/>
 <part name="GND2" library="shrew-common" deviceset="GND" device=""/>
-<part name="R1" library="shrew-common" deviceset="RESISTOR" device="0402-RES" value="10K"/>
+<part name="R1" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="10K"/>
 <part name="P+2" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="ANT1" library="shrew-common" deviceset="ANTENNA2" device="SMD" value="74889302450"/>
 <part name="FL1" library="shrew-core" deviceset="2450FM07D0034T" device=""/>
 <part name="ANT2" library="shrew-common" deviceset="ANTENNA2" device="SMD" value="74889302450"/>
-<part name="C1" library="shrew-common" deviceset="CAP" device="0402-CAP" value="1n"/>
+<part name="C1" library="shrew-common" deviceset="CAP" device="0402-REV" value="1n"/>
 <part name="GND7" library="shrew-common" deviceset="GND" device=""/>
 <part name="P+3" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="P+4" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="P+5" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="L1" library="shrew-common" deviceset="INDUCTOR" device="0805" value="15u"/>
-<part name="C2" library="shrew-common" deviceset="CAP" device="0402-CAP" value="470n"/>
+<part name="C2" library="shrew-common" deviceset="CAP" device="0402-REV" value="470n"/>
 <part name="GND8" library="shrew-common" deviceset="GND" device=""/>
-<part name="C3" library="shrew-common" deviceset="CAP" device="0402-CAP" value="10n"/>
+<part name="C3" library="shrew-common" deviceset="CAP" device="0402-REV" value="10n"/>
 <part name="GND9" library="shrew-common" deviceset="GND" device=""/>
-<part name="C4" library="shrew-common" deviceset="CAP" device="0402-CAP" value="10n"/>
+<part name="C4" library="shrew-common" deviceset="CAP" device="0402-REV" value="10n"/>
 <part name="GND10" library="shrew-common" deviceset="GND" device=""/>
-<part name="C5" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n"/>
-<part name="C6" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n"/>
+<part name="C5" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
+<part name="C6" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
 <part name="GND11" library="shrew-common" deviceset="GND" device=""/>
 <part name="GND12" library="shrew-common" deviceset="GND" device=""/>
-<part name="C7" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n"/>
+<part name="C7" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
 <part name="GND13" library="shrew-common" deviceset="GND" device=""/>
-<part name="C8" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n"/>
-<part name="C9" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n"/>
+<part name="C8" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
+<part name="C9" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
 <part name="GND14" library="shrew-common" deviceset="GND" device=""/>
 <part name="LED1" library="shrew-core" deviceset="SK6812" device="-EC20"/>
 <part name="P+6" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="GND15" library="shrew-common" deviceset="GND" device=""/>
 <part name="D1" library="shrew-common" deviceset="DIODE-ZENER" device="-BZT52" value="3V6"/>
-<part name="R2" library="shrew-common" deviceset="RESISTOR" device="0402-RES" value="10K"/>
-<part name="R3" library="shrew-common" deviceset="RESISTOR" device="0402-RES" value="10K"/>
+<part name="R2" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="10K"/>
+<part name="R3" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="10K"/>
 <part name="P+15" library="shrew-common" deviceset="+24V" device=""/>
 <part name="GND22" library="shrew-common" deviceset="GND" device=""/>
-<part name="C17" library="shrew-common" deviceset="CAP" device="0402-CAP" value="470n"/>
+<part name="C17" library="shrew-common" deviceset="CAP" device="0402-REV" value="470n"/>
 <part name="EDGE1" library="shrew-common" deviceset="M07" device="-2MM-TH"/>
 <part name="GND16" library="shrew-common" deviceset="GND" device=""/>
 <part name="P+7" library="shrew-common" deviceset="3.3V" device=""/>
-<part name="C10" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n"/>
-<part name="C13" library="shrew-common" deviceset="CAP" device="0402-CAP" value="470n"/>
+<part name="C10" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
+<part name="C13" library="shrew-common" deviceset="CAP" device="0402-REV" value="470n"/>
 <part name="GND17" library="shrew-common" deviceset="GND" device=""/>
 <part name="EDGE2" library="shrew-common" deviceset="M05" device="PTH"/>
 <part name="P+8" library="shrew-common" deviceset="+24V" device=""/>

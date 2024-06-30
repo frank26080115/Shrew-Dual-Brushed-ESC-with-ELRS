@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -948,7 +948,7 @@
 <wire x1="0.1" y1="1.4" x2="-0.1" y2="1.4" width="0" layer="41"/>
 <wire x1="0.5" y1="1.9" x2="0.5" y2="2.1" width="0" layer="41"/>
 <wire x1="-1" y1="1.9" x2="-1" y2="2.1" width="0" layer="41"/>
-<rectangle x1="-2.2" y1="1.7" x2="-1.7" y2="2.2" layer="21"/>
+<rectangle x1="-2.4" y1="1.7" x2="-1.7" y2="2.4" layer="21"/>
 </package>
 <package name="QFN24_4X4_SEM-M">
 <smd name="1" x="-2.0193" y="1.25" dx="0.254" dy="0.8636" layer="1" rot="R270"/>
@@ -1962,7 +1962,7 @@
 <smd name="47" x="-2.25" y="3.265" dx="0.45" dy="0.35" layer="1" roundness="25" rot="R90"/>
 <smd name="48" x="-2.75" y="3.265" dx="0.45" dy="0.35" layer="1" roundness="25" rot="R90"/>
 <smd name="49" x="0" y="0" dx="5.4" dy="5.4" layer="1" cream="no"/>
-<rectangle x1="-3.6" y1="3.2" x2="-3.2" y2="3.6" layer="21"/>
+<rectangle x1="-3.8" y1="3.2" x2="-3.2" y2="3.8" layer="21"/>
 <wire x1="-0.1" y1="-2.8" x2="0.1" y2="-2.8" width="0" layer="41"/>
 <wire x1="2.8" y1="0.1" x2="2.8" y2="-0.1" width="0" layer="41"/>
 <wire x1="-0.1" y1="2.7" x2="0.1" y2="2.7" width="0" layer="41"/>
@@ -1983,9 +1983,9 @@
 <smd name="1" x="-0.6" y="0" dx="0.55" dy="0.55" layer="1"/>
 <smd name="3" x="0.6" y="0" dx="0.55" dy="0.55" layer="1"/>
 <smd name="4" x="0" y="0.35" dx="0.3" dy="0.5" layer="1"/>
-<wire x1="-0.7" y1="0.6" x2="-1.2" y2="0.6" width="0.2" layer="21"/>
-<wire x1="-1.2" y1="0.6" x2="-1.2" y2="-0.6" width="0.2" layer="21"/>
-<wire x1="-1.2" y1="-0.6" x2="-0.7" y2="-0.6" width="0.2" layer="21"/>
+<wire x1="-0.4" y1="0.6" x2="-1.125" y2="0.6" width="0.2" layer="21"/>
+<wire x1="-1.125" y1="0.6" x2="-1.125" y2="-0.6" width="0.2" layer="21"/>
+<wire x1="-1.125" y1="-0.6" x2="-0.4" y2="-0.6" width="0.2" layer="21"/>
 </package>
 <package name="LED_SK6812">
 <wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
