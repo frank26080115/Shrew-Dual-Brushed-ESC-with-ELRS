@@ -7,10 +7,11 @@ import re
 
 args = None
 
+# used to move elements
 def add_to_coord(elem, direction, additional):
     attrib_list = [direction]
     for i in range(1, 5):
-        attrib_list.append(direction + str(i))
+        attrib_list.append(direction + str(i)) # this creates a list like x x1 x2 x3 x4
     for a in attrib_list:
         if a in elem.attrib:
             try:
@@ -19,9 +20,10 @@ def add_to_coord(elem, direction, additional):
                 elem.attrib[a] = str(new_value)
             except ValueError:
                 pass
-    for child in elem:
+    for child in elem: # recursively move, such as text associated with a component
         add_to_coord(child, direction, additional)
 
+# get the boundary defined by the minimum and maximum coordinates
 def get_bounds(elem, min_x = None, max_x = None, min_y = None, max_y = None):
     attrib_list = ['x', 'x1', 'x2', 'x3', 'x4', 'y', 'y1', 'y2', 'y3', 'y4']
     for a in attrib_list:
@@ -36,10 +38,11 @@ def get_bounds(elem, min_x = None, max_x = None, min_y = None, max_y = None):
                     max_y = current_value if max_y is None or max_y < current_value else max_y
             except ValueError:
                 pass
-    for child in elem:
+    for child in elem: # recursively find, such as text associated with a component
         min_x, max_x, min_y, max_y = get_bounds(child, min_x, max_x, min_y, max_y)
     return min_x, max_x, min_y, max_y
 
+# get all the part names from within a schematic, output is a dictionary
 def get_all_parts(elem, d = None):
     if d is None:
         d = dict()
@@ -50,29 +53,44 @@ def get_all_parts(elem, d = None):
             d[name] = name
     return d
 
+# get all the net names from within a schematic, output is a dictionary
+def get_all_nets(elem, d = None):
+    if d is None:
+        d = dict()
+    eleParts = elem.find("drawing/schematic/sheets/sheet/nets")
+    for child in eleParts:
+        if child.tag == "net":
+            name = child.attrib["name"]
+            if name not in d:
+                d[name] = name
+    return d
+
+# increment the number at the end of a part name, making sure that it doesn't already exist in any of the haystacks
 def inc_name(original_string, haystacks = []):
     match = re.search(r'\d+$', original_string)
     if match:
         integer_part = match.group()
         new_integer = int(integer_part) + 1
         incremented_string = original_string[:match.start()] + str(new_integer)
-        for h in haystacks:
+        for h in haystacks: # making sure that it doesn't already exist in any of the haystacks
             while incremented_string in h.values():
-                new_integer += 1
+                new_integer += 1 # keep incrementing
                 incremented_string = original_string[:match.start()] + str(new_integer)
         return incremented_string
-    else:
+    else: # did not find any numbers
         if haystacks is None or len(haystacks) <= 0:
             return original_string
         else:
+            # add a number to the end to prevent duplicates
             new_integer = 1
             incremented_string = original_string + str(new_integer)
-            for h in haystacks:
+            for h in haystacks: # making sure that it doesn't already exist in any of the haystacks
                 while incremented_string in h.values():
-                    new_integer += 1
+                    new_integer += 1 # keep incrementing
                     incremented_string = original_string + str(new_integer)
             return original_string + str(new_integer)
 
+# take two lists of part names and generate a renaming dictionary so that there are no duplicates
 def map_part_names(d1, d2):
     dout = dict()
     for i in d2:
@@ -85,6 +103,21 @@ def map_part_names(d1, d2):
             dout[i] = d2[i]
     return dout
 
+# take two lists of net names and generate a renaming dictionary so that there are no duplicates for unnamed nets
+def map_net_names(d1, d2):
+    dout = dict()
+    for i in d2:
+        if i[0:2] == "N$":
+            if i in d1 or i in dout.values():
+                n = inc_name(i, haystacks = [d1, d2, dout])
+                while n in d1 or n in d1.values() or n in dout.values():
+                    n = inc_name(n, haystacks = [d1, d2, dout])
+                dout[i] = n
+            else:
+                dout[i] = d2[i]
+    return dout
+
+# use a renaming dictionary to rename all items recursively, whitelist is a dictionary with a tag name and associated attribute
 def rename_all(elem, whitelist, dic):
     for child in elem:
         for tn, atr in whitelist.items():
@@ -93,6 +126,7 @@ def rename_all(elem, whitelist, dic):
                     child.attrib[atr] = dic[child.attrib[atr]]
         rename_all(child, whitelist, dic)
 
+# take all child nodes from root2 and insert them into root1
 def concatenate_elements(root1, root2, pathstr):
     if pathstr is not None and len(pathstr) > 0:
         ele1 = root1.find(pathstr)
@@ -103,6 +137,7 @@ def concatenate_elements(root1, root2, pathstr):
     for child in ele2:
         ele1.append(child)
 
+# take all child nodes from root2 and merge them into root1 when their name attribute matches, if no match, then append
 def merge_nets(root1, root2, pathstr, atr = "name", fn = concatenate_elements):
     if pathstr is not None and len(pathstr) > 0:
         ele1 = root1.find(pathstr)
@@ -121,6 +156,7 @@ def merge_nets(root1, root2, pathstr, atr = "name", fn = concatenate_elements):
         if found == False:
             ele1.append(child2)
 
+# merge library components
 def merge_libraries(root1, root2, pathstr):
     global args
     atr = "name"
@@ -199,18 +235,38 @@ def stitch(fpath1, fpath2, outpath):
         #print("parts from second schematic: " + str(d2))
         pass
 
-    rename_dict = map_part_names(d1, d2)
+    part_rename_dict = map_part_names(d1, d2)
     if args.verbose:
-        print("rename dictionary generated")
-        #print(rename_dict)
+        print(f"part rename dictionary generated, {len(part_rename_dict)} items")
+        #print(part_rename_dict)
 
-    rename_all(tree_sch_2.getroot().find("drawing/schematic/parts"), {"part": "name"}, rename_dict)
-    rename_all(tree_sch_2.getroot().find("drawing/schematic/sheets"), {"instance": "part", "pinref": "part"}, rename_dict)
-    rename_all(tree_brd_2.getroot().find("drawing/board/elements"), {"element": "name"}, rename_dict)
-    rename_all(tree_brd_2.getroot().find("drawing/board/signals"), {"contactref": "element"}, rename_dict)
+    d1 = get_all_nets(tree_sch.getroot())
+    if args.verbose:
+        #print("nets from first schematic: " + str(d1))
+        pass
+    d2 = get_all_nets(tree_sch_2.getroot())
+    if args.verbose:
+        #print("nets from second schematic: " + str(d2))
+        pass
+
+    net_rename_dict = map_net_names(d1, d2)
+    if args.verbose:
+        print(f"net rename dictionary generated, {len(net_rename_dict)} items")
+        #print(net_rename_dict)
+
+    rename_all(tree_sch_2.getroot().find("drawing/schematic/parts"), {"part": "name"}, part_rename_dict)
+    rename_all(tree_sch_2.getroot().find("drawing/schematic/sheets"), {"instance": "part", "pinref": "part"}, part_rename_dict)
+    rename_all(tree_brd_2.getroot().find("drawing/board/elements"), {"element": "name"}, part_rename_dict)
+    rename_all(tree_brd_2.getroot().find("drawing/board/signals"), {"contactref": "element"}, part_rename_dict)
 
     if args.verbose:
         print("parts all renamed")
+
+    rename_all(tree_sch_2.getroot().find("drawing/schematic/sheets/sheet/nets"), {"net": "name"}, net_rename_dict)
+    rename_all(tree_brd_2.getroot().find("drawing/board/signals"), {"signal": "name"}, net_rename_dict)
+
+    if args.verbose:
+        print("nets all renamed")
 
     add_to_coord(tree_sch_2.getroot().find("drawing/schematic/sheets"), "x", x_shift)
     add_to_coord(tree_brd.getroot().find("drawing/board/elements"), "y", y_shift)
