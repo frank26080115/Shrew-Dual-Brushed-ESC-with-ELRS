@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -72,6 +72,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -133,6 +134,10 @@
 <wire x1="10.4" y1="3.8" x2="11.3" y2="2.9" width="0" layer="42"/>
 <wire x1="0" y1="9.8" x2="14" y2="9.8" width="0" layer="41"/>
 <wire x1="14" y1="9.8" x2="0" y2="9.8" width="0" layer="42"/>
+<text x="13.4" y="7" size="1" layer="21" font="vector" align="center">G</text>
+<text x="13.2" y="7.1" size="1" layer="22" font="vector" rot="MR270" align="center">G</text>
+<text x="0.6" y="5.8" size="1" layer="22" font="vector" rot="MR0" align="center">V</text>
+<text x="0.8" y="5.8" size="1" layer="21" font="vector" align="center">V</text>
 </plain>
 <libraries>
 <library name="shrew-core">
@@ -228,6 +233,9 @@
 <text x="-1.7272" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
 <wire x1="-1.7" y1="0.7" x2="-1.7" y2="1.2" width="0.2" layer="21"/>
 <wire x1="-1.7" y1="1.2" x2="-0.6" y2="1.2" width="0.2" layer="21"/>
+</package>
+<package name="PAD-1X-MED">
+<pad name="P$1" x="0" y="0" drill="1" diameter="1.8" shape="square"/>
 </package>
 <package name="PAD-1X-1.5MMSQ">
 <pad name="P$1" x="0" y="0" drill="0.8" diameter="1.5" shape="square"/>
@@ -520,7 +528,7 @@ chip</description>
 <attribute name="VALUE" x="11.8795" y="4.533" size="0.4064" layer="27" rot="R180"/>
 </element>
 <element name="X5" library="shrew-core" package="PAD-1X-1.5MMSQ" value="PIN-1X-1.5MMSQ" x="0.96" y="4.2" smashed="yes"/>
-<element name="X6" library="shrew-core" package="PAD-1X-1.5MMSQ" value="PIN-1X-1.5MMSQ" x="13.03" y="5.36" smashed="yes"/>
+<element name="X6" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="12.89" y="5.36" smashed="yes"/>
 <element name="C1" library="shrew-common" package="0805" value="" x="5.2" y="6" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.6745" y="7.538" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="6.597" y="4.984" size="0.4064" layer="27" rot="R90"/>
@@ -615,8 +623,8 @@ chip</description>
 <via x="5.41" y="8.6" extent="1-16" drill="0.3" shape="square"/>
 <via x="5.41" y="8" extent="1-16" drill="0.3" shape="square"/>
 <via x="8.78" y="5.98" extent="1-16" drill="0.3" shape="square"/>
-<wire x1="13.03" y1="5.36" x2="11.9" y2="5.36" width="0.6" layer="1"/>
-<wire x1="13.03" y1="5.36" x2="11.9" y2="5.36" width="0.6" layer="16"/>
+<wire x1="12.89" y1="5.36" x2="11.2" y2="5.36" width="0.6" layer="1"/>
+<wire x1="12.89" y1="5.36" x2="11.7" y2="5.36" width="0.6" layer="16"/>
 <wire x1="13" y1="6.6" x2="13" y2="4" width="0.6" layer="16"/>
 <wire x1="6.2" y1="8.6" x2="6.2" y2="9.2" width="0.254" layer="16"/>
 <wire x1="7.8" y1="9.2" x2="7.8" y2="7.8" width="0.254" layer="16"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2045,6 +2045,9 @@
 <package name="PAD-1X-1.5MMSQ">
 <pad name="P$1" x="0" y="0" drill="0.8" diameter="1.5" shape="square"/>
 </package>
+<package name="PAD-1X-MED">
+<pad name="P$1" x="0" y="0" drill="1" diameter="1.8" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP32-QFN48">
@@ -2840,6 +2843,14 @@
 </technologies>
 </device>
 <device name="-1.5MMSQ" package="PAD-1X-1.5MMSQ">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MED" package="PAD-1X-MED">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
