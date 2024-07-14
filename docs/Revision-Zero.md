@@ -16,6 +16,8 @@ The receiver portion has a pin assignment error. I had JLCPCB put in the ESP32-P
 
 This means revision-zero loses two pins for auxiliary servos, and probably cannot do things with I2C or CAN bus. The serial TX and serial RX pins can in theory be used for other purposes other than serial port though.
 
+The Shrew-Mega motor driver PCB is missing the sleep signal. The design tied the sleep signal to 3.3V but this is apparently never going to work, the DRV8244 chip requires a very brief low pulse on the sleep signal before it works. So to fix this with a bodge-wire, the voltage regulator's output leg is bent and connected directly to the Shrew-RX's power signal. The existing 3.3V signal is rerouted to the Shrew-RX's RX pin.
+
 ## Mini Motor Driver
 
 The components for revision-zero may differ from future cost optimized revisions.
@@ -39,20 +41,31 @@ Test condition:
  * PCBs are detached
  * Input voltage 17.2V
  * Room temperature set to 75°F, which is 24°C
- * Receiver is connected to Transmitter, 100Hz packet rate, 10mW telemetry (default telemetry settings). This is roughly 120mA of load on the 3.3V power
+ * Receiver is connected to Transmitter, 100Hz packet rate, 10mW telemetry, 1:32 telemetry ratio. This is roughly 120mA of load on the 3.3V power
 
 Voltage Regulator `MIC5239-3.3YS`
 
-![](thermal-rev0-mic5239.jpg)
+![](imgs/thermal-rev0-mic5239.jpg)
 
 Voltage Regulator `DS8242-33A3L`
 
-![](thermal-rev0-ds8242.jpg)
+![](imgs/thermal-rev0-ds8242.jpg)
 
 ESP32-Pico-D4
 
-![](thermal-rev0-esp32.jpg)
+![](imgs/thermal-rev0-esp32.jpg)
 
 SX1280
 
-![](thermal-rev0-sx1280.jpg)
+![](imgs/thermal-rev0-sx1280.jpg)
+
+ * Same setup as above
+ * Receiver is connected to Transmitter, 100Hz packet rate, 10mW telemetry, 1:128 telemetry ratio. This is roughly 80mA of load on the 3.3V power
+
+Voltage Regulator `MIC5239-3.3YS`
+
+![](imgs/thermal-rev0-mic5239-lower.jpg)
+
+Voltage Regulator `DS8242-33A3L`
+
+![](imgs/thermal-rev0-ds8242-lower.jpg)
