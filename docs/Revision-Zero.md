@@ -4,6 +4,8 @@ The first batch of prototypes were made around June of 2024. This batch is speci
 
 All PCBs are made without castellated edge holes to save cost. This makes the PCB a bit bigger than intended. To join the receiver and motor driver PCBs together, the edge of the PCB can be sanded down first to create castellated edge holes that are soldered together.
 
+![](imgs/shrew-family-rev0.jpg)
+
 The receiver PCB half is manufactured as a standard 4 layer PCB with 1 oz copper. The mini motor driver PCB is made with a 2 layer PCB with 1 oz copper. The mega motor driver is made with a 2 layer PCB with 2 oz copper. Any future revisions with the two halves integrated will need to use a 4 layer PCB.
 
 I forgot to put some silkscreen text on the PCBs. Please refer to diagram to avoid any wiring mistakes.
