@@ -69,3 +69,13 @@ Voltage Regulator `MIC5239-3.3YS`
 Voltage Regulator `DS8242-33A3L`
 
 ![](imgs/thermal-rev0-ds8242-lower.jpg)
+
+# Oscillator Quality
+
+The oscillator is a TCXO, temperature compensated crystal oscillator. This type of oscillator should ensure that the RF performance is superb under all temperature conditions. The particular part being used is a `Seiko Epson X1G0054410320`.
+
+ExpressLRS has a test mode that generates a continuous wave at 2440 MHz and you are supposed to measure it to see how good your oscillator is. The lower the deviation from 2440 MHz, the better. More information about this test: https://www.expresslrs.org/hardware/crystal-frequency-error/
+
+![](imgs/center_freq.png)
+
+It's measuring a 2440.006 MHz in the above screen shot, which is about as good as it gets.
