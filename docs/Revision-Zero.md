@@ -8,6 +8,8 @@ All PCBs are made without castellated edge holes to save cost. This makes the PC
 
 The receiver PCB half is manufactured as a standard 4 layer PCB with 1 oz copper. The mini motor driver PCB is made with a 2 layer PCB with 1 oz copper. The mega motor driver is made with a 2 layer PCB with 2 oz copper. Any future revisions with the two halves integrated will need to use a 4 layer PCB.
 
+![](imgs/shrew-rev0-malenki-compare.jpg)
+
 I forgot to put some silkscreen text on the PCBs. Please refer to diagram to avoid any wiring mistakes.
 
 The footprints being used for the 0402 components are a bit larger than what the PCB manufacture prefers, but this might help me when I am hand soldering or doing repair work. Future revisions will have a smaller footprint for the 0402 components.
@@ -18,7 +20,7 @@ The receiver portion has a pin assignment error. I had JLCPCB put in the ESP32-P
 
 This means revision-zero loses two pins for auxiliary servos, and probably cannot do things with I2C or CAN bus. The serial TX and serial RX pins can in theory be used for other purposes other than serial port though.
 
-The Shrew-Mega motor driver PCB is missing the sleep signal. The design tied the sleep signal to 3.3V but this is apparently never going to work, the DRV8244 chip requires a very brief low pulse on the sleep signal before it works. So to fix this with a bodge-wire, the voltage regulator's output leg is bent and connected directly to the Shrew-RX's power signal. The existing 3.3V signal is rerouted to the Shrew-RX's RX pin.
+The Shrew-Mega motor driver PCB is missing the sleep signal. The design tied the sleep signal to 3.3V but this is apparently never going to work, the DRV8244 chip requires a very brief low pulse on the sleep signal before it works. So to fix this with a bodge-wire, the voltage regulator's output leg is bent and connected directly to the Shrew-RX's GPIO4 (this used to be the battery measuring ADC pin). The existing 3.3V signal is rerouted to the Shrew-RX's RX pin.
 
 ## Mini Motor Driver
 
