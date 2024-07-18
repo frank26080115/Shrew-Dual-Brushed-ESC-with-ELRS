@@ -86,7 +86,7 @@ Voltage Regulator `DS8242-33A3L`
 
 ![](imgs/thermal-rev0-ds8242-lower.jpg)
 
-# Thermal Test on Shrew-Mega
+## Thermal Test on Shrew-Mega
 
  * 12V input
  * Driving two JCR Viper motors, with gearbox, without load
@@ -100,4 +100,20 @@ Side with motor drivers:
 
 Side with voltage regulator:
 
-![](imgs/thermal-rev0-ds8242-lower.jpg)
+![](imgs/thermal-rev0-mega-continuous-back.jpg)
+
+## Thermal Test on Shrew-Mini
+
+ * 12V input
+ * Driving 2x2 N20 motors, with gearbox, without load
+ * Measurements taken after 5 minutes of running
+
+The steady-state current drawn by these four motors started off at about 0.37A combined, and slowly tappered off to about 0.29A combined.
+
+Side with motor drivers:
+
+![](imgs/thermal-rev0-mini-continuous.jpg)
+
+Side with voltage regulator:
+
+![](imgs/thermal-rev0-mini-continuous-back.jpg)
