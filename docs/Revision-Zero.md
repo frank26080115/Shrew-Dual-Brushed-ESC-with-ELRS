@@ -38,7 +38,17 @@ The voltage regulator on it is a [MIC5239-3.3YS](https://www.digikey.com/en/prod
 
 The input capacitors on this circuit are 7x [C2012X5R1V226M125AC](https://www.digikey.com/en/products/detail/tdk-corporation/C2012X5R1V226M125AC/3951664), 22uF 35V X5R ceramic capacitors. These are somewhat expensive and may not be used in future cost optimized revisions.
 
-## Initial Thermal Tests
+# Oscillator Quality
+
+The oscillator is a TCXO, temperature compensated crystal oscillator. This type of oscillator should ensure that the RF performance is superb under all temperature conditions. The particular part being used is a `Seiko Epson X1G0054410320`.
+
+ExpressLRS has a test mode that generates a continuous wave at 2440 MHz and you are supposed to measure it to see how good your oscillator is. The lower the deviation from 2440 MHz, the better. More information about this test: https://www.expresslrs.org/hardware/crystal-frequency-error/
+
+![](imgs/center_freq.png)
+
+It's measuring a 2440.006 MHz in the above screen shot, which is about as good as it gets.
+
+## Initial Thermal Tests on Voltage Regulator
 
 Test condition:
 
@@ -63,6 +73,8 @@ SX1280
 
 ![](imgs/thermal-rev0-sx1280.jpg)
 
+## 2nd Thermal Tests on Voltage Regulator
+
  * Same setup as above
  * Receiver is connected to Transmitter, 100Hz packet rate, 10mW telemetry, 1:128 telemetry ratio. This is roughly 80mA of load on the 3.3V power
 
@@ -74,12 +86,18 @@ Voltage Regulator `DS8242-33A3L`
 
 ![](imgs/thermal-rev0-ds8242-lower.jpg)
 
-# Oscillator Quality
+# Thermal Test on Shrew-Mega
 
-The oscillator is a TCXO, temperature compensated crystal oscillator. This type of oscillator should ensure that the RF performance is superb under all temperature conditions. The particular part being used is a `Seiko Epson X1G0054410320`.
+ * 12V input
+ * Driving two JCR Viper motors, with gearbox, without load
+ * Measurements taken after 5 minutes of running
 
-ExpressLRS has a test mode that generates a continuous wave at 2440 MHz and you are supposed to measure it to see how good your oscillator is. The lower the deviation from 2440 MHz, the better. More information about this test: https://www.expresslrs.org/hardware/crystal-frequency-error/
+The steady-state current drawn by these two motors started off at about 1.1A combined, and slowly tappered off to about 0.7A combined, which I think is because of the internal resistance of the DRV8244 increasing slowly as temperature also rose.
 
-![](imgs/center_freq.png)
+Side with motor drivers:
 
-It's measuring a 2440.006 MHz in the above screen shot, which is about as good as it gets.
+![](imgs/thermal-rev0-mega-continuous.jpg)
+
+Side with voltage regulator:
+
+![](imgs/thermal-rev0-ds8242-lower.jpg)
