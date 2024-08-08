@@ -1,0 +1,2 @@
+python move_gerber_files.py
+pause

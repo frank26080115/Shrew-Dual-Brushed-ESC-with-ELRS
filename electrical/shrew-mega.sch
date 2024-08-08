@@ -3834,7 +3834,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="C20" library="shrew-common" deviceset="CAP" device="0805"/>
 <part name="C25" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
 <part name="GND23" library="shrew-common" deviceset="GND" device=""/>
-<part name="R4" library="shrew-common" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R4" library="shrew-common" deviceset="RESISTOR" device="0402-REV"/>
 <part name="P+10" library="shrew-common" deviceset="+24V" device=""/>
 <part name="U3" library="shrew-core" deviceset="DRV8244SQRYJRQ1" device=""/>
 <part name="U4" library="shrew-core" deviceset="DRV8244SQRYJRQ1" device=""/>

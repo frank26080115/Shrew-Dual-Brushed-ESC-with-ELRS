@@ -30,14 +30,14 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -146,7 +146,7 @@
 <wire x1="11.79" y1="4.12" x2="11.79" y2="3.73" width="0.254" layer="29"/>
 <wire x1="12.79" y1="4.13" x2="12.79" y2="3.74" width="0.254" layer="29"/>
 <rectangle x1="6" y1="3.5" x2="11.1" y2="4.3" layer="29"/>
-<rectangle x1="3" y1="3.3" x2="7.2" y2="4.8" layer="30"/>
+<rectangle x1="3" y1="3.7" x2="7.2" y2="4.8" layer="30"/>
 <wire x1="4.43" y1="3.93" x2="4.57" y2="3.93" width="0" layer="41"/>
 <wire x1="12.23" y1="3.93" x2="12.36" y2="3.93" width="0" layer="41"/>
 <wire x1="12.36" y1="3.93" x2="12.36" y2="3.95" width="0" layer="41"/>
@@ -155,7 +155,7 @@
 <wire x1="14.33" y1="4.13" x2="14.46" y2="4.13" width="0" layer="41"/>
 <text x="0.3" y="8.5" size="1" layer="21" align="center-left">BAT+</text>
 <text x="15.3" y="8.5" size="1" layer="21" rot="R180" align="center-left">GND</text>
-<text x="13.3" y="6.3" size="1" layer="22" rot="MR0" align="center-left">GND</text>
+<text x="12.8" y="7.2" size="1" layer="22" rot="MR270" align="center-left">GND</text>
 <text x="2" y="7.4" size="1" layer="22" rot="MR180" align="center-left">BAT+</text>
 <text x="2.5" y="12" size="1" layer="22" rot="MR180" align="center-left">19</text>
 <text x="2.5" y="14.6" size="1" layer="22" rot="MR180" align="center-left">22</text>
@@ -166,6 +166,12 @@
 <text x="2.7" y="13.4" size="0.8" layer="22" rot="MR180" align="center-left">P2</text>
 <text x="2.6" y="16" size="0.8" layer="22" rot="MR180" align="center-left">3</text>
 <text x="2.6" y="18.4" size="0.8" layer="22" rot="MR180" align="center-left">1</text>
+<text x="9.9" y="11.7" size="0.9" layer="22" font="vector" ratio="10" rot="MR0" align="center-left">SHREW
+LITE</text>
+<text x="4.35" y="1.6" size="0.8" layer="21" font="vector" align="center">A</text>
+<text x="12.16" y="1.6" size="0.8" layer="21" font="vector" align="center">B</text>
+<text x="11.98" y="1.6" size="0.8" layer="22" font="vector" rot="MR0" align="center">B</text>
+<text x="4.17" y="1.6" size="0.8" layer="22" font="vector" rot="MR0" align="center">A</text>
 </plain>
 <libraries>
 <library name="shrew-core">
@@ -1079,9 +1085,9 @@ chip</description>
 <attribute name="NAME" x="11.0185" y="5.5445" size="1.016" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="5.5095" y="5.3705" size="0.4064" layer="28" rot="MR90"/>
 </element>
-<element name="R4" library="shrew-common" package="0402-RES" value="" x="11.2" y="8.6" smashed="yes" rot="MR180">
-<attribute name="NAME" x="10.311" y="7.9015" size="1.016" layer="26" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="10.1205" y="9.743" size="0.4064" layer="28" rot="MR180"/>
+<element name="R4" library="shrew-common" package="0402-RES" value="" x="11.2" y="8.9" smashed="yes" rot="MR180">
+<attribute name="NAME" x="10.311" y="8.2015" size="1.016" layer="26" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="10.1205" y="10.043" size="0.4064" layer="28" rot="MR180"/>
 </element>
 <element name="X7" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="1.16" y="6.8"/>
 <element name="X8" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="14.39" y="6.8"/>
@@ -1168,7 +1174,6 @@ chip</description>
 <via x="14.9" y="19.4" extent="1-16" drill="0.3" shape="octagon"/>
 <via x="14.5" y="13.7" extent="1-16" drill="0.3" shape="octagon"/>
 <via x="9.1" y="14.7" extent="1-16" drill="0.3" shape="octagon"/>
-<via x="9.6" y="11.65" extent="1-16" drill="0.3" shape="octagon"/>
 <contactref element="C11" pad="2"/>
 <polygon width="0.1524" layer="1" spacing="0.1524" isolate="0.1524" thermals="no">
 <vertex x="1.5" y="24"/>
@@ -1273,6 +1278,7 @@ chip</description>
 <vertex x="15.1" y="5.7"/>
 </polygon>
 <via x="12.81" y="5.4" extent="1-16" drill="0.3" shape="square"/>
+<wire x1="9.1" y1="14.7" x2="9.11" y2="14.69" width="0" layer="19" extent="1-15"/>
 </signal>
 <signal name="VDD_SDIO">
 </signal>
@@ -1686,7 +1692,7 @@ chip</description>
 <contactref element="JP1" pad="3"/>
 <contactref element="R4" pad="1"/>
 <wire x1="10.55" y1="10" x2="10.8" y2="10" width="0.4064" layer="16"/>
-<wire x1="10.55" y1="8.6" x2="10.55" y2="10" width="0.4064" layer="16"/>
+<wire x1="10.55" y1="8.9" x2="10.55" y2="10" width="0.4064" layer="16"/>
 <wire x1="10.55" y1="10" x2="10.5" y2="10" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$5">
@@ -1700,7 +1706,7 @@ chip</description>
 <contactref element="U3" pad="5"/>
 <contactref element="X5" pad="1"/>
 <via x="6.04" y="4.38" extent="1-16" drill="0.3" shape="square"/>
-<via x="6.04" y="3.81" extent="1-16" drill="0.3" shape="square"/>
+<via x="6.04" y="3.81" extent="1-16" drill="0.3" shape="octagon"/>
 <contactref element="C16" pad="1"/>
 <contactref element="C19" pad="1"/>
 <contactref element="C18" pad="1"/>
@@ -1733,20 +1739,23 @@ chip</description>
 <wire x1="1.9" y1="4.46" x2="2.2" y2="4.4" width="0.4064" layer="1"/>
 <wire x1="2.2" y1="4.4" x2="2.2033" y2="4.3967" width="0.3048" layer="1"/>
 <wire x1="2.2033" y1="4.3967" x2="3.4998125" y2="4.3967" width="0.3048" layer="1"/>
-<via x="2.84" y="4.38" extent="1-16" drill="0.3" shape="square"/>
-<via x="2.84" y="3.78" extent="1-16" drill="0.3" shape="square"/>
+<via x="2.84" y="4.58" extent="1-16" drill="0.3" shape="square"/>
+<via x="2.84" y="3.98" extent="1-16" drill="0.3" shape="octagon"/>
 <contactref element="X7" pad="1"/>
 <wire x1="2" y1="8.8" x2="2" y2="7.64" width="0.4064" layer="16"/>
 <wire x1="2" y1="7.64" x2="1.16" y2="6.8" width="0.4064" layer="16"/>
 <wire x1="1.16" y1="6.8" x2="1.16" y2="5.06" width="0.4064" layer="16"/>
-<wire x1="10.6" y1="7.3" x2="11.85" y2="8.55" width="0.1524" layer="16"/>
-<wire x1="11.85" y1="8.55" x2="11.85" y2="8.6" width="0.1524" layer="16"/>
 <polygon width="0.3048" layer="15" spacing="0.1524" isolate="0.3048" thermals="no">
 <vertex x="2.6" y="4.6"/>
 <vertex x="6.3" y="4.6"/>
 <vertex x="6.3" y="3.6"/>
 <vertex x="2.6" y="3.6"/>
 </polygon>
+<wire x1="10.6" y1="7.3" x2="11.1" y2="7.8" width="0.1524" layer="16"/>
+<wire x1="11.1" y1="7.8" x2="11.4" y2="7.8" width="0.1524" layer="16"/>
+<wire x1="11.4" y1="7.8" x2="11.6" y2="8" width="0.1524" layer="16"/>
+<wire x1="11.6" y1="8" x2="11.6" y2="8.9" width="0.1524" layer="16"/>
+<wire x1="11.6" y1="8.9" x2="11.85" y2="8.9" width="0.1524" layer="16"/>
 </signal>
 <signal name="MOTOR3">
 <contactref element="U3" pad="6"/>
@@ -1791,4 +1800,10 @@ chip</description>
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
