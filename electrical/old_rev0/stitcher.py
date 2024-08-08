@@ -216,6 +216,8 @@ def stitch(fpath1, fpath2, outpath):
     xn = x1 + w
     x_shift = 0 if x3 > xn else round((xn - x3) / 2.54)
     x_shift *= 2.54
+    # display units are in inches but the XML units are always mm, so we must round to the nearest 0.1" and convert it to mm
+    # or else the schematic will hard to edit as nothing would snap to the grid correctly
 
     if args.verbose:
         print(f"schematic X offset {x_shift}")
