@@ -5063,6 +5063,15 @@ Nick Garner - TeleSense</description>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
+<package name="1X07-2MM-TH-TINY">
+<pad name="4" x="0" y="0" drill="0.3" shape="octagon"/>
+<pad name="3" x="2" y="0" drill="0.3" shape="octagon"/>
+<pad name="2" x="4" y="0" drill="0.3" shape="octagon"/>
+<pad name="1" x="6" y="0" drill="0.3" shape="square"/>
+<pad name="5" x="-2" y="0" drill="0.3" shape="octagon"/>
+<pad name="6" x="-4" y="0" drill="0.3" shape="octagon"/>
+<pad name="7" x="-6" y="0" drill="0.3" shape="octagon"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1.0V">
@@ -8034,6 +8043,20 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </technologies>
 </device>
 <device name="-2MM-TH" package="1X07-2MM-TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2MM-TH-TINY" package="1X07-2MM-TH-TINY">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

@@ -72,6 +72,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -768,17 +769,17 @@ chip</description>
 </element>
 <element name="X5" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="1.6" y="10" smashed="yes"/>
 <element name="X6" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="16.4" y="10" smashed="yes"/>
-<element name="C1" library="shrew-common" package="0805" value="" x="1.7" y="4.7" smashed="yes" rot="MR180">
-<attribute name="NAME" x="3.238" y="5.1745" size="1.016" layer="26" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="0.684" y="6.097" size="0.4064" layer="28" rot="MR180"/>
+<element name="C1" library="shrew-common" package="0805" value="" x="1.7" y="4.3" smashed="yes" rot="MR180">
+<attribute name="NAME" x="3.238" y="4.7745" size="1.016" layer="26" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="0.684" y="5.697" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="C2" library="shrew-common" package="0805" value="" x="1.7" y="6.2" smashed="yes" rot="MR180">
-<attribute name="NAME" x="3.238" y="6.6745" size="1.016" layer="26" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="0.684" y="7.597" size="0.4064" layer="28" rot="MR180"/>
+<element name="C2" library="shrew-common" package="0805" value="" x="1.7" y="5.9" smashed="yes" rot="MR180">
+<attribute name="NAME" x="3.238" y="6.3745" size="1.016" layer="26" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="0.684" y="7.297" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="C3" library="shrew-common" package="0805" value="" x="1.7" y="7.7" smashed="yes" rot="MR180">
-<attribute name="NAME" x="3.138" y="8.1745" size="1.016" layer="26" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="0.684" y="9.097" size="0.4064" layer="28" rot="MR180"/>
+<element name="C3" library="shrew-common" package="0805" value="" x="1.7" y="7.5" smashed="yes" rot="MR180">
+<attribute name="NAME" x="3.138" y="7.9745" size="1.016" layer="26" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="0.684" y="8.897" size="0.4064" layer="28" rot="MR180"/>
 </element>
 <element name="C4" library="shrew-common" package="0805" value="" x="3.9" y="8.7" smashed="yes" rot="MR270">
 <attribute name="NAME" x="3.0745" y="9.462" size="1.016" layer="26" font="vector" rot="MR270"/>
@@ -809,19 +810,20 @@ chip</description>
 <attribute name="TYPE" value="TYPE" x="12.7" y="7.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="9.4234" y="6.865" size="1.016" layer="27" font="vector" ratio="6" rot="SR0"/>
 </element>
-<element name="C5" library="shrew-common" package="0805" value="" x="16.4" y="7.05" smashed="yes" rot="MR180">
-<attribute name="NAME" x="15.638" y="6.2245" size="1.016" layer="26" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="15.384" y="8.447" size="0.4064" layer="28" rot="MR180"/>
+<element name="C5" library="shrew-common" package="0805" value="" x="16.4" y="7.15" smashed="yes" rot="MR180">
+<attribute name="NAME" x="15.638" y="6.3245" size="1.016" layer="26" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="15.384" y="8.547" size="0.4064" layer="28" rot="MR180"/>
 </element>
 <element name="C6" library="shrew-common" package="0805" value="" x="16.4" y="5.55" smashed="yes" rot="MR180">
 <attribute name="NAME" x="15.638" y="4.7245" size="1.016" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="15.384" y="6.947" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="C7" library="shrew-common" package="0805" value="" x="16.4" y="4.05" smashed="yes" rot="MR180">
-<attribute name="NAME" x="15.638" y="3.2245" size="1.016" layer="26" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="15.384" y="5.447" size="0.4064" layer="28" rot="MR180"/>
+<element name="C7" library="shrew-common" package="0805" value="" x="16.4" y="3.95" smashed="yes" rot="MR180">
+<attribute name="NAME" x="15.638" y="3.1245" size="1.016" layer="26" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="15.384" y="5.347" size="0.4064" layer="28" rot="MR180"/>
 </element>
 <element name="IC1" library="shrew-common" package="SOT223" value="" x="9" y="7.9" rot="MR180"/>
+<element name="C11" library="shrew-common" package="0805" value="" x="9" y="9.9" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -916,26 +918,16 @@ chip</description>
 <via x="11.3" y="4.6" extent="1-16" drill="0.3" shape="square"/>
 <via x="7.9" y="10.2" extent="1-16" drill="0.3" shape="square"/>
 <via x="10.2" y="11" extent="1-16" drill="0.3" shape="square"/>
+<contactref element="C11" pad="2"/>
 </signal>
 <signal name="VDD_SDIO">
 </signal>
-<signal name="3.3V">
-<contactref element="JP1" pad="2"/>
-<contactref element="C8" pad="1"/>
-<contactref element="U1" pad="3"/>
-<contactref element="U2" pad="3"/>
-<wire x1="3.9" y1="8.875" x2="3.40155625" y2="8.875" width="0.1524" layer="1"/>
+<signal name="SLEEP">
 <wire x1="3.40155625" y1="8.875" x2="3.2" y2="9.07655625" width="0.1524" layer="1"/>
 <wire x1="3.2" y1="9.07655625" x2="3.2" y2="10.7" width="0.1524" layer="1"/>
 <via x="10.25" y="10.05" extent="1-16" drill="0.3" shape="octagon"/>
-<wire x1="13" y1="14" x2="13.52" y2="13.48" width="0.6" layer="16"/>
-<wire x1="13.52" y1="13.48" x2="13.52" y2="12.3" width="0.6" layer="16"/>
-<wire x1="3.2" y1="10.7" x2="3.6" y2="11.1" width="0.1524" layer="1"/>
-<wire x1="3.6" y1="11.1" x2="5" y2="11.1" width="0.1524" layer="1"/>
-<wire x1="5" y1="11.1" x2="5.1" y2="11.2" width="0.1524" layer="1"/>
+<wire x1="3.2" y1="10.7" x2="3.7" y2="11.2" width="0.1524" layer="1"/>
 <via x="5.1" y="11.2" extent="1-16" drill="0.3" shape="octagon"/>
-<contactref element="IC1" pad="3"/>
-<wire x1="11.3" y1="8.875" x2="10.675" y2="8.875" width="0.1524" layer="1"/>
 <wire x1="10.675" y1="8.875" x2="10.25" y2="9.3" width="0.1524" layer="1"/>
 <wire x1="10.25" y1="9.3" x2="10.25" y2="10.05" width="0.1524" layer="1"/>
 <wire x1="5.1" y1="11.2" x2="5.8" y2="10.5" width="0.1524" layer="16"/>
@@ -943,11 +935,11 @@ chip</description>
 <wire x1="5.8" y1="9.5772" x2="6.2272" y2="9.15" width="0.1524" layer="16"/>
 <wire x1="6.2272" y1="9.15" x2="9.35" y2="9.15" width="0.1524" layer="16"/>
 <wire x1="9.35" y1="9.15" x2="10.25" y2="10.05" width="0.1524" layer="16"/>
-<wire x1="10.25" y1="10.05" x2="11.3114" y2="10.05" width="0.4064" layer="16"/>
-<wire x1="11.3114" y1="10.05" x2="11.3114" y2="10.9988" width="0.4064" layer="16"/>
-<wire x1="13.52" y1="12.3" x2="12.2" y2="12.3" width="0.6" layer="16"/>
-<wire x1="12.2" y1="12.3" x2="11.3114" y2="11.4114" width="0.6" layer="16"/>
-<wire x1="11.3114" y1="11.4114" x2="11.3114" y2="10.9988" width="0.6" layer="16"/>
+<contactref element="U1" pad="3"/>
+<contactref element="U2" pad="3"/>
+<wire x1="3.9" y1="8.875" x2="3.40155625" y2="8.875" width="0.1524" layer="1"/>
+<wire x1="11.3" y1="8.875" x2="10.675" y2="8.875" width="0.1524" layer="1"/>
+<wire x1="3.7" y1="11.2" x2="5.1" y2="11.2" width="0.1524" layer="1"/>
 </signal>
 <signal name="+24V">
 <contactref element="X5" pad="1"/>
@@ -989,14 +981,14 @@ chip</description>
 <wire x1="15" y1="8.1" x2="15.2" y2="7.9" width="0.4064" layer="16"/>
 <wire x1="15.2" y1="7.9" x2="15.2" y2="7.6" width="0.4064" layer="16"/>
 <wire x1="15.2" y1="7.6" x2="15.5" y2="7.3" width="0.3048" layer="16"/>
-<wire x1="15.5" y1="7.05" x2="15.5" y2="5.55" width="0.3048" layer="16"/>
-<wire x1="15.5" y1="5.55" x2="15.5" y2="4.05" width="0.3048" layer="16"/>
-<wire x1="15.5" y1="7.3" x2="15.5" y2="7.05" width="0.3048" layer="16"/>
-<wire x1="0.8" y1="4.7" x2="0.6" y2="4.7" width="0.3048" layer="16"/>
+<wire x1="15.5" y1="7.15" x2="15.5" y2="5.55" width="0.3048" layer="16"/>
+<wire x1="15.5" y1="5.55" x2="15.5" y2="3.95" width="0.3048" layer="16"/>
+<wire x1="15.5" y1="7.3" x2="15.5" y2="7.15" width="0.3048" layer="16"/>
+<wire x1="0.8" y1="4.3" x2="0.6" y2="4.7" width="0.3048" layer="16"/>
 <wire x1="0.6" y1="4.7" x2="0.6" y2="4.5" width="0.3048" layer="16"/>
-<wire x1="0.8" y1="6.2" x2="0.6" y2="6.2" width="0.3048" layer="16"/>
+<wire x1="0.8" y1="5.9" x2="0.6" y2="6.2" width="0.3048" layer="16"/>
 <wire x1="0.6" y1="6.2" x2="0.6" y2="5.8" width="0.3048" layer="16"/>
-<wire x1="0.8" y1="7.7" x2="0.6" y2="7.7" width="0.3048" layer="16"/>
+<wire x1="0.8" y1="7.5" x2="0.6" y2="7.7" width="0.3048" layer="16"/>
 <wire x1="0.6" y1="7.7" x2="0.6" y2="8" width="0.3048" layer="16"/>
 <contactref element="IC1" pad="1"/>
 <wire x1="3.9" y1="9.6" x2="2" y2="9.6" width="0.6" layer="16"/>
@@ -1009,6 +1001,7 @@ chip</description>
 <wire x1="6.6886" y1="11.1114" x2="6.6886" y2="10.9988" width="0.6" layer="16"/>
 <wire x1="2.25" y1="12.4" x2="2.25" y2="10.65" width="0.4064" layer="16"/>
 <wire x1="2.25" y1="10.65" x2="1.6" y2="10" width="0.4064" layer="16"/>
+<contactref element="C11" pad="1"/>
 </signal>
 <signal name="MOTOR2">
 <contactref element="X1" pad="1"/>
@@ -1113,6 +1106,15 @@ chip</description>
 <wire x1="11" y1="14" x2="9.8" y2="12.8" width="0.1524" layer="16"/>
 <wire x1="9.8" y1="12.8" x2="3.95" y2="12.8" width="0.1524" layer="16"/>
 <wire x1="3.95" y1="12.8" x2="3.55" y2="12.4" width="0.1524" layer="16"/>
+</signal>
+<signal name="3.3V">
+<contactref element="JP1" pad="2"/>
+<contactref element="IC1" pad="3"/>
+<contactref element="C8" pad="1"/>
+<wire x1="11.3114" y1="10.9988" x2="12.6126" y2="12.3" width="0.8128" layer="16"/>
+<wire x1="12.6126" y1="12.3" x2="13.52" y2="12.3" width="0.8128" layer="16"/>
+<wire x1="13" y1="14" x2="13.52" y2="13.48" width="0.8128" layer="16"/>
+<wire x1="13.52" y1="13.48" x2="13.52" y2="12.3" width="0.8128" layer="16"/>
 </signal>
 </signals>
 </board>

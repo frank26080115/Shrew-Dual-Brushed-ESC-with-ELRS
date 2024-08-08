@@ -214,7 +214,8 @@ def stitch(fpath1, fpath2, outpath):
     w = x2 - x1
     w *= 1.5
     xn = x1 + w
-    x_shift = 0 if x3 > xn else round(xn - x3)
+    x_shift = 0 if x3 > xn else round((xn - x3) / 2.54)
+    x_shift *= 2.54
 
     if args.verbose:
         print(f"schematic X offset {x_shift}")

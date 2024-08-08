@@ -72,6 +72,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -1166,12 +1167,6 @@ Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;br&g
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="3.3V">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="CAP">
 <wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
@@ -1239,25 +1234,18 @@ Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;br&g
 <text x="-5.08" y="5.08" size="1.27" layer="95">&gt;NAME</text>
 <text x="-5.08" y="7.62" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="3.3V">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="3.3V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="3.3V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1654,6 +1642,19 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
+<deviceset name="3.3V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1675,7 +1676,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="X5" library="shrew-core" deviceset="PIN-1X" device="-BIG" value="PIN-1X-BIG"/>
 <part name="P+11" library="shrew-common" deviceset="+24V" device=""/>
 <part name="P+12" library="shrew-common" deviceset="+24V" device=""/>
-<part name="P+13" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="GND18" library="shrew-common" deviceset="GND" device=""/>
 <part name="X6" library="shrew-core" deviceset="PIN-1X" device="-BIG" value="PIN-1X-BIG"/>
 <part name="GND19" library="shrew-common" deviceset="GND" device=""/>
@@ -1689,7 +1689,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND23" library="shrew-common" deviceset="GND" device=""/>
 <part name="JP1" library="shrew-common" deviceset="M07" device="-2MM-TH"/>
 <part name="GND1" library="shrew-common" deviceset="GND" device=""/>
-<part name="P+1" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="R1" library="shrew-common" deviceset="RESISTOR" device="0402-RES"/>
 <part name="P+2" library="shrew-common" deviceset="+24V" device=""/>
 <part name="U1" library="shrew-core" deviceset="DRV8244SQRYJRQ1" device=""/>
@@ -1698,14 +1697,17 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND3" library="shrew-common" deviceset="GND" device=""/>
 <part name="P+3" library="shrew-common" deviceset="+24V" device=""/>
 <part name="P+4" library="shrew-common" deviceset="+24V" device=""/>
-<part name="P+5" library="shrew-common" deviceset="3.3V" device=""/>
-<part name="P+6" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="GND4" library="shrew-common" deviceset="GND" device=""/>
 <part name="GND5" library="shrew-common" deviceset="GND" device=""/>
 <part name="C5" library="shrew-common" deviceset="CAP" device="0805"/>
 <part name="C6" library="shrew-common" deviceset="CAP" device="0805"/>
 <part name="C7" library="shrew-common" deviceset="CAP" device="0805"/>
 <part name="IC1" library="shrew-common" deviceset="V_REG_SOT" device="-SOT223"/>
+<part name="P+1" library="shrew-common" deviceset="3.3V" device=""/>
+<part name="P+5" library="shrew-common" deviceset="3.3V" device=""/>
+<part name="C11" library="shrew-common" deviceset="CAP" device="0805"/>
+<part name="GND6" library="shrew-common" deviceset="GND" device=""/>
+<part name="P+6" library="shrew-common" deviceset="+24V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1726,7 +1728,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="X5" gate="G$1" x="0" y="106.68"/>
 <instance part="P+11" gate="1" x="-7.62" y="111.76"/>
 <instance part="P+12" gate="1" x="12.7" y="111.76"/>
-<instance part="P+13" gate="G$1" x="45.72" y="109.22"/>
 <instance part="GND18" gate="1" x="27.94" y="88.9"/>
 <instance part="X6" gate="G$1" x="0" y="101.6"/>
 <instance part="GND19" gate="1" x="-7.62" y="96.52"/>
@@ -1740,7 +1741,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="GND23" gate="1" x="45.72" y="91.44"/>
 <instance part="JP1" gate="G$1" x="63.5" y="96.52"/>
 <instance part="GND1" gate="1" x="71.12" y="86.36"/>
-<instance part="P+1" gate="G$1" x="96.52" y="88.9"/>
 <instance part="R1" gate="G$1" x="86.36" y="96.52"/>
 <instance part="P+2" gate="1" x="104.14" y="104.14"/>
 <instance part="U1" gate="A" x="5.08" y="33.02"/>
@@ -1749,14 +1749,17 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="GND3" gate="1" x="50.8" y="-66.04"/>
 <instance part="P+3" gate="1" x="-5.08" y="38.1"/>
 <instance part="P+4" gate="1" x="-2.54" y="-20.32"/>
-<instance part="P+5" gate="G$1" x="-20.32" y="-35.56"/>
-<instance part="P+6" gate="G$1" x="-20.32" y="22.86"/>
 <instance part="GND4" gate="1" x="2.54" y="-66.04"/>
 <instance part="GND5" gate="1" x="2.54" y="-7.62"/>
 <instance part="C5" gate="G$1" x="33.02" y="63.5"/>
 <instance part="C6" gate="G$1" x="43.18" y="63.5"/>
 <instance part="C7" gate="G$1" x="53.34" y="63.5"/>
 <instance part="IC1" gate="G$1" x="27.94" y="106.68"/>
+<instance part="P+1" gate="G$1" x="45.72" y="109.22"/>
+<instance part="P+5" gate="G$1" x="111.76" y="96.52"/>
+<instance part="C11" gate="G$1" x="81.28" y="68.58"/>
+<instance part="GND6" gate="1" x="81.28" y="60.96"/>
+<instance part="P+6" gate="1" x="81.28" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -1883,36 +1886,22 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="48.26" y1="-48.26" x2="50.8" y2="-48.26" width="0.1524" layer="91"/>
 <label x="50.8" y="-48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="81.28" y1="66.04" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
+</segment>
 </net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="P+13" gate="G$1" pin="3.3V"/>
-<wire x1="45.72" y1="109.22" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VO"/>
-<wire x1="45.72" y1="106.68" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="106.68" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
-<junction x="45.72" y="106.68"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<pinref part="P+1" gate="G$1" pin="3.3V"/>
-<wire x1="68.58" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="93.98" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="86.36" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
-</segment>
+<net name="SLEEP" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="SLEEP_N"/>
-<pinref part="P+6" gate="G$1" pin="3.3V"/>
-<wire x1="5.08" y1="20.32" x2="-20.32" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="20.32" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="20.32" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
+<label x="2.54" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="SLEEP_N"/>
-<pinref part="P+5" gate="G$1" pin="3.3V"/>
-<wire x1="5.08" y1="-38.1" x2="-20.32" y2="-38.1" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-38.1" x2="-20.32" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-38.1" x2="2.54" y2="-38.1" width="0.1524" layer="91"/>
+<label x="2.54" y="-38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="+24V" class="0">
@@ -1975,6 +1964,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="P+3" gate="1" pin="+24V"/>
 <wire x1="5.08" y1="33.02" x2="-5.08" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="33.02" x2="-5.08" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="P+6" gate="1" pin="+24V"/>
+<wire x1="81.28" y1="73.66" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR2" class="0">
@@ -2096,6 +2090,23 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="JP1" gate="G$1" pin="3"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="96.52" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="P+5" gate="G$1" pin="3.3V"/>
+<wire x1="111.76" y1="96.52" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="93.98" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VO"/>
+<pinref part="P+1" gate="G$1" pin="3.3V"/>
+<wire x1="38.1" y1="106.68" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="106.68" x2="45.72" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="104.14" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
+<junction x="45.72" y="106.68"/>
 </segment>
 </net>
 </nets>
