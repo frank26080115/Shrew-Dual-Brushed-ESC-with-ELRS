@@ -3820,21 +3820,21 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="X2" library="shrew-core" deviceset="PIN-1X" device="-BIG"/>
 <part name="X3" library="shrew-core" deviceset="PIN-1X" device="-BIG"/>
 <part name="X4" library="shrew-core" deviceset="PIN-1X" device="-BIG"/>
-<part name="C14" library="shrew-common" deviceset="CAP" device="0402-CAP"/>
-<part name="C15" library="shrew-common" deviceset="CAP" device="0402-CAP"/>
+<part name="C14" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n"/>
+<part name="C15" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n"/>
 <part name="X5" library="shrew-core" deviceset="PIN-1X" device="-BIG" value="PIN-1X-BIG"/>
 <part name="P+11" library="shrew-common" deviceset="+24V" device=""/>
 <part name="X6" library="shrew-core" deviceset="PIN-1X" device="-BIG" value="PIN-1X-BIG"/>
 <part name="GND24" library="shrew-common" deviceset="GND" device=""/>
-<part name="C16" library="shrew-common" deviceset="CAP" device="0805"/>
-<part name="C18" library="shrew-common" deviceset="CAP" device="0805"/>
-<part name="C19" library="shrew-common" deviceset="CAP" device="0805"/>
+<part name="C16" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
+<part name="C18" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
+<part name="C19" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
 <part name="P+14" library="shrew-common" deviceset="+24V" device=""/>
 <part name="GND25" library="shrew-common" deviceset="GND" device=""/>
-<part name="C20" library="shrew-common" deviceset="CAP" device="0805"/>
+<part name="C20" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
 <part name="C25" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
 <part name="GND23" library="shrew-common" deviceset="GND" device=""/>
-<part name="R4" library="shrew-common" deviceset="RESISTOR" device="0402-REV"/>
+<part name="R4" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="68K"/>
 <part name="P+10" library="shrew-common" deviceset="+24V" device=""/>
 <part name="U3" library="shrew-core" deviceset="DRV8244SQRYJRQ1" device=""/>
 <part name="U4" library="shrew-core" deviceset="DRV8244SQRYJRQ1" device=""/>
@@ -3844,9 +3844,9 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="P+16" library="shrew-common" deviceset="+24V" device=""/>
 <part name="GND29" library="shrew-common" deviceset="GND" device=""/>
 <part name="GND30" library="shrew-common" deviceset="GND" device=""/>
-<part name="C21" library="shrew-common" deviceset="CAP" device="0805"/>
-<part name="C22" library="shrew-common" deviceset="CAP" device="0805"/>
-<part name="C23" library="shrew-common" deviceset="CAP" device="0805"/>
+<part name="C21" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
+<part name="C22" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
+<part name="C23" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
 <part name="P+17" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="C24" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
 <part name="GND31" library="shrew-common" deviceset="GND" device=""/>
@@ -3939,12 +3939,20 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <instance part="P+11" gate="1" x="421.64" y="134.62"/>
 <instance part="X6" gate="G$1" x="429.26" y="124.46"/>
 <instance part="GND24" gate="1" x="421.64" y="119.38"/>
-<instance part="C16" gate="G$1" x="421.64" y="86.36"/>
-<instance part="C18" gate="G$1" x="431.8" y="86.36"/>
-<instance part="C19" gate="G$1" x="441.96" y="86.36"/>
+<instance part="C16" gate="G$1" x="421.64" y="86.36" smashed="yes">
+<attribute name="NAME" x="423.164" y="89.281" size="1.778" layer="95"/>
+</instance>
+<instance part="C18" gate="G$1" x="431.8" y="86.36" smashed="yes">
+<attribute name="NAME" x="433.324" y="89.281" size="1.778" layer="95"/>
+</instance>
+<instance part="C19" gate="G$1" x="441.96" y="86.36" smashed="yes">
+<attribute name="NAME" x="443.484" y="89.281" size="1.778" layer="95"/>
+</instance>
 <instance part="P+14" gate="1" x="421.64" y="99.06"/>
 <instance part="GND25" gate="1" x="421.64" y="76.2"/>
-<instance part="C20" gate="G$1" x="452.12" y="86.36"/>
+<instance part="C20" gate="G$1" x="452.12" y="86.36" smashed="yes">
+<attribute name="NAME" x="453.644" y="89.281" size="1.778" layer="95"/>
+</instance>
 <instance part="C25" gate="G$1" x="393.7" y="149.86"/>
 <instance part="GND23" gate="1" x="474.98" y="114.3"/>
 <instance part="R4" gate="G$1" x="50.8" y="-33.02" rot="R90"/>
@@ -3957,9 +3965,15 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <instance part="P+16" gate="1" x="426.72" y="2.54"/>
 <instance part="GND29" gate="1" x="431.8" y="-43.18"/>
 <instance part="GND30" gate="1" x="431.8" y="15.24"/>
-<instance part="C21" gate="G$1" x="462.28" y="86.36"/>
-<instance part="C22" gate="G$1" x="472.44" y="86.36"/>
-<instance part="C23" gate="G$1" x="482.6" y="86.36"/>
+<instance part="C21" gate="G$1" x="462.28" y="86.36" smashed="yes">
+<attribute name="NAME" x="463.804" y="89.281" size="1.778" layer="95"/>
+</instance>
+<instance part="C22" gate="G$1" x="472.44" y="86.36" smashed="yes">
+<attribute name="NAME" x="473.964" y="89.281" size="1.778" layer="95"/>
+</instance>
+<instance part="C23" gate="G$1" x="482.6" y="86.36" smashed="yes">
+<attribute name="NAME" x="484.124" y="89.281" size="1.778" layer="95"/>
+</instance>
 <instance part="P+17" gate="G$1" x="474.98" y="132.08"/>
 <instance part="C24" gate="G$1" x="510.54" y="91.44"/>
 <instance part="GND31" gate="1" x="510.54" y="83.82"/>

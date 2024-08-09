@@ -209,7 +209,7 @@
 <text x="2.4" y="16.6" size="1" layer="22" rot="MR180" align="center-left">P2</text>
 <text x="2.5" y="21.8" size="1" layer="22" rot="MR180" align="center-left">1</text>
 <text x="2.5" y="19.1" size="1" layer="22" rot="MR180" align="center-left">3</text>
-<text x="17.1" y="14.2" size="1" layer="22" font="vector" ratio="10" rot="MR90" align="center-left">SHREW-MEGA</text>
+<text x="17.1" y="14.2" size="1" layer="22" font="vector" ratio="10" rot="MR90" align="center-left">SHREW-PRO</text>
 <text x="3.7" y="1.7" size="0.8" layer="22" font="vector" ratio="10" rot="MR0" align="center">A</text>
 <text x="3.9" y="1.7" size="0.8" layer="21" font="vector" ratio="10" align="center">A</text>
 <text x="14.3" y="1.6" size="0.8" layer="21" font="vector" ratio="10" align="center">B</text>
@@ -1270,29 +1270,29 @@ chip</description>
 <element name="X2" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="6" y="1.6" smashed="yes"/>
 <element name="X3" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="12" y="1.6" smashed="yes"/>
 <element name="X4" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="16.4" y="1.6" smashed="yes"/>
-<element name="C14" library="shrew-common" package="0402-CAP" value="" x="3.8" y="3.39" smashed="yes" rot="R180">
+<element name="C14" library="shrew-common" package="0402-CAP" value="100n" x="3.8" y="3.39" smashed="yes" rot="R180">
 <attribute name="NAME" x="5.011" y="3.1085" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="4.8795" y="4.533" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="C15" library="shrew-common" package="0402-CAP" value="" x="14.2" y="3.39" smashed="yes" rot="R180">
+<element name="C15" library="shrew-common" package="0402-CAP" value="100n" x="14.2" y="3.39" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.411" y="3.2085" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="15.2795" y="4.533" size="0.4064" layer="27" rot="R180"/>
 </element>
 <element name="X5" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="1.6" y="10" smashed="yes"/>
 <element name="X6" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="16.4" y="10" smashed="yes"/>
-<element name="C16" library="shrew-common" package="0805" value="" x="1.7" y="4.3" smashed="yes" rot="MR180">
+<element name="C16" library="shrew-common" package="0805" value="10u" x="1.7" y="4.3" smashed="yes" rot="MR180">
 <attribute name="NAME" x="3.238" y="4.7745" size="1.016" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="0.684" y="5.697" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="C18" library="shrew-common" package="0805" value="" x="1.7" y="5.9" smashed="yes" rot="MR180">
+<element name="C18" library="shrew-common" package="0805" value="10u" x="1.7" y="5.9" smashed="yes" rot="MR180">
 <attribute name="NAME" x="3.238" y="6.3745" size="1.016" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="0.684" y="7.297" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="C19" library="shrew-common" package="0805" value="" x="1.7" y="7.5" smashed="yes" rot="MR180">
+<element name="C19" library="shrew-common" package="0805" value="10u" x="1.7" y="7.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="3.138" y="7.9745" size="1.016" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="0.684" y="8.897" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="C20" library="shrew-common" package="0805" value="" x="3.9" y="8.7" smashed="yes" rot="MR270">
+<element name="C20" library="shrew-common" package="0805" value="10u" x="3.9" y="8.7" smashed="yes" rot="MR270">
 <attribute name="NAME" x="3.0745" y="9.462" size="1.016" layer="26" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="5.297" y="9.716" size="0.4064" layer="28" rot="MR270"/>
 </element>
@@ -1300,7 +1300,7 @@ chip</description>
 <attribute name="NAME" x="13.8255" y="9.758" size="1.016" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="11.503" y="10.104" size="0.4064" layer="28" rot="MR90"/>
 </element>
-<element name="R4" library="shrew-common" package="0402-REV" value="" x="2.9" y="12.4" smashed="yes" rot="MR0">
+<element name="R4" library="shrew-common" package="0402-REV" value="68K" x="2.9" y="12.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="3.789" y="13.0985" size="1.016" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="3.9795" y="11.257" size="0.4064" layer="28" rot="MR0"/>
 </element>
@@ -1320,15 +1320,15 @@ chip</description>
 <attribute name="TYPE" value="TYPE" x="12.7" y="7.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="9.4234" y="6.865" size="1.016" layer="27" font="vector" ratio="6" rot="SR0"/>
 </element>
-<element name="C21" library="shrew-common" package="0805" value="" x="16.4" y="7.15" smashed="yes" rot="MR180">
+<element name="C21" library="shrew-common" package="0805" value="10u" x="16.4" y="7.15" smashed="yes" rot="MR180">
 <attribute name="NAME" x="15.638" y="6.3245" size="1.016" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="15.384" y="8.547" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="C22" library="shrew-common" package="0805" value="" x="16.4" y="5.55" smashed="yes" rot="MR180">
+<element name="C22" library="shrew-common" package="0805" value="10u" x="16.4" y="5.55" smashed="yes" rot="MR180">
 <attribute name="NAME" x="15.638" y="4.7245" size="1.016" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="15.384" y="6.947" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="C23" library="shrew-common" package="0805" value="" x="16.4" y="3.95" smashed="yes" rot="MR180">
+<element name="C23" library="shrew-common" package="0805" value="10u" x="16.4" y="3.95" smashed="yes" rot="MR180">
 <attribute name="NAME" x="15.638" y="3.1245" size="1.016" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="15.384" y="5.347" size="0.4064" layer="28" rot="MR180"/>
 </element>

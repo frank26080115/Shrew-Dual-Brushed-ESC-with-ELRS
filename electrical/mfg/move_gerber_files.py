@@ -2,7 +2,7 @@ import os
 import shutil
 import zipfile
 
-project_names = ["shrew-lite", "shrew-mega"]
+project_names = ["shrew-lite", "shrew-pro"]
 file_extensions = ["txt", "xln", "do", "gml", "gtp", "gts", "gto", "gtl", "gbp", "gbs", "gbo", "gbl", "g2l", "g3l"]
 delete_extensions = ["dri", "gpi"]
 
