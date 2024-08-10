@@ -2,9 +2,18 @@ import os
 import shutil
 import zipfile
 
-project_names = ["shrew-lite", "shrew-pro"]
 file_extensions = ["txt", "xln", "do", "gml", "gtp", "gts", "gto", "gtl", "gbp", "gbs", "gbo", "gbl", "g2l", "g3l"]
 delete_extensions = ["dri", "gpi"]
+
+project_names = []
+
+for filename in os.listdir(".."):
+    fpath = os.path.abspath(os.path.join("..", filename))
+    basename = os.path.basename(fpath)
+    fname = os.path.splitext(basename)[0]
+    fext = os.path.splitext(basename)[1][1:].lower()
+    if fext == "brd":
+        project_names.append(fname)
 
 for d in project_names:
     os.makedirs(d, exist_ok=True)

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2087,6 +2087,41 @@
 <smd name="5" x="1.155" y="0" dx="1.45" dy="0.59" layer="1"/>
 <smd name="6" x="1.155" y="0.95" dx="1.45" dy="0.59" layer="1"/>
 </package>
+<package name="JIG-PLACEMENTS">
+<wire x1="24" y1="0" x2="24" y2="27" width="0.127" layer="21"/>
+<wire x1="24" y1="27" x2="42" y2="27" width="0.127" layer="21"/>
+<wire x1="42" y1="27" x2="42" y2="0" width="0.127" layer="21"/>
+<wire x1="42" y1="0" x2="24" y2="0" width="0.127" layer="21"/>
+<pad name="GND1" x="25.5" y="24.96" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="TX1" x="25.5" y="22.42" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="RX1" x="25.5" y="19.88" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="AUX1-2" x="25.5" y="17.34" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="AUX1-1" x="25.5" y="14.8" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="PWR1" x="38.43" y="12.6" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="BOOT1" x="38.2" y="17.75" drill="0.8" diameter="1.8288" shape="octagon"/>
+<wire x1="0" y1="0" x2="0" y2="24" width="0.127" layer="21"/>
+<wire x1="0" y1="24" x2="15.5" y2="24" width="0.127" layer="21"/>
+<wire x1="15.5" y1="24" x2="15.5" y2="0" width="0.127" layer="21"/>
+<wire x1="15.5" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="GND2" x="1.5" y="21.96" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="TX2" x="1.5" y="19.42" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="RX2" x="1.5" y="16.88" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="AUX2-2" x="1.5" y="14.34" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="AUX2-1" x="1.5" y="11.8" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="PWR2" x="12.5" y="10" drill="0.8" diameter="1.8288" shape="octagon"/>
+<pad name="BOOT2" x="12.9" y="14.75" drill="0.8" diameter="1.8288" shape="octagon"/>
+</package>
+<package name="SWITCH-ROCKER-3PIN-2MNT">
+<pad name="C" x="0" y="0" drill="1" shape="octagon"/>
+<pad name="1" x="0" y="2.54" drill="1" shape="octagon"/>
+<pad name="2" x="0" y="-2.54" drill="1" shape="octagon"/>
+<pad name="M2" x="0" y="-5.08" drill="1" shape="square"/>
+<pad name="M1" x="0" y="5.088" drill="1" shape="square"/>
+<wire x1="-3" y1="5" x2="3" y2="5" width="0.127" layer="21"/>
+<wire x1="3" y1="5" x2="3" y2="-5" width="0.127" layer="21"/>
+<wire x1="3" y1="-5" x2="-3" y2="-5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-5" x2="-3" y2="5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ESP32-QFN48">
@@ -2338,6 +2373,34 @@
 <pin name="SHDN" x="-17.78" y="-2.54" length="middle"/>
 <pin name="SW" x="17.78" y="2.54" length="middle" rot="R180"/>
 <pin name="GND" x="-17.78" y="-12.7" length="middle" direction="pwr"/>
+</symbol>
+<symbol name="PROG-JIG">
+<wire x1="0" y1="0" x2="0" y2="38.1" width="0.254" layer="94"/>
+<wire x1="0" y1="38.1" x2="17.78" y2="38.1" width="0.254" layer="94"/>
+<wire x1="17.78" y1="38.1" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="PWR1" x="-5.08" y="35.56" length="middle"/>
+<pin name="GND1" x="-5.08" y="5.08" length="middle"/>
+<pin name="GND2" x="-5.08" y="2.54" length="middle"/>
+<pin name="PWR2" x="-5.08" y="33.02" length="middle"/>
+<pin name="TX1" x="-5.08" y="27.94" length="middle"/>
+<pin name="RX1" x="-5.08" y="20.32" length="middle"/>
+<pin name="TX2" x="-5.08" y="25.4" length="middle"/>
+<pin name="RX2" x="-5.08" y="17.78" length="middle"/>
+<pin name="BOOT1" x="-5.08" y="12.7" length="middle"/>
+<pin name="BOOT2" x="-5.08" y="10.16" length="middle"/>
+</symbol>
+<symbol name="SWITCH-ROCKER-3PIN-2MNT">
+<pin name="C" x="-10.16" y="0" visible="pad" length="middle"/>
+<pin name="1" x="7.62" y="2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="2" x="7.62" y="-2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="M1" x="-2.54" y="-12.7" visible="pad" length="middle" rot="R90"/>
+<pin name="M2" x="0" y="-12.7" visible="pad" length="middle" rot="R90"/>
+<wire x1="-7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94" style="shortdash"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94" style="shortdash"/>
+<wire x1="5.08" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-5.08" y1="0" x2="2.54" y2="2.794" width="0.2032" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2963,6 +3026,49 @@
 <attribute name="PRICE" value="None"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/LMR16006XDDCR/Texas+Instruments/view-part/?ref=snap"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PROG-JIG" prefix="X">
+<gates>
+<gate name="G$1" symbol="PROG-JIG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JIG-PLACEMENTS">
+<connects>
+<connect gate="G$1" pin="BOOT1" pad="BOOT1"/>
+<connect gate="G$1" pin="BOOT2" pad="BOOT2"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="PWR1" pad="PWR1"/>
+<connect gate="G$1" pin="PWR2" pad="PWR2"/>
+<connect gate="G$1" pin="RX1" pad="RX1"/>
+<connect gate="G$1" pin="RX2" pad="RX2"/>
+<connect gate="G$1" pin="TX1" pad="TX1"/>
+<connect gate="G$1" pin="TX2" pad="TX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH-ROCKER-3PIN-2MNT" prefix="SW">
+<gates>
+<gate name="G$1" symbol="SWITCH-ROCKER-3PIN-2MNT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SWITCH-ROCKER-3PIN-2MNT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="M1" pad="M1"/>
+<connect gate="G$1" pin="M2" pad="M2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
