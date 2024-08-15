@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2879,7 +2879,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="2450FM07D0034T" prefix="FL">
+<deviceset name="2450FM07D0034T" prefix="Y">
 <description>2.4GHz ~ 2.5GHz Frequency RF Filter (Radio Frequency) 100MHz Bandwidth 0.75dB 0402 (1005 Metric), 4 PC Pad  &lt;a href="https://pricing.snapeda.com/parts/2450FM07D0034T/Johanson%20Technology%20Inc./view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="2450FM07D0034T" x="0" y="0"/>
@@ -2906,7 +2906,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="SK6812" prefix="D">
+<deviceset name="SK6812" prefix="LED">
 <description>SMD 5050 Full color RGB LED data transmission frequency up to 800Kbps, with 30 fps refresh rate, 5.00x5.00 mm  &lt;a href="https://pricing.snapeda.com/parts/SK6812/Shenzhen%20LED%20Color%20Optoelectronic%20Inc./view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="SK6812" x="0" y="0"/>
@@ -3000,7 +3000,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LMR16006XDDCR" prefix="U">
+<deviceset name="LMR16006XDDCR" prefix="IC">
 <description> &lt;a href="https://pricing.snapeda.com/parts/LMR16006XDDCR/Texas%20Instruments/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LMR16006XDDCR" x="0" y="0"/>

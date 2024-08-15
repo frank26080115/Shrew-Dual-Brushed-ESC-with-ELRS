@@ -927,7 +927,7 @@ chip</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="SX1280IMLTRT" x="9.3" y="19" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="7.5728" y="18.365" size="0.8128" layer="27" font="vector" ratio="6" rot="SR0"/>
 </element>
-<element name="Y1" library="shrew-common" package="OSC_TG2016SMN_50.0000M-ECGNNMB" value="52MHz TCXO" x="5.3" y="16.9" smashed="yes" rot="R90">
+<element name="Y2" library="shrew-common" package="OSC_TG2016SMN_50.0000M-ECGNNMB" value="52MHz TCXO" x="5.3" y="16.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.75" y="16.21" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="7.05" y="15.71" size="0.8128" layer="27" font="vector" rot="R90" align="top-left"/>
 </element>
@@ -948,7 +948,7 @@ chip</description>
 <attribute name="VALUE" x="10.2205" y="22.843" size="0.4064" layer="28" rot="MR180"/>
 </element>
 <element name="ANT1" library="shrew-common" package="ANTENNA-CHIP2" value="74889302450" x="7.7" y="22.95" smashed="yes" rot="MR270"/>
-<element name="FL1" library="shrew-core" package="FIL_2450FM07D0034T" value="2450FM07D0034T" x="9.05" y="22.6" smashed="yes" rot="R90">
+<element name="Y1" library="shrew-core" package="FIL_2450FM07D0034T" value="2450FM07D0034T" x="9.05" y="22.6" smashed="yes" rot="R90">
 <attribute name="PRICE" value="None" x="9.05" y="22.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value=" 2.4GHz ~ 2.5GHz Frequency - RF Filter (Radio Frequency) 100MHz Bandwidth 0.75dB 0402 (1005 Metric), 4 PC Pad " x="9.05" y="22.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Johanson Technology Inc." x="9.05" y="22.6" size="1.778" layer="27" rot="R90" display="off"/>
@@ -960,7 +960,7 @@ chip</description>
 <attribute name="VALUE" x="10.05" y="21.6" size="0.8128" layer="27" font="vector" rot="R90" align="top-left"/>
 </element>
 <element name="ANT2" library="shrew-common" package="ANTENNA-CHIP2" value="74889302450" x="12.1" y="22.95" smashed="yes" rot="R90"/>
-<element name="C1" library="shrew-common" package="0402-REV" value="1n" x="5.3" y="18.75" smashed="yes">
+<element name="C15" library="shrew-common" package="0402-REV" value="1n" x="5.3" y="18.75" smashed="yes">
 <attribute name="NAME" x="4.711" y="19.3485" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="4.2205" y="17.607" size="0.8128" layer="27" font="vector"/>
 </element>
@@ -968,33 +968,33 @@ chip</description>
 <attribute name="NAME" x="13.1745" y="18.638" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="14.097" y="15.984" size="0.8128" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="C2" library="shrew-common" package="0402-REV" value="470n" x="13.5" y="14.7" smashed="yes" rot="R180">
+<element name="C19" library="shrew-common" package="0402-REV" value="470n" x="13.5" y="14.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="14.389" y="14.0015" size="1.016" layer="25" font="vector" rot="R180"/>
 </element>
-<element name="C3" library="shrew-common" package="0402-REV" value="10n" x="6" y="21.6" smashed="yes" rot="R270">
+<element name="C14" library="shrew-common" package="0402-REV" value="10n" x="6" y="21.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="5.511" y="22.7985" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="4.857" y="22.6795" size="0.8128" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="C4" library="shrew-common" package="0402-REV" value="10n" x="4.7" y="21.6" smashed="yes" rot="R270">
+<element name="C13" library="shrew-common" package="0402-REV" value="10n" x="4.7" y="21.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="4.989" y="23.8015" size="1.016" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="3.557" y="22.6795" size="0.8128" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="C5" library="shrew-common" package="0402-REV" value="100n" x="14.6" y="17.2" smashed="yes" rot="R90">
+<element name="C18" library="shrew-common" package="0402-REV" value="100n" x="14.6" y="17.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="15.1015" y="18.411" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="15.743" y="16.1205" size="0.8128" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="C6" library="shrew-common" package="0402-REV" value="100n" x="10.5" y="15.6" smashed="yes" rot="R180">
+<element name="C17" library="shrew-common" package="0402-REV" value="100n" x="10.5" y="15.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="11.289" y="15.0015" size="1.016" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="11.5795" y="16.743" size="0.8128" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="C7" library="shrew-common" package="0402-REV" value="100n" x="5.3" y="15" smashed="yes" rot="R180">
+<element name="C16" library="shrew-common" package="0402-REV" value="100n" x="5.3" y="15" smashed="yes" rot="R180">
 <attribute name="NAME" x="4.389" y="15.4015" size="1.016" layer="25" font="vector" rot="R180"/>
 </element>
-<element name="C8" library="shrew-common" package="0402-REV" value="100n" x="7.9" y="21.2" smashed="yes" rot="MR180">
+<element name="C7" library="shrew-common" package="0402-REV" value="100n" x="7.9" y="21.2" smashed="yes" rot="MR180">
 <attribute name="NAME" x="7.011" y="20.5015" size="0.4064" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="6.8205" y="22.343" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="C9" library="shrew-common" package="0402-REV" value="100n" x="12.98" y="17.18" smashed="yes" rot="MR90">
+<element name="C8" library="shrew-common" package="0402-REV" value="100n" x="12.98" y="17.18" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.6785" y="16.291" size="0.4064" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="11.837" y="16.1005" size="0.4064" layer="28" rot="MR90"/>
 </element>
@@ -1004,7 +1004,7 @@ chip</description>
 <element name="D1" library="shrew-common" package="SOD-323" value="3V6" x="11.7" y="11.65" smashed="yes" rot="R180">
 <attribute name="NAME" x="13.511" y="11.166" size="1.016" layer="25" font="vector"/>
 </element>
-<element name="R2" library="shrew-common" package="0402-REV" value="10K" x="13.95" y="11.51" smashed="yes" rot="MR0">
+<element name="R4" library="shrew-common" package="0402-REV" value="10K" x="13.95" y="11.51" smashed="yes" rot="MR0">
 <attribute name="NAME" x="14.839" y="12.2085" size="0.4064" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="15.0295" y="10.367" size="0.4064" layer="28" rot="MR0"/>
 </element>
@@ -1012,25 +1012,25 @@ chip</description>
 <attribute name="NAME" x="12.189" y="12.0985" size="0.4064" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="12.3795" y="10.257" size="0.4064" layer="28" rot="MR0"/>
 </element>
-<element name="C17" library="shrew-common" package="0402-REV" value="470n" x="13.95" y="12.65" smashed="yes" rot="MR180">
+<element name="C12" library="shrew-common" package="0402-REV" value="470n" x="13.95" y="12.65" smashed="yes" rot="MR180">
 <attribute name="NAME" x="13.061" y="11.9515" size="0.4064" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="12.8705" y="13.793" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="C10" library="shrew-common" package="0402-REV" value="100n" x="5.2" y="21.7" smashed="yes" rot="MR90">
+<element name="C6" library="shrew-common" package="0402-REV" value="100n" x="5.2" y="21.7" smashed="yes" rot="MR90">
 <attribute name="NAME" x="5.8985" y="20.811" size="0.4064" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="4.057" y="20.6205" size="0.4064" layer="28" rot="MR90"/>
 </element>
-<element name="C13" library="shrew-common" package="0402-REV" value="470n" x="14.8" y="21" smashed="yes" rot="MR90">
+<element name="C10" library="shrew-common" package="0402-REV" value="470n" x="14.8" y="21" smashed="yes" rot="MR90">
 <attribute name="NAME" x="15.4985" y="20.111" size="0.4064" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="13.657" y="19.9205" size="0.4064" layer="28" rot="MR90"/>
 </element>
-<element name="EDGE1" library="shrew-common" package="1X05" value="" x="1.5" y="11.8" smashed="yes" rot="R90">
+<element name="JP1" library="shrew-common" package="1X05" value="" x="1.5" y="11.8" smashed="yes" rot="R90">
 <attribute name="VALUE" x="4.675" y="10.53" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C11" library="shrew-common" package="0805" value="10u" x="8.8" y="13" smashed="yes" rot="R180">
+<element name="C9" library="shrew-common" package="0805" value="10u" x="8.8" y="13" smashed="yes" rot="R180">
 <attribute name="NAME" x="7.038" y="13.8255" size="1.016" layer="25" font="vector"/>
 </element>
-<element name="C12" library="shrew-common" package="0402-CAP" value="DNP" x="13.6" y="14.75" smashed="yes" rot="MR0">
+<element name="C11" library="shrew-common" package="0402-CAP" value="DNP" x="13.6" y="14.75" smashed="yes" rot="MR0">
 <attribute name="NAME" x="14.489" y="15.4485" size="0.4064" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="14.6795" y="13.607" size="0.4064" layer="28" rot="MR0"/>
 </element>
@@ -1046,51 +1046,51 @@ chip</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="DRV8231DSGR" x="12.04" y="5.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="11.405" y="8.6766" size="1.016" layer="27" font="vector" ratio="6" rot="SR270"/>
 </element>
-<element name="X1" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="2.4" y="1.6" smashed="yes"/>
-<element name="X2" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="6.1" y="1.6" smashed="yes"/>
-<element name="X3" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="10.2" y="1.6" smashed="yes"/>
-<element name="X4" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="13.9" y="1.6" smashed="yes"/>
-<element name="C14" library="shrew-common" package="0402-CAP" value="100n" x="4.5" y="3.39" smashed="yes" rot="R180">
+<element name="X7" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="2.4" y="1.6" smashed="yes"/>
+<element name="X5" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="6.1" y="1.6" smashed="yes"/>
+<element name="X8" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="10.2" y="1.6" smashed="yes"/>
+<element name="X6" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="13.9" y="1.6" smashed="yes"/>
+<element name="C20" library="shrew-common" package="0402-CAP" value="100n" x="4.5" y="3.39" smashed="yes" rot="R180">
 <attribute name="NAME" x="5.711" y="3.1085" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="5.5795" y="4.533" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="C15" library="shrew-common" package="0402-CAP" value="100n" x="12.3" y="3.39" smashed="yes" rot="R180">
+<element name="C21" library="shrew-common" package="0402-CAP" value="100n" x="12.3" y="3.39" smashed="yes" rot="R180">
 <attribute name="NAME" x="13.511" y="3.2085" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="13.3795" y="4.533" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="X5" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="1.16" y="5.06" smashed="yes"/>
-<element name="X6" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="14.39" y="5.06" smashed="yes"/>
-<element name="C16" library="shrew-common" package="0805" value="10u" x="6.4" y="6" smashed="yes" rot="R90">
+<element name="X2" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="1.16" y="5.06" smashed="yes"/>
+<element name="X3" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="14.39" y="5.06" smashed="yes"/>
+<element name="C2" library="shrew-common" package="0805" value="10u" x="6.4" y="6" smashed="yes" rot="R90">
 <attribute name="NAME" x="6.8745" y="7.538" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="7.797" y="4.984" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="C18" library="shrew-common" package="0805" value="10u" x="8.05" y="6" smashed="yes" rot="R90">
+<element name="C3" library="shrew-common" package="0805" value="10u" x="8.05" y="6" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.5245" y="7.538" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="9.447" y="4.984" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="C19" library="shrew-common" package="0805" value="10u" x="9.7" y="6" smashed="yes" rot="R90">
+<element name="C4" library="shrew-common" package="0805" value="10u" x="9.7" y="6" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.1745" y="7.438" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="11.097" y="4.984" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="C20" library="shrew-common" package="0805" value="10u" x="2.9" y="8.8" smashed="yes" rot="MR180">
+<element name="C5" library="shrew-common" package="0805" value="10u" x="2.9" y="8.8" smashed="yes" rot="MR180">
 <attribute name="NAME" x="2.138" y="7.9745" size="1.016" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="1.884" y="10.197" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="C21" library="shrew-common" package="0805" value="10u" x="13.92" y="8.6" smashed="yes" rot="MR180">
+<element name="C1" library="shrew-common" package="0805" value="10u" x="13.92" y="8.6" smashed="yes" rot="MR180">
 <attribute name="NAME" x="12.558" y="7.6745" size="1.016" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="12.904" y="9.997" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="JP1" library="shrew-common" package="1X07-2MM-TH-TINY" value="" x="8.5" y="10" smashed="yes"/>
+<element name="JP2" library="shrew-common" package="1X07-2MM-TH-TINY" value="" x="8.5" y="10" smashed="yes"/>
 <element name="IC1" library="shrew-common" package="SOT89" value="Vreg +3V3" x="8.5" y="6.5" smashed="yes" rot="MR0">
 <attribute name="NAME" x="11.0185" y="5.5445" size="1.016" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="5.5095" y="5.3705" size="0.4064" layer="28" rot="MR90"/>
 </element>
-<element name="R4" library="shrew-common" package="0402-RES" value="68K" x="11.2" y="8.9" smashed="yes" rot="MR180">
+<element name="R2" library="shrew-common" package="0402-RES" value="68K" x="11.2" y="8.9" smashed="yes" rot="MR180">
 <attribute name="NAME" x="10.311" y="8.2015" size="1.016" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="10.1205" y="10.043" size="0.4064" layer="28" rot="MR180"/>
 </element>
-<element name="X7" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="1.16" y="6.8"/>
-<element name="X8" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="14.39" y="6.8"/>
+<element name="X1" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="1.16" y="6.8"/>
+<element name="X4" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="14.39" y="6.8"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1103,15 +1103,15 @@ chip</description>
 <contactref element="U2" pad="5"/>
 <contactref element="U1" pad="21"/>
 <contactref element="U1" pad="49"/>
-<contactref element="Y1" pad="2"/>
-<contactref element="C2" pad="1"/>
-<contactref element="C3" pad="1"/>
-<contactref element="C4" pad="1"/>
-<contactref element="C6" pad="1"/>
-<contactref element="C5" pad="1"/>
-<contactref element="C7" pad="1"/>
+<contactref element="Y2" pad="2"/>
+<contactref element="C19" pad="1"/>
+<contactref element="C14" pad="1"/>
+<contactref element="C13" pad="1"/>
+<contactref element="C17" pad="1"/>
+<contactref element="C18" pad="1"/>
+<contactref element="C16" pad="1"/>
+<contactref element="C7" pad="2"/>
 <contactref element="C8" pad="2"/>
-<contactref element="C9" pad="2"/>
 <polygon width="0.1524" layer="1" spacing="0.1524" isolate="0.1524" rank="5">
 <vertex x="1.5" y="2.3"/>
 <vertex x="1.5" y="24"/>
@@ -1143,10 +1143,10 @@ chip</description>
 <wire x1="8.05" y1="19" x2="9.3" y2="19" width="0.1524" layer="1"/>
 <contactref element="LED1" pad="3"/>
 <contactref element="D1" pad="2"/>
-<contactref element="R2" pad="1"/>
-<contactref element="C17" pad="2"/>
-<contactref element="C10" pad="2"/>
-<contactref element="C13" pad="1"/>
+<contactref element="R4" pad="1"/>
+<contactref element="C12" pad="2"/>
+<contactref element="C6" pad="2"/>
+<contactref element="C10" pad="1"/>
 <via x="11.21" y="17.13" extent="1-16" drill="0.3" shape="octagon"/>
 <via x="11.16" y="14.63" extent="1-16" drill="0.3" shape="octagon"/>
 <wire x1="12.065" y1="15.75" x2="11.16" y2="15.75" width="0.254" layer="16"/>
@@ -1168,7 +1168,7 @@ chip</description>
 <via x="9.3" y="18.9" extent="1-16" drill="0.3" shape="octagon"/>
 <via x="7" y="16.3" extent="1-16" drill="0.3" shape="octagon"/>
 <via x="6.9" y="15.1" extent="1-16" drill="0.3" shape="octagon"/>
-<contactref element="EDGE1" pad="5"/>
+<contactref element="JP1" pad="5"/>
 <wire x1="8.8" y1="17" x2="9.3" y2="17.5" width="0.1524" layer="16"/>
 <wire x1="9.3" y1="17.5" x2="9.3" y2="18.9" width="0.1524" layer="16"/>
 <via x="3.7" y="18.1" extent="1-16" drill="0.3" shape="octagon"/>
@@ -1177,7 +1177,7 @@ chip</description>
 <via x="14.9" y="19.4" extent="1-16" drill="0.3" shape="octagon"/>
 <via x="14.5" y="13.7" extent="1-16" drill="0.3" shape="octagon"/>
 <via x="9.1" y="14.7" extent="1-16" drill="0.3" shape="octagon"/>
-<contactref element="C11" pad="2"/>
+<contactref element="C9" pad="2"/>
 <polygon width="0.1524" layer="1" spacing="0.1524" isolate="0.1524" thermals="no">
 <vertex x="1.5" y="24"/>
 <vertex x="1.5" y="19.5"/>
@@ -1190,7 +1190,7 @@ chip</description>
 <vertex x="2.8" y="19.5"/>
 <vertex x="1.5" y="19.5"/>
 </polygon>
-<contactref element="C12" pad="1"/>
+<contactref element="C11" pad="1"/>
 <wire x1="8.74" y1="22.66" x2="7.34" y2="22.66" width="0.1524" layer="1"/>
 <wire x1="7.34" y1="22.66" x2="6.95" y2="22.27" width="0.1524" layer="1"/>
 <wire x1="6.95" y1="22.27" x2="6" y2="22.27" width="0.254" layer="1"/>
@@ -1202,8 +1202,6 @@ chip</description>
 <wire x1="9.55" y1="19.4" x2="10.3" y2="19.4" width="0.1524" layer="1"/>
 <wire x1="6" y1="22.1" x2="6" y2="22.27" width="0.254" layer="1"/>
 <via x="11.82" y="12.21" extent="1-16" drill="0.3" shape="octagon"/>
-<contactref element="FL1" pad="2"/>
-<contactref element="FL1" pad="4"/>
 <via x="13.8" y="17.38" extent="1-16" drill="0.3" shape="octagon"/>
 <wire x1="12.98" y1="17.68" x2="13.15" y2="17.51" width="0.254" layer="16"/>
 <wire x1="13.15" y1="17.51" x2="13.8" y2="17.51" width="0.254" layer="16"/>
@@ -1216,13 +1214,13 @@ chip</description>
 <contactref element="U3" pad="9"/>
 <contactref element="U3" pad="1"/>
 <wire x1="4.4800625" y1="5.2" x2="4.25" y2="5.4" width="0.1524" layer="1"/>
-<contactref element="X6" pad="1"/>
+<contactref element="X3" pad="1"/>
 <via x="2.89" y="5.68" extent="1-16" drill="0.3" shape="square"/>
-<contactref element="C16" pad="2"/>
-<contactref element="C19" pad="2"/>
-<contactref element="C18" pad="2"/>
-<contactref element="C20" pad="2"/>
-<contactref element="C21" pad="2"/>
+<contactref element="C2" pad="2"/>
+<contactref element="C4" pad="2"/>
+<contactref element="C3" pad="2"/>
+<contactref element="C5" pad="2"/>
+<contactref element="C1" pad="2"/>
 <contactref element="U4" pad="7"/>
 <contactref element="U3" pad="7"/>
 <via x="3.69" y="5.4" extent="1-16" drill="0.3" shape="square"/>
@@ -1231,7 +1229,7 @@ chip</description>
 <wire x1="4.5000625" y1="5.4" x2="4.81" y2="5.4" width="0.254" layer="1"/>
 <wire x1="5" y1="6.41" x2="5" y2="5.4" width="0.254" layer="1"/>
 <wire x1="5" y1="5.4" x2="4.81" y2="5.4" width="0.254" layer="1"/>
-<contactref element="JP1" pad="1"/>
+<contactref element="JP2" pad="1"/>
 <contactref element="IC1" pad="2"/>
 <contactref element="IC1" pad="4"/>
 <wire x1="12.2900625" y1="4.3967" x2="12.2900625" y2="5.4" width="0.254" layer="1"/>
@@ -1253,7 +1251,7 @@ chip</description>
 <wire x1="9.3" y1="7.8" x2="8.5" y2="7.8" width="0.254" layer="16"/>
 <via x="9.6" y="10.25" extent="1-16" drill="0.3" shape="octagon"/>
 <via x="9.1" y="8.45" extent="1-16" drill="0.3" shape="octagon"/>
-<contactref element="X8" pad="1"/>
+<contactref element="X4" pad="1"/>
 <polygon width="0.1524" layer="16" spacing="0.1524" isolate="0.1524" thermals="no">
 <vertex x="13.2" y="6.9"/>
 <vertex x="14" y="6.9"/>
@@ -1279,6 +1277,81 @@ chip</description>
 <vertex x="15.1" y="5.7"/>
 </polygon>
 <via x="12.81" y="5.4" extent="1-16" drill="0.3" shape="square"/>
+<contactref element="Y1" pad="2"/>
+<contactref element="Y1" pad="4"/>
+<wire x1="14.9" y1="19.4" x2="14.8" y2="20.5" width="0" layer="19" extent="16-16"/>
+<wire x1="13.8" y1="17.51" x2="14.9" y2="19.4" width="0" layer="19" extent="16-16"/>
+<wire x1="14.6" y1="16.7" x2="13.8" y2="17.38" width="0" layer="19" extent="1-1"/>
+<wire x1="14.88" y1="15.77" x2="14.6" y2="16.7" width="0" layer="19" extent="1-1"/>
+<wire x1="14.25" y1="14.75" x2="14.88" y2="15.77" width="0" layer="19" extent="16-16"/>
+<wire x1="14" y1="14.7" x2="14.25" y2="14.75" width="0" layer="19" extent="1-16"/>
+<wire x1="14.5" y1="13.7" x2="14.25" y2="14.75" width="0" layer="19" extent="16-16"/>
+<wire x1="14.45" y1="12.65" x2="14.5" y2="13.7" width="0" layer="19" extent="16-16"/>
+<wire x1="14.45" y1="11.51" x2="14.45" y2="12.65" width="0" layer="19" extent="16-16"/>
+<wire x1="14.5" y1="10" x2="14.45" y2="11.51" width="0" layer="19" extent="16-16"/>
+<wire x1="14.82" y1="8.6" x2="14.5" y2="10" width="0" layer="19" extent="16-16"/>
+<wire x1="13.8" y1="7.3" x2="14.82" y2="8.6" width="0" layer="19" extent="16-16"/>
+<wire x1="14.39" y1="6.8" x2="14.4" y2="6.8" width="0" layer="19" extent="16-16"/>
+<wire x1="12.7901875" y1="6.4033" x2="13.8" y2="6.8" width="0" layer="19" extent="1-16"/>
+<wire x1="12.79" y1="6.41" x2="12.7901875" y2="6.4033" width="0" layer="19" extent="1-1"/>
+<wire x1="12.81" y1="5.4" x2="12.79" y2="5.4" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="5.36" x2="12.79" y2="5.4" width="0" layer="19" extent="1-1"/>
+<wire x1="14.39" y1="5.06" x2="14.4" y2="5.36" width="0" layer="19" extent="1-1"/>
+<wire x1="11.2685" y1="17.75" x2="12.98" y2="17.68" width="0" layer="19" extent="1-16"/>
+<wire x1="11.14" y1="17.78" x2="11.2685" y2="17.75" width="0" layer="19" extent="1-1"/>
+<wire x1="9.3" y1="18.9" x2="9.3" y2="19" width="0" layer="19" extent="1-1"/>
+<wire x1="10.05" y1="20.9685" x2="10.05" y2="20.79" width="0" layer="19" extent="1-1"/>
+<wire x1="8.4" y1="21.2" x2="8.55" y2="20.9685" width="0" layer="19" extent="1-16"/>
+<wire x1="8.05" y1="20.9685" x2="8.4" y2="21.2" width="0" layer="19" extent="1-16"/>
+<wire x1="8.3" y1="19.4" x2="8.05" y2="19" width="0" layer="19" extent="1-1"/>
+<wire x1="9.4" y1="22.6" x2="9.55" y2="22" width="0" layer="19" extent="1-1"/>
+<wire x1="11.21" y1="17.13" x2="11.2685" y2="17.75" width="0" layer="19" extent="1-1"/>
+<wire x1="8.74" y1="22.66" x2="9.4" y2="22.6" width="0" layer="19" extent="1-1"/>
+<wire x1="8.7" y1="22.6" x2="8.74" y2="22.66" width="0" layer="19" extent="1-1"/>
+<wire x1="4.7" y1="22.1" x2="4.77" y2="22.27" width="0" layer="19" extent="1-1"/>
+<wire x1="5.2" y1="22.2" x2="4.77" y2="22.27" width="0" layer="19" extent="1-16"/>
+<wire x1="8.3" y1="18.3" x2="8.05" y2="19" width="0" layer="19" extent="1-1"/>
+<wire x1="10.3" y1="18" x2="11.14" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="3.7" y1="22.3" x2="4.7" y2="22.1" width="0" layer="19" extent="1-1"/>
+<wire x1="5.2" y1="23.4" x2="5.2" y2="22.2" width="0" layer="19" extent="16-16"/>
+<wire x1="11.16" y1="15.75" x2="11.21" y2="17.13" width="0" layer="19" extent="16-16"/>
+<wire x1="11.16" y1="14.62" x2="11.16" y2="14.63" width="0" layer="19" extent="1-15"/>
+<wire x1="11" y1="15.6" x2="11.16" y2="15.75" width="0" layer="19" extent="1-16"/>
+<wire x1="10.55" y1="11.65" x2="11.82" y2="12.21" width="0" layer="19" extent="1-1"/>
+<wire x1="9.6" y1="10.25" x2="10.55" y2="11.65" width="0" layer="19" extent="1-1"/>
+<wire x1="9.3" y1="9.2" x2="9.6" y2="10.25" width="0" layer="19" extent="16-16"/>
+<wire x1="9.1" y1="8.45" x2="9.3" y2="7.8" width="0" layer="19" extent="16-16"/>
+<wire x1="9.7" y1="6.9" x2="9.3" y2="7.8" width="0" layer="19" extent="1-16"/>
+<wire x1="10" y1="7" x2="9.7" y2="6.9" width="0" layer="19" extent="1-16"/>
+<wire x1="6.4" y1="6.9" x2="7.2" y2="7" width="0" layer="19" extent="1-16"/>
+<wire x1="8.05" y1="6.9" x2="7.2" y2="7" width="0" layer="19" extent="1-16"/>
+<wire x1="6.91" y1="8" x2="7.2" y2="7" width="0" layer="19" extent="16-16"/>
+<wire x1="6.91" y1="8.6" x2="6.91" y2="8" width="0" layer="19" extent="1-1"/>
+<wire x1="7.7" y1="8.6" x2="6.91" y2="8.6" width="0" layer="19" extent="16-16"/>
+<wire x1="10.28" y1="5.98" x2="10" y2="7" width="0" layer="19" extent="16-16"/>
+<wire x1="5.11" y1="7.5" x2="6.4" y2="6.9" width="0" layer="19" extent="1-1"/>
+<wire x1="5.11" y1="8.1" x2="5.11" y2="7.5" width="0" layer="19" extent="1-1"/>
+<wire x1="5.11" y1="8.7" x2="5.11" y2="8.1" width="0" layer="19" extent="1-1"/>
+<wire x1="5" y1="6.41" x2="5.11" y2="7.5" width="0" layer="19" extent="1-1"/>
+<wire x1="5.0001875" y1="6.4033" x2="5" y2="6.41" width="0" layer="19" extent="1-1"/>
+<wire x1="4.4800625" y1="5.2" x2="4.5000625" y2="5.4" width="0" layer="19" extent="1-1"/>
+<wire x1="3.69" y1="5.4" x2="4.25" y2="5.4" width="0" layer="19" extent="1-1"/>
+<wire x1="2.89" y1="5.68" x2="3.69" y2="5.4" width="0" layer="19" extent="1-1"/>
+<wire x1="3.8" y1="8.8" x2="5.11" y2="8.7" width="0" layer="19" extent="16-16"/>
+<wire x1="2.9" y1="7.78" x2="3.8" y2="8.8" width="0" layer="19" extent="16-16"/>
+<wire x1="2.9" y1="7.21" x2="2.9" y2="7.78" width="0" layer="19" extent="1-1"/>
+<wire x1="7" y1="16.3" x2="8.8" y2="17" width="0" layer="19" extent="16-16"/>
+<wire x1="6.125" y1="16.335" x2="7" y2="16.3" width="0" layer="19" extent="1-1"/>
+<wire x1="5.33" y1="15.93" x2="6.125" y2="16.335" width="0" layer="19" extent="1-1"/>
+<wire x1="5.8" y1="15" x2="5.69" y2="15" width="0" layer="19" extent="1-1"/>
+<wire x1="6.9" y1="15.1" x2="5.8" y2="15" width="0" layer="19" extent="1-1"/>
+<wire x1="9.1" y1="14.7" x2="11.16" y2="14.63" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9" y1="13" x2="9.1" y2="14.7" width="0" layer="19" extent="1-1"/>
+<wire x1="8.5" y1="4.7" x2="10.28" y2="5.98" width="0" layer="19" extent="16-16"/>
+<wire x1="1.5" y1="21.96" x2="3.7" y2="22.3" width="0" layer="19" extent="1-1"/>
+<wire x1="3.7" y1="18.1" x2="5.33" y2="15.93" width="0" layer="19" extent="1-1"/>
+<wire x1="3" y1="19.2" x2="3.7" y2="18.1" width="0" layer="19" extent="1-1"/>
+<wire x1="3.4" y1="11.85" x2="3.8" y2="8.8" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="VDD_SDIO">
 </signal>
@@ -1292,18 +1365,18 @@ chip</description>
 <contactref element="U1" pad="37"/>
 <contactref element="U1" pad="26"/>
 <contactref element="R1" pad="2"/>
-<contactref element="Y1" pad="4"/>
+<contactref element="Y2" pad="4"/>
 <contactref element="U2" pad="15"/>
 <contactref element="U2" pad="11"/>
-<contactref element="C5" pad="2"/>
-<contactref element="C6" pad="2"/>
-<contactref element="C7" pad="2"/>
+<contactref element="C18" pad="2"/>
+<contactref element="C17" pad="2"/>
+<contactref element="C16" pad="2"/>
+<contactref element="C7" pad="1"/>
 <contactref element="C8" pad="1"/>
-<contactref element="C9" pad="1"/>
 <wire x1="5.02" y1="15" x2="5.02" y2="16.92" width="0.1524" layer="1"/>
 <wire x1="5.02" y1="16.92" x2="4.475" y2="17.465" width="0.1524" layer="1"/>
 <contactref element="LED1" pad="1"/>
-<contactref element="C10" pad="1"/>
+<contactref element="C6" pad="1"/>
 <via x="7.55" y="22.14" extent="1-16" drill="0.3" shape="octagon"/>
 <wire x1="7.05" y1="20.265" x2="7.05" y2="20.85" width="0.254" layer="16"/>
 <wire x1="7.05" y1="20.85" x2="7.4" y2="21.2" width="0.254" layer="16"/>
@@ -1344,7 +1417,7 @@ chip</description>
 <via x="13.7" y="21.61" extent="1-16" drill="0.3" shape="octagon"/>
 <wire x1="4.6" y1="13.15" x2="4.65" y2="13.2" width="0.254" layer="1"/>
 <wire x1="4.65" y1="13.2" x2="4.65" y2="14.1" width="0.254" layer="1"/>
-<contactref element="C11" pad="1"/>
+<contactref element="C9" pad="1"/>
 <wire x1="9.85" y1="13.15" x2="9.7" y2="13" width="0.4064" layer="1"/>
 <wire x1="11.1" y1="13" x2="9.85" y2="13" width="0.4064" layer="1"/>
 <wire x1="9.85" y1="13" x2="9.85" y2="13.15" width="0.4064" layer="1"/>
@@ -1371,7 +1444,7 @@ chip</description>
 <via x="2.89" y="6.41" extent="1-16" drill="0.3" shape="octagon"/>
 <via x="11.22" y="7.19" extent="1-16" drill="0.3" shape="octagon"/>
 <contactref element="IC1" pad="1"/>
-<contactref element="JP1" pad="2"/>
+<contactref element="JP2" pad="2"/>
 <wire x1="10" y1="4.7" x2="10" y2="3.6" width="0.4064" layer="16"/>
 <wire x1="10" y1="3.6" x2="7.7" y2="3.6" width="0.4064" layer="16"/>
 <wire x1="7.7" y1="3.6" x2="7.7" y2="5.7" width="0.4064" layer="16"/>
@@ -1390,7 +1463,7 @@ chip</description>
 <wire x1="12.8" y1="8" x2="12.8" y2="8.5" width="0.4064" layer="16"/>
 <wire x1="12.1" y1="7.3" x2="11.99" y2="7.19" width="0.4064" layer="16"/>
 <wire x1="11.99" y1="7.19" x2="11.22" y2="7.19" width="0.4064" layer="16"/>
-<contactref element="C21" pad="1"/>
+<contactref element="C1" pad="1"/>
 <wire x1="13.02" y1="8.6" x2="13.02" y2="8.5" width="0.4064" layer="16"/>
 <wire x1="13.02" y1="8.5" x2="12.8" y2="8.5" width="0.4064" layer="16"/>
 <wire x1="12.8" y1="8.5" x2="12.8" y2="9.7" width="0.4064" layer="16"/>
@@ -1398,20 +1471,20 @@ chip</description>
 </signal>
 <signal name="U0TXD">
 <contactref element="U1" pad="41"/>
-<contactref element="EDGE1" pad="4"/>
+<contactref element="JP1" pad="4"/>
 <wire x1="5.535" y1="16.25" x2="4.67" y2="16.25" width="0.1524" layer="16"/>
 <wire x1="4.67" y1="16.25" x2="1.5" y2="19.42" width="0.1524" layer="16"/>
 </signal>
 <signal name="U0RXD">
 <contactref element="U1" pad="40"/>
-<contactref element="EDGE1" pad="3"/>
+<contactref element="JP1" pad="3"/>
 <wire x1="5.535" y1="15.75" x2="2.63" y2="15.75" width="0.1524" layer="16"/>
 <wire x1="2.63" y1="15.75" x2="1.5" y2="16.88" width="0.1524" layer="16"/>
 </signal>
 <signal name="ESP-EN">
 <contactref element="U1" pad="9"/>
 <contactref element="R1" pad="1"/>
-<contactref element="C13" pad="2"/>
+<contactref element="C10" pad="2"/>
 <wire x1="10.05" y1="20.265" x2="10.05" y2="21" width="0.254" layer="16"/>
 <wire x1="14.8" y1="21.5" x2="13.89605625" y2="22.40394375" width="0.1524" layer="16"/>
 <wire x1="13.89605625" y1="22.40394375" x2="11.36394375" y2="22.40394375" width="0.1524" layer="16"/>
@@ -1513,25 +1586,25 @@ chip</description>
 </signal>
 <signal name="N$6">
 <contactref element="U2" pad="22"/>
-<contactref element="FL1" pad="1"/>
+<contactref element="Y1" pad="1"/>
 <wire x1="9.05" y1="20.9685" x2="9.05" y2="22" width="0.25" layer="1"/>
 </signal>
 <signal name="N$7">
-<contactref element="FL1" pad="3"/>
+<contactref element="Y1" pad="3"/>
 <contactref element="ANT2" pad="FEED"/>
 <wire x1="9.05" y1="23.2" x2="10.85" y2="23.2" width="0.4064" layer="1"/>
 <wire x1="10.85" y1="23.2" x2="10.85" y2="22.95" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="Y1" pad="3"/>
-<contactref element="C1" pad="1"/>
+<contactref element="Y2" pad="3"/>
+<contactref element="C15" pad="1"/>
 <wire x1="6.125" y1="17.465" x2="5.67" y2="17.92" width="0.1524" layer="1"/>
 <wire x1="5.67" y1="17.92" x2="5.48" y2="17.92" width="0.1524" layer="1"/>
 <wire x1="5.48" y1="17.92" x2="4.8" y2="18.6" width="0.1524" layer="1"/>
 <wire x1="4.8" y1="18.6" x2="4.8" y2="18.75" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$3">
-<contactref element="C1" pad="2"/>
+<contactref element="C15" pad="2"/>
 <contactref element="U2" pad="4"/>
 <wire x1="5.8" y1="18.75" x2="7.3315" y2="18.75" width="0.1524" layer="1"/>
 </signal>
@@ -1544,9 +1617,9 @@ chip</description>
 <signal name="RADIO-VDD">
 <contactref element="L1" pad="1"/>
 <contactref element="U2" pad="12"/>
-<contactref element="C2" pad="2"/>
+<contactref element="C19" pad="2"/>
 <contactref element="U2" pad="2"/>
-<contactref element="C4" pad="2"/>
+<contactref element="C13" pad="2"/>
 <wire x1="7.3315" y1="19.75" x2="6.71" y2="19.75" width="0.1524" layer="1"/>
 <wire x1="6.71" y1="19.75" x2="6.26" y2="20.2" width="0.1524" layer="1"/>
 <wire x1="6.26" y1="20.2" x2="5.6" y2="20.2" width="0.1524" layer="1"/>
@@ -1572,7 +1645,7 @@ chip</description>
 </signal>
 <signal name="N$11">
 <contactref element="U2" pad="1"/>
-<contactref element="C3" pad="2"/>
+<contactref element="C14" pad="2"/>
 <wire x1="7.3315" y1="20.25" x2="6.75" y2="20.25" width="0.1524" layer="1"/>
 <wire x1="6.75" y1="20.25" x2="6.05" y2="20.95" width="0.1524" layer="1"/>
 <wire x1="6.05" y1="20.95" x2="6" y2="21.1" width="0.1524" layer="1"/>
@@ -1580,16 +1653,16 @@ chip</description>
 <signal name="ESP-BOOT">
 <contactref element="U1" pad="23"/>
 <wire x1="12.065" y1="14.75" x2="12.9" y2="14.75" width="0.254" layer="16"/>
-<contactref element="C12" pad="2"/>
+<contactref element="C11" pad="2"/>
 <wire x1="12.95" y1="14.75" x2="12.9" y2="14.75" width="0.1524" layer="16"/>
 </signal>
 <signal name="VM">
 </signal>
 <signal name="BATT-ADC">
 <contactref element="R3" pad="1"/>
-<contactref element="R2" pad="2"/>
+<contactref element="R4" pad="2"/>
 <contactref element="D1" pad="1"/>
-<contactref element="C17" pad="1"/>
+<contactref element="C12" pad="1"/>
 <contactref element="U1" pad="24"/>
 <via x="12.4" y="12.84" extent="1-16" drill="0.3" shape="octagon"/>
 <wire x1="13.45" y1="11.51" x2="13.45" y2="12.65" width="0.4064" layer="16"/>
@@ -1604,14 +1677,14 @@ chip</description>
 </signal>
 <signal name="AUX2">
 <contactref element="U1" pad="39"/>
-<contactref element="EDGE1" pad="2"/>
+<contactref element="JP1" pad="2"/>
 <wire x1="5.535" y1="15.25" x2="4.05" y2="15.25" width="0.1524" layer="16"/>
 <wire x1="4.05" y1="15.25" x2="3.14" y2="14.34" width="0.1524" layer="16"/>
 <wire x1="3.14" y1="14.34" x2="1.5" y2="14.34" width="0.1524" layer="16"/>
 </signal>
 <signal name="AUX1">
 <contactref element="U1" pad="38"/>
-<contactref element="EDGE1" pad="1"/>
+<contactref element="JP1" pad="1"/>
 <wire x1="5.535" y1="14.75" x2="4.45" y2="14.75" width="0.1524" layer="16"/>
 <wire x1="4.45" y1="14.75" x2="1.5" y2="11.8" width="0.1524" layer="16"/>
 </signal>
@@ -1624,7 +1697,7 @@ chip</description>
 <wire x1="8.68" y1="12.9" x2="9.68" y2="12.9" width="0.1524" layer="16"/>
 <wire x1="9.68" y1="12.9" x2="10.05" y2="13.27" width="0.1524" layer="16"/>
 <contactref element="U3" pad="2"/>
-<contactref element="JP1" pad="6"/>
+<contactref element="JP2" pad="6"/>
 <wire x1="4.5000625" y1="6.4033" x2="4.5000625" y2="9.9999375" width="0.254" layer="1"/>
 <wire x1="4.5000625" y1="9.9999375" x2="4.5" y2="10" width="0.254" layer="1"/>
 </signal>
@@ -1644,7 +1717,7 @@ chip</description>
 <wire x1="7.5" y1="10.9" x2="7.4" y2="10.9" width="0.1524" layer="16"/>
 <wire x1="7.4" y1="10.9" x2="6.5" y2="10" width="0.1524" layer="16"/>
 <contactref element="U4" pad="3"/>
-<contactref element="JP1" pad="5"/>
+<contactref element="JP2" pad="5"/>
 <wire x1="11.7899375" y1="6.4033" x2="11.7899375" y2="7.59975" width="0.254" layer="1"/>
 <wire x1="11.7899375" y1="7.59975" x2="11.5896875" y2="7.8" width="0.254" layer="1"/>
 <wire x1="11.5896875" y1="7.8" x2="8.7" y2="7.8" width="0.254" layer="1"/>
@@ -1667,7 +1740,7 @@ chip</description>
 <wire x1="8.7" y1="11.4" x2="8.7" y2="10.2" width="0.1524" layer="16"/>
 <wire x1="8.7" y1="10.2" x2="8.5" y2="10" width="0.1524" layer="16"/>
 <contactref element="U4" pad="2"/>
-<contactref element="JP1" pad="4"/>
+<contactref element="JP2" pad="4"/>
 <wire x1="12.2900625" y1="6.4033" x2="12.2900625" y2="7.999878125" width="0.254" layer="1"/>
 <wire x1="12.2900625" y1="7.999878125" x2="11.889940625" y2="8.4" width="0.254" layer="1"/>
 <wire x1="11.889940625" y1="8.4" x2="10.1" y2="8.4" width="0.254" layer="1"/>
@@ -1682,7 +1755,7 @@ chip</description>
 <wire x1="9.46" y1="13.27" x2="9.55" y2="13.36" width="0.1524" layer="16"/>
 <wire x1="9.55" y1="13.36" x2="9.55" y2="13.735" width="0.1524" layer="16"/>
 <contactref element="U3" pad="3"/>
-<contactref element="JP1" pad="7"/>
+<contactref element="JP2" pad="7"/>
 <wire x1="3.9999375" y1="6.4033" x2="3.9999375" y2="8.5000625" width="0.254" layer="1"/>
 <wire x1="3.9999375" y1="8.5000625" x2="3.9" y2="8.6" width="0.254" layer="1"/>
 <wire x1="3.9" y1="8.6" x2="2.5" y2="10" width="0.254" layer="1"/>
@@ -1696,13 +1769,13 @@ chip</description>
 <signal name="+24V">
 <contactref element="U4" pad="5"/>
 <contactref element="U3" pad="5"/>
-<contactref element="X5" pad="1"/>
+<contactref element="X2" pad="1"/>
 <via x="6.04" y="4.38" extent="1-16" drill="0.3" shape="square"/>
 <via x="6.04" y="3.81" extent="1-16" drill="0.3" shape="octagon"/>
-<contactref element="C16" pad="1"/>
-<contactref element="C19" pad="1"/>
-<contactref element="C18" pad="1"/>
-<contactref element="C20" pad="1"/>
+<contactref element="C2" pad="1"/>
+<contactref element="C4" pad="1"/>
+<contactref element="C3" pad="1"/>
+<contactref element="C5" pad="1"/>
 <polygon width="0.1524" layer="1" spacing="0.1524" isolate="0.1524" thermals="no">
 <vertex x="1.5" y="4.8"/>
 <vertex x="3.6" y="4.8"/>
@@ -1728,7 +1801,7 @@ chip</description>
 <wire x1="2.2033" y1="4.3967" x2="3.4998125" y2="4.3967" width="0.3048" layer="1"/>
 <via x="2.84" y="4.58" extent="1-16" drill="0.3" shape="square"/>
 <via x="2.84" y="3.98" extent="1-16" drill="0.3" shape="octagon"/>
-<contactref element="X7" pad="1"/>
+<contactref element="X1" pad="1"/>
 <wire x1="2" y1="8.8" x2="2" y2="7.64" width="0.4064" layer="16"/>
 <wire x1="2" y1="7.64" x2="1.16" y2="6.8" width="0.4064" layer="16"/>
 <wire x1="1.16" y1="6.8" x2="1.16" y2="5.06" width="0.4064" layer="16"/>
@@ -1738,7 +1811,7 @@ chip</description>
 <vertex x="6.3" y="3.6"/>
 <vertex x="2.6" y="3.6"/>
 </polygon>
-<contactref element="R4" pad="2"/>
+<contactref element="R2" pad="2"/>
 <wire x1="11.85" y1="8.9" x2="11.57" y2="8.62" width="0.1524" layer="16"/>
 <wire x1="11.57" y1="8.62" x2="11.57" y2="8.32" width="0.1524" layer="16"/>
 <wire x1="11.57" y1="8.32" x2="10.7" y2="7.45" width="0.1524" layer="16"/>
@@ -1751,8 +1824,8 @@ chip</description>
 </signal>
 <signal name="MOTOR3">
 <contactref element="U3" pad="6"/>
-<contactref element="X1" pad="1"/>
-<contactref element="C14" pad="2"/>
+<contactref element="X7" pad="1"/>
+<contactref element="C20" pad="2"/>
 <wire x1="3.9999375" y1="4.3967" x2="3.9999375" y2="3.39" width="0.254" layer="1"/>
 <wire x1="3.9999375" y1="3.39" x2="3.85" y2="3.39" width="0.254" layer="1"/>
 <wire x1="3.85" y1="3.39" x2="2.4" y2="1.94" width="0.4064" layer="1"/>
@@ -1760,8 +1833,8 @@ chip</description>
 </signal>
 <signal name="MOTOR4">
 <contactref element="U3" pad="8"/>
-<contactref element="X2" pad="1"/>
-<contactref element="C14" pad="1"/>
+<contactref element="X5" pad="1"/>
+<contactref element="C20" pad="1"/>
 <wire x1="5.0001875" y1="4.3967" x2="5.0001875" y2="3.39" width="0.254" layer="1"/>
 <wire x1="5.0001875" y1="3.39" x2="5.15" y2="3.39" width="0.254" layer="1"/>
 <wire x1="5.15" y1="3.39" x2="5.15" y2="1.6" width="0.254" layer="1"/>
@@ -1769,8 +1842,8 @@ chip</description>
 </signal>
 <signal name="MOTOR1">
 <contactref element="U4" pad="6"/>
-<contactref element="X3" pad="1"/>
-<contactref element="C15" pad="2"/>
+<contactref element="X8" pad="1"/>
+<contactref element="C21" pad="2"/>
 <wire x1="11.7899375" y1="4.3967" x2="11.7899375" y2="3.39" width="0.254" layer="1"/>
 <wire x1="11.7899375" y1="3.39" x2="11.65" y2="3.39" width="0.254" layer="1"/>
 <wire x1="11.65" y1="3.39" x2="10.2" y2="1.94" width="0.4064" layer="1"/>
@@ -1778,8 +1851,8 @@ chip</description>
 </signal>
 <signal name="MOTOR2">
 <contactref element="U4" pad="8"/>
-<contactref element="X4" pad="1"/>
-<contactref element="C15" pad="1"/>
+<contactref element="X6" pad="1"/>
+<contactref element="C21" pad="1"/>
 <wire x1="12.7901875" y1="4.3967" x2="12.7901875" y2="3.39" width="0.254" layer="1"/>
 <wire x1="12.7901875" y1="3.39" x2="12.95" y2="3.39" width="0.254" layer="1"/>
 <wire x1="12.95" y1="3.39" x2="12.95" y2="1.6" width="0.254" layer="1"/>
@@ -1787,8 +1860,8 @@ chip</description>
 </signal>
 <signal name="N$4">
 <contactref element="R3" pad="2"/>
-<contactref element="R4" pad="1"/>
-<contactref element="JP1" pad="3"/>
+<contactref element="R2" pad="1"/>
+<contactref element="JP2" pad="3"/>
 <wire x1="10.55" y1="8.9" x2="10.55" y2="10" width="0.3048" layer="16"/>
 <wire x1="10.55" y1="10" x2="10.55" y2="11.15" width="0.3048" layer="16"/>
 <wire x1="10.55" y1="11.15" x2="10.8" y2="11.4" width="0.3048" layer="16"/>
