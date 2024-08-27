@@ -14,6 +14,12 @@ Shrew-Zero is a ExpressLRS RC radio receiver with 8 signal output, and a power i
 
 The `CHAN` number is the PWM channel number under default configuration. The `GPIO` numbers are the ones that can be used in the JSON configuration or in the firmware source code. The `UART`, aka serial port, can be remapped. A second serial port can be configured by the user. Note that the UART pins can be used for additional PWM/DSHOT pins if you want 8 channels instead of 6 channels.
 
+## Dimensions
+
+20mm x 18mm
+
+![](docs/imgs/shrew-zero-dimensions.png)
+
 ## Transmitter Preperation
 
 Just in case you need it, here are some links to official ExpressLRS instructions on how to prepare your transmitter:
@@ -58,6 +64,8 @@ Scroll down and edit the binding-phrase and then save it.
 ![](docs/imgs/wifiui-binding-phrase.png)
 
 Once you have done that, Shrew-Zero should be ready to use with default settings.
+
+**IMPORTANT:** The Shrew firmware disables the activation of binding mode by power cycling it 3 times. This is done to prevent accidental activation of binding mode.
 
 ## Please Set Packet-Rate
 
