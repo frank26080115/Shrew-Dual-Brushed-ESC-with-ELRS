@@ -65,6 +65,8 @@ For the set of prototypes of Shrew-Lite, you have been given a USB power adapter
 
 (the 5V power is low enough to avoid an overheating problem, battery voltages above 6V will cause the voltage regulator to overheat while in Wi-Fi mode)
 
+![](docs/imgs/shrew-lite-proto-usb-adapter.jpg)
+
 When Shrew is powered, the LED should start blinking orange. Wait for about 60 seconds. Then the LED will start to go crazy (it's like a green-yellow fading animation). This means the Shrew-Zero has activated its own Wi-Fi access point.
 
 Using your phone or computer, connect to the `ExpressLRS RX` Wi-Fi access point. The password is `expresslrs`.
@@ -114,6 +116,8 @@ To configure anything on Shrew, you need to connect to its web-ui via Wi-Fi.
 For the set of prototypes of Shrew-Lite, you have been given a USB power adapter cable. This cable supplies your robot with 5V of power. Please use this to power up the Shrew-Lite whenever you are trying to use its Wi-Fi functionality. **The prototype firmware will refuse to go into Wi-Fi mode if the voltage is above 5.8V**
 
 (the 5V power is low enough to avoid an overheating problem, battery voltages above 6V will cause the voltage regulator to overheat while in Wi-Fi mode)
+
+![](docs/imgs/shrew-lite-proto-usb-adapter.jpg)
 
 There are two ways of activating Wi-Fi on Shrew.
 
