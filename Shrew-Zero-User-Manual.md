@@ -24,9 +24,10 @@ The `CHAN` number is the PWM channel number under default configuration. The `GP
 
 | Behaviour | Meaning |
 |-----------|---------|
-| Orange Blinks | not connected, waiting for connection |
-| Yellow-Green Looping Crossfade | Wi-Fi mode |
-| Solid Colour, colour changes as the radio transmitter sticks/channels move | connected to transmitter |
+| ![](docs/imgs/led-blinks/disconnected.webp) | not connected, waiting for connection |
+| ![](docs/imgs/led-blinks/nobind.webp) | not bound, please bind it to a transmitter |
+| ![](docs/imgs/led-blinks/wifi.webp) | Wi-Fi mode |
+| ![](docs/imgs/led-blinks/active.webp) | connected and active |
 
 ## Transmitter Preperation
 
