@@ -1,24 +1,26 @@
-# Shrew-Zero User Manual
+# Shrew-Lite Prototype User Manual
 
-Shrew-Zero is a ExpressLRS RC radio receiver with 8 signal output, and a power input rated for 40V.
+Shrew-Lite is a dual brushed motor ESC with an integrated ExpressLRS RC radio receiver.
 
- * all outputs support multiple protocols: PWM (default), DSHOT300, PWM-stretched
- * all channels feature no-pulse failsafe set by default
- * serial port transmits CRSF protocol packets by default
- * all outputs can be used to configure and test AM32 brushless ESCs
- * power input is rated for 40V continuous operation, up to 60V voltage spikes
+ * Maximum voltage: 18V (4S lithium ion)
+ * Recommended voltage: 6V-14V (2S-3S lithium ion)
+ * Current rating per brushed motor channel: 3.7A each
+ * Has over-current protection and over-temperature protection
+ * 4 digital outputs, capable of PWM, PWM-stretched, DShot, CRSF, SBUS
+
+**IMPORTANT:** This version of the user manual is specifically for the first batch of prototypes. Literally only one or maybe two people should be reading this. If you are not using these for sbockey, you should probably stop reading.
 
 ## Pin Map
 
-![](docs/imgs/shrew-zero-rev1-pinout.png)
+![](docs/imgs/shrew-lite-proto-pinout.png)
 
-The `CHAN` number is the PWM channel number under default configuration. The `GPIO` numbers are the ones that can be used in the JSON configuration or in the firmware source code. The `UART`, aka serial port, can be remapped. A second serial port can be configured by the user. Note that the UART pins can be used for additional PWM/DSHOT pins if you want 8 channels instead of 6 channels.
+Motor-A is assigned to channel 1. Motor-B is assigned to channel 2. These assignments cannot be changed.
+
+The `CHAN` number is the PWM channel number under default configuration. The `GPIO` numbers are the ones that can be used in the JSON configuration or in the firmware source code. The `UART`, aka serial port, can be remapped. A second serial port can be configured by the user. Note that the UART pins can be used for additional PWM/DSHOT pins if you want 4 channels instead of 2 channels.
 
 ## Dimensions
 
-20mm x 18mm
-
-![](docs/imgs/shrew-zero-dimensions.png)
+![](docs/imgs/shrew-lite-proto-dimensions.png)
 
 ## LED Blink Meaning
 
@@ -37,7 +39,7 @@ Just in case you need it, here are some links to official ExpressLRS instruction
 
 **Important Note:** Your transmitter can run official ExpressLRS firmware, as long as it is version `3.3.0` and later. **You can use ExpressLRS Configurator to update your transmitter**
 
-**Important Note Continued:** The Shrew-Zero firmware is not official ExpressLRS firmware, and does not have to match to the transmitter firmware. **Do not use the ExpressLRS Configurator to update Shrew-Zero**.
+**Important Note Continued:** The Shrew firmware is not official ExpressLRS firmware, and does not have to match to the transmitter firmware. **Do not use the ExpressLRS Configurator to update Shrew**.
 
 I hope you have followed the instructions above and have access to the ExpressLRS Lua script on your transmitter. Run the `ExpressLRS` script, scroll down and select `WiFi Connectivity`, and then select `Enable WiFi`.
 
@@ -59,7 +61,11 @@ Once you have saved it, **turn off the radio**, or at least exit Wi-Fi mode.
 
 ## First Time Binding
 
-Connect the Shrew-Zero to a power source. Shrew-Zero is designed to be directly connected to a battery, no pre-conditioning (such as a BEC) is required. The LED should start blinking orange. Wait for about 60 seconds. Then the LED will start to go crazy (it's like a green-yellow fading animation). This means the Shrew-Zero has activated its own Wi-Fi access point.
+For the set of prototypes of Shrew-Lite, you have been given a USB power adapter cable. This cable supplies your robot with 5V of power. Please use this to power up the Shrew-Lite whenever you are trying to use its Wi-Fi functionality. **The prototype firmware will refuse to go into Wi-Fi mode if the voltage is above 5.8V**
+
+(the 5V power is low enough to avoid an overheating problem, battery voltages above 6V will cause the voltage regulator to overheat while in Wi-Fi mode)
+
+When Shrew is powered, the LED should start blinking orange. Wait for about 60 seconds. Then the LED will start to go crazy (it's like a green-yellow fading animation). This means the Shrew-Zero has activated its own Wi-Fi access point.
 
 Using your phone or computer, connect to the `ExpressLRS RX` Wi-Fi access point. The password is `expresslrs`.
 
@@ -89,15 +95,27 @@ If you want the best possible performance, read the section on `Packet Rate Lock
 
 ## First Test
 
-Have your radio transmitter powered up and ready to use. Power-cycle Shrew-Zero, it should connect to your transmitter, the LED should stay a solid colour, and your transmitter should indicate that it is connected (you might see a RSSI symbol somewhere on your screen).
+Have your radio transmitter powered up and ready to use. Power-cycle Shrew, it should connect to your transmitter, the LED should stay a solid colour, and your transmitter should indicate that it is connected (you might see a RSSI symbol somewhere on your screen).
 
 ![](docs/imgs/rssi-symbol.png)
 
 Moving any sticks/channels on the transmitter should make the LED on the Shrew change colour. (experimental feature, ExpressLRS receivers don't typically do this, but Shrew firmware does)
 
+## Robot Drive Mixing
+
+I have provided mixes for your transmitter. It involves copying a file to your transmitter's microSD card. Please see [this page for full details](tx-mixes/readme.md).
+
+Otherwise, make your own mix however you want, just remember that Motor-A is always channel 1 and Motor-B is always channel 2.
+
 ## Activating Wi-Fi
 
-To configure anything on Shrew-Zero, you need to connect to its web-ui via Wi-Fi. There are two ways of activating Wi-Fi on Shrew-Zero.
+To configure anything on Shrew, you need to connect to its web-ui via Wi-Fi.
+
+For the set of prototypes of Shrew-Lite, you have been given a USB power adapter cable. This cable supplies your robot with 5V of power. Please use this to power up the Shrew-Lite whenever you are trying to use its Wi-Fi functionality. **The prototype firmware will refuse to go into Wi-Fi mode if the voltage is above 5.8V**
+
+(the 5V power is low enough to avoid an overheating problem, battery voltages above 6V will cause the voltage regulator to overheat while in Wi-Fi mode)
+
+There are two ways of activating Wi-Fi on Shrew.
 
  * Powering it up without a transmitter, and then waiting for 60 seconds. (this time period is configurable)
  * Powering it up, connect it to the transmitter, and then using the transmitter's Lua script to activate Wi-Fi. This is similar to activating the transmitter's own Wi-Fi, but you use the `[Enable Rx WiFi]` option instead.
@@ -142,7 +160,7 @@ I recommend you activate this option:
 
 ![](docs/imgs/wifiui-packet-rate.png)
 
-In the previous steps, I have asked you to set the packet-rate to 100Hz already. Locking it on Shrew-Zero will allow for it to reconnect a bit faster.
+In the previous steps, I have asked you to set the packet-rate to 100Hz already. Locking it on Shrew will allow for it to reconnect a bit faster.
 
 #### AM32 Configurator
 
@@ -158,17 +176,7 @@ The GPIOs are capable of things like I2C, an extra serial port, or even CAN bus.
 
 ## Firmware Update
 
-If there is a firmware update, it must be obtained from [https://expresslrsconfig.eleccelerator.com/](https://expresslrsconfig.eleccelerator.com/), which is my firmware distribution mechanism for Shrew. **Official ExpressLRS firmware will not work for Shrew. Do not attempt to obtain a firmware using the official ExpressLRS GitHub repo or their configurator.**
-
-Be sure to select `Shrew-Zero` as the receiver!
-
-![](docs/imgs/elrsconfig-choose-shrew-zero.png)
-
-Go ahead and configure the firmware however you like, just make sure the receiver is `Shrew Zero`. After you are ready, click on `Save for Wi-Fi Install`.
-
-![](docs/imgs/elrsconfig-finish-and-save.png)
-
-Once the firmware `*.bin` file has been downloaded, it can be uploaded to the `Update` tab in the Wi-Fi web-ui.
+If there is a firmware update, it will be provided from me personally, as you have a special prototype. Once you have the file, it can be uploaded to the `Update` tab in the Wi-Fi web-ui.
 
 ![](docs/imgs/wifiui-fw-update-tab.png)
 
@@ -176,25 +184,19 @@ If you need to update the firmware via a USB-to-serial converter, then follow th
 
 ## Wiring Hints
 
-Shrew-Zero is meant to allow the user total freedom in how they want to wire it. I expect most users to solder wires directly to it.
+The design allows you to run the wires in one direction and then wrap it all in heat shrink tubing.
 
-![](docs/imgs/shrew-zero-wire-hint.jpg)
+![](docs/imgs/shrew-lite-wire-hint.jpg)
 
-The wires can be pretty thin, the signal wires require almost no current at all, the power wires need to handle 80mA normally, and 300mA at maximum.
+![](docs/imgs/shrew-lite-wire-hint-heatshrink.jpg)
 
-If you want to add pins, here are some suggested ways:
+The connectors I put on for the motors are GNB A30 connectors.
 
-![](docs/imgs/shrew-zero-suggested-pin-soldering.jpg)
+![](docs/imgs/gnba30.jpg)
 
-Notice that I did not use bent headers, I used straight headers, and the legs **did not** go into the holes. This is intentional and it is the way I am recommending you solder on pins. As long as you put enough solder to reach the other side of the board, joints like this is more than strong enough.
+Notice that I do not put the wires through the holes, the wires are soldered to the surface instead, there is enough solder to actually fill the holes though. This is all intentional and the way I recommend you solder wires to Shrew.
 
-Recommended heat-shrink wrap size is 3/4"
-
-![](docs/imgs/shrew-zero-heatshrink.jpg)
-
-If you want to learn how to make super short connectors, [check out this guide](docs/Make-Short-Dupont-Plug-Connectors/readme.md)
-
-![](docs/Make-Short-Dupont-Plug-Connectors/shortplug_intro.png)
+![](docs/imgs/shrew-lite-wire-surface.jpg)
 
 ## Appendix
 
