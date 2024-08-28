@@ -73,6 +73,8 @@ Using your phone or computer, connect to the `ExpressLRS RX` Wi-Fi access point.
 
 ![](docs/imgs/smartphone-wifilist-rx.png)
 
+Use your web-browser to navigate to `http://10.0.0.1/`
+
 ![](docs/imgs/wifiui-browser.png)
 
 Scroll down and edit the binding-phrase and then save it.
