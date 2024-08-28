@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="10" display="no" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="10" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,13 +23,13 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="14" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -103,7 +103,7 @@
 <layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -124,7 +124,7 @@
 <rectangle x1="11.6" y1="18.1" x2="15.2" y2="19.8" layer="42"/>
 <rectangle x1="7" y1="18.1" x2="9.9" y2="20" layer="41"/>
 <rectangle x1="7" y1="18.4" x2="10.8" y2="20" layer="43"/>
-<rectangle x1="14.2" y1="18.1" x2="16.6" y2="19.8" layer="41"/>
+<rectangle x1="14.2" y1="18.1" x2="18" y2="19.8" layer="41"/>
 <rectangle x1="15.2" y1="18.1" x2="16.6" y2="19.8" layer="43"/>
 <wire x1="9.4" y1="17.3" x2="9.4" y2="17.1" width="0" layer="42"/>
 <wire x1="7.6" y1="14.1" x2="7.6" y2="14" width="0" layer="41"/>
@@ -139,15 +139,15 @@
 <text x="16.6" y="3.7" size="1" layer="21" font="vector" align="center">GND</text>
 <text x="1.5" y="3.6" size="1" layer="21" font="vector" align="center">V+</text>
 <text x="1.2" y="3.6" size="1" layer="22" font="vector" rot="MR0" align="center">V+</text>
-<text x="2.4" y="18.3" size="1" layer="22" rot="MR180" align="center-left">GND</text>
-<text x="2.5" y="15.9" size="1" layer="22" rot="MR180" align="center-left">TX</text>
-<text x="2.5" y="13.3" size="1" layer="22" rot="MR180" align="center-left">RX</text>
-<text x="2.4" y="10.8" size="1" layer="22" rot="MR180" align="center-left">22</text>
-<text x="2.5" y="8.4" size="1" layer="22" rot="MR180" align="center-left">19</text>
-<text x="2.5" y="7.2" size="1" layer="22" rot="MR180" align="center-left">P1</text>
-<text x="2.4" y="9.6" size="1" layer="22" rot="MR180" align="center-left">P2</text>
-<text x="2.5" y="14.8" size="1" layer="22" rot="MR180" align="center-left">1</text>
-<text x="2.5" y="12.1" size="1" layer="22" rot="MR180" align="center-left">3</text>
+<text x="2.4" y="18.3" size="0.8128" layer="22" rot="MR180" align="center-left">GND</text>
+<text x="2.5" y="15.9" size="0.8128" layer="22" rot="MR180" align="center-left">TX</text>
+<text x="2.5" y="13.3" size="0.8128" layer="22" rot="MR180" align="center-left">RX</text>
+<text x="2.5" y="9.8" size="0.8128" layer="22" rot="MR180" align="center-left">#22</text>
+<text x="2.5" y="7.2" size="0.8128" layer="22" rot="MR180" align="center-left">#19</text>
+<text x="2.5" y="8.3" size="0.8128" layer="22" rot="MR180" align="center-left">P1</text>
+<text x="2.5" y="10.8" size="0.8128" layer="22" rot="MR180" align="center-left">P2</text>
+<text x="2.5" y="14.8" size="0.8128" layer="22" rot="MR180" align="center-left">#1</text>
+<text x="2.5" y="12.3" size="0.8128" layer="22" rot="MR180" align="center-left">#3</text>
 <text x="17.1" y="7.2" size="1" layer="22" font="vector" ratio="10" rot="MR90" align="center-left">SHREW-ZERO</text>
 <wire x1="10.9" y1="18.5" x2="11.4" y2="18.5" width="0" layer="42"/>
 <rectangle x1="15.2" y1="17.9" x2="16.6" y2="19.8" layer="42"/>
@@ -159,6 +159,23 @@
 <dimension x1="12.81" y1="1.2" x2="18" y2="0.8" x3="15.405" y3="-2.1" textsize="1" textratio="6" layer="216" dtype="horizontal" width="0.08"/>
 <dimension x1="1.5" y1="7.8" x2="2.8" y2="0" x3="-1.1" y3="3.9" textsize="1" textratio="6" layer="216" dtype="vertical" width="0.08"/>
 <dimension x1="1.5" y1="7.8" x2="1.5" y2="18" x3="-2.2" y3="12.9" textsize="1" textratio="6" layer="216" dtype="vertical" width="0.08"/>
+<text x="17.1" y="7.2" size="1" layer="21" font="vector" ratio="10" rot="R90" align="center-left">SHREW-ZERO</text>
+<text x="16.4" y="3.6" size="0.82" layer="22" font="vector" rot="MR0" align="center">GND</text>
+<text x="2.6" y="18.3" size="0.8128" layer="21" align="center-left">GND</text>
+<text x="2.5" y="15.9" size="0.8128" layer="21" align="center-left">TX</text>
+<text x="2.5" y="14.8" size="0.8128" layer="21" align="center-left">#1</text>
+<text x="2.7" y="13.3" size="0.8128" layer="21" align="center-left">RX</text>
+<text x="2.6" y="12.3" size="0.8128" layer="21" align="center-left">#3</text>
+<text x="2.7" y="11.1" size="0.8128" layer="21" align="center-left">P2</text>
+<text x="2.7" y="10.1" size="0.8128" layer="21" align="center-left">#22</text>
+<text x="2.7" y="7.9" size="0.8128" layer="21" align="center-left">P1</text>
+<text x="2.7" y="6.8" size="0.8128" layer="21" align="center-left">#19</text>
+<text x="12.8" y="2.4" size="0.8128" layer="21" align="bottom-center">#13</text>
+<text x="10.4" y="2.4" size="0.8128" layer="21" align="bottom-center">#27</text>
+<text x="7.9" y="2.4" size="0.8128" layer="21" align="bottom-center">#9</text>
+<text x="5.4" y="2.4" size="0.8128" layer="21" align="bottom-center">#10</text>
+<text x="13.9" y="1.5" size="0.8128" layer="21" rot="R270" align="bottom-center">P3</text>
+<text x="4.1" y="1.4" size="0.8128" layer="21" rot="R90" align="bottom-center">P6</text>
 </plain>
 <libraries>
 <library name="shrew-core">
@@ -1077,8 +1094,8 @@ chip</description>
 <vertex x="0" y="1"/>
 <vertex x="0" y="3.8"/>
 <vertex x="2.9" y="6.7"/>
-<vertex x="2.894971875" y="16.38656875"/>
-<vertex x="2.28671875" y="17"/>
+<vertex x="2.9" y="16.4"/>
+<vertex x="2.3" y="17"/>
 <vertex x="0" y="17"/>
 <vertex x="0" y="20"/>
 <vertex x="6.5" y="20"/>
