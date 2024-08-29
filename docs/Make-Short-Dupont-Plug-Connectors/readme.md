@@ -24,6 +24,4 @@ You are finished.
 
 I recommend using 28AWG wire for this, or even 30AWG wire, as long as the wire is stranded-core. Also, using silicone jacketed wire will make this much easier.
 
-I only recommend this technique to be used for PWM signal wires, and low power wires (such as simply powering a radio receiver). To save space in a space constrained situation, please also see [this technique converting ELRS receivers to use PWM](../ELRS-receiver-PWM-modification/readme.md).
-
-![](../ELRS-receiver-PWM-modification/elrsrxprep_start.jpg)
+(only use thin wires for signalling wires, not power wires, power wires need to be appropriately thick)
