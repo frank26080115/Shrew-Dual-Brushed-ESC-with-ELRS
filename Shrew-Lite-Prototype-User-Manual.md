@@ -28,8 +28,10 @@ The `CHAN` number is the PWM channel number under default configuration. The `GP
 |-----------|---------|
 | ![](docs/imgs/led-blinks/disconnected.webp) | not connected, waiting for connection <br> orange regular blink |
 | ![](docs/imgs/led-blinks/nobind.webp) | not bound, please bind it to a transmitter <br> orange double blink |
-| ![](docs/imgs/led-blinks/wifi.webp) | Wi-Fi mode <br> yellow and green looping crossfade |
+| ![](docs/imgs/led-blinks/wifi.webp) | Wi-Fi mode <br> green yellow green animation |
 | ![](docs/imgs/led-blinks/active.webp) | connected and active <br> solid colour, colour changes as the radio transmitter sticks/channels move |
+
+(above table contains animations, appologies if they are not playing correctly)
 
 ## Transmitter Preperation
 
@@ -186,6 +188,8 @@ The GPIOs are capable of things like I2C, an extra serial port, or even CAN bus.
 If there is a firmware update, it will be provided from me personally, as you have a special prototype. Once you have the file, it can be uploaded to the `Update` tab in the Wi-Fi web-ui.
 
 ![](docs/imgs/wifiui-fw-update-tab.png)
+
+**IMPORTANT:** Updating the firmware in any way will reset all settings to the default as specified in the firmware. Please double check your settings after every firmware update.
 
 If you need to update the firmware via a USB-to-serial converter, then follow the instructions on [firmware updating via USB](docs/Firmware-Updating-via-USB.md). (for example, if Wi-Fi is unavailable due to corrupted firmware, or, if you are building the circuit at home instead of purchasing one)
 
