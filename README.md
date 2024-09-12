@@ -26,6 +26,7 @@ Safety and reliability is on the top of my priority list
  * No dead-zone implemented, so there's no control lag at all, and there is also no need for calibration
  * Binding is done with a binding-phrase, extremely good for spare parts management of a competitive robot
  * Power input solder points are intentionally placed farther apart to prevent accidental short circuiting
+ * RGB LED on it is indicative of control inputs, not just connection state
 
 ## Open Source Notes
 
