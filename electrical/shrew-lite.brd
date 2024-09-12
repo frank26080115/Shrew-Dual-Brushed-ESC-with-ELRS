@@ -1625,8 +1625,8 @@ chip</description>
 <signal name="SIG1">
 <contactref element="U1" pad="20"/>
 <via x="13.8" y="14.9" extent="1-16" drill="0.3" shape="octagon"/>
-<wire x1="12.73" y1="14.9" x2="13.8" y2="14.9" width="0.1524" layer="16"/>
-<wire x1="12.73" y1="14.9" x2="12.46" y2="15.16" width="0.1524" layer="16"/>
+<wire x1="13.03" y1="14.9" x2="13.8" y2="14.9" width="0.1524" layer="16"/>
+<wire x1="13.03" y1="14.9" x2="12.46" y2="15.16" width="0.1524" layer="16"/>
 <wire x1="12.46" y1="15.16" x2="12.065" y2="15.16" width="0.1524" layer="16"/>
 <wire x1="12.065" y1="15.16" x2="12.065" y2="15.25" width="0.1524" layer="16"/>
 <via x="8.7" y="10.4" extent="1-16" drill="0.3" shape="octagon"/>
