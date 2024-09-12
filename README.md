@@ -1,30 +1,31 @@
 # Shrew: Dual Brushed ESC with ELRS
 
-Shrew is a ESC that can drive two brushed motors, with ELRS integrated. It is designed to be as small as possible yet still pack plenty of power. It is meant for insect class combat robots.
+Shrew is family of ESCs (Electronic Speed Controller) that can drive two brushed motors, with an ELRS receiver integrated. It is designed to be as small as possible yet still pack plenty of power. It is meant for insect class combat robots.
 
-There are two variations of Shrew, and so Shrew is actually designed as two circuit boards. The first circuit board is called the Shrew-RX and it contains all of the ExpressLRS circuitry. The second circuit board contains two motor driver ICs and a 3.3V voltage regulator that converts the high battery voltage to the low voltage that the Shrew-RX needs.
+There are three variations of Shrew
 
-The user is expected to solder the two circuit boards together to form one final board.
+ * Shrew-Pro, for dual brushed motors up to 21A
+ * Shrew-Lite, for dual brushed motors up to 3.7A
+ * Shrew-Zero, not a ESC, just a receiver
 
-![](docs/imgs/shrew-family-rev0.jpg)
+![](docs/imgs/shrew-family-photo-1.jpg)
 
-![](docs/imgs/shrew-rev0-malenki-compare.jpg)
+All of these function as ELRS receivers with 4 or more GPIO pins, capable of controlling other ESCs or servos. These pins can output PWM, as well as better protocols such as Dshot. If you have the skills, you can even use them for I2C and such.
 
-There are two variations of the motor driver circuit board: the Mini, and the Mega.
+The input voltage ratings of Shrew is incredibly high, even Shrew-Lite can handle up to 36V, that means connecting directly to a 8S battery is not a problem (please see individual detailed specifications).
 
-The Mini is rated for 4S batteries and can drive up to 3.7A per motor. It is small, the final size is 24mm x 14mm. This is designed for a few friends who are building small 150g fairyweight class robots.
+If you are using AM32 brushless ESCs with Shrew, Shrew features a webpage interface to configure the AM32 ESC. If you have 4 ESCs connected to Shrew, you can change settings on each one individually and test it immediately, all without disconnecting any wires. Plus, you can test the ESCs immediately after making a settings change through the same webpage interface.
 
-The Mega version is rated for 6S batteries and can drive up to 21A per motor. It is a bit bigger, 28mm x 18mm. This is designed for my own 3lbs beetleweight class robot that are trying to run JCR Viper motors (they stall at 12A).
+## Design Ethos
 
-The Shrew-RX also has two more additional outputs to allow the user to attach devices such as servos and other ESCs. The UART pins are also available to output CRSF data. It can also read battery voltage and report it back through radio telemetry.
+Safety and reliability is on the top of my priority list
 
-The Shrew-RX runs a special build of ExpressLRS firmware so that it can drive all of the motor drivers using only two CRSF channels. This firmware is technically optional, but it makes it so much easier to use.
-
-## Revision Zero
-
-Current revision has serious flaws and the design files on this repository should not be used.
-
-I have documented the flaws and test results: [Revision Zero](docs/Revision-Zero.md)
+ * Digital protocols are safer than PWM ([why this is better](docs/Digital-Protocols-for-ESC-Control.md))
+ * No-pulse failsafe mode by default ([why this is better](docs/No-Pulse-Failsafe-Mode.md))
+ * No entering any unexpected modes, there is no way to accidentally enter some sort of calibration mode or binding mode
+ * No dead-zone implemented, so there's no control lag at all, and there is also no need for calibration
+ * Binding is done with a binding-phrase, extremely good for spare parts management of a competitive robot
+ * Power input solder points are intentionally placed farther apart to prevent accidental short circuiting
 
 ## Open Source Notes
 
