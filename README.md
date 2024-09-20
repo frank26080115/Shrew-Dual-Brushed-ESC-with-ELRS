@@ -8,7 +8,7 @@ There are three variations of Shrew
  * Shrew-Lite, for dual brushed motors up to 3.7A
  * Shrew-Zero, not a ESC, just a receiver
 
-![](docs/imgs/shrew-family-photo-1.jpg)
+![](docs/imgs/familyphoto.png)
 
 All of these function as ELRS receivers with 4 or more GPIO pins, capable of controlling other ESCs or servos. These pins can output PWM, as well as better protocols such as Dshot. If you have the skills, you can even use them for I2C and such.
 
@@ -27,6 +27,7 @@ Safety and reliability is on the top of my priority list
  * Binding is done with a binding-phrase, extremely good for spare parts management of a competitive robot
  * Power input solder points are intentionally placed farther apart to prevent accidental short circuiting
  * RGB LED on it is indicative of control inputs, not just connection state
+ * Top quality TCXO and a ceramic antenna for a balance between high RF performance and durability.
 
 ## Open Source Notes
 

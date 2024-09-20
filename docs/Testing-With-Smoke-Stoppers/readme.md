@@ -6,7 +6,7 @@ This article will discuss using these smoke stoppers in the combat robotics hobb
 
 For example, it would've prevented this kind of accident:
 
-![](convo.fw.png)
+![](imgs/convo.fw.png)
 
 # What Kind of Protection
 
@@ -22,7 +22,7 @@ If you do end up plugging in a battery backwards, or somehow connected a red wir
 
 There is literally only one smoke stopper that I can recommend: the ViFly Short Saver 2 Smoke Stopper
 
-![](vifly.jpg)
+![](imgs/vifly.jpg)
 
  * [Amazon Link](https://www.amazon.com/VIFLY-ShortSaver-Electronic-Short-Circuit-Available/dp/B088TVVNVM/ref=sr_1_4)
  * [Get FPV Store](https://www.getfpv.com/vifly-shortsaver-2-smart-smoke-stopper-xt60-xt30.html)
@@ -31,7 +31,7 @@ There is literally only one smoke stopper that I can recommend: the ViFly Short 
 
 This product is superior to all of its competitors for some very critical reasons. It is the only one that's actually an active electrical current sensing device, it is actually not a traditional fuse. All of the other similar products are simple self-resetting fuses.
 
-![](notrecommended.fw.png)
+![](imgs/notrecommended.fw.png)
 
 The problem with fuses:
 
@@ -49,7 +49,7 @@ There are many power supplies with current limiting that are very useful for tes
 
 Connecting a smoke stopper is easy, it comes with a battery input connector and another output connector, usually XT30 or XT60 or both. You plug in a battery to the input, and the output connects to where your battery was supposed to go on your robot. The ViFly smoke stopper also has an ON button you need to press.
 
-![](usingsmokestopper.jpg)
+![](imgs/usingsmokestopper.jpg)
 
 It is important to know that all of these smoke stoppers are rated or configured for only 1A of current, I think the ViFly one can be configured for 1A or 2A. This means it is not supposed to let you run motors. So basically, you are just checking things like:
 
@@ -70,13 +70,13 @@ You need to buy something called a "USB-C voltage trigger", which is something t
  * [Amazon Link, 12V fixed](https://www.amazon.com/AITRIP-Voltage-Trigger-Module-Type-C/dp/B09M3SQSXL/ref=sr_1_3)
  * [Amazon Link, 12V fixed](https://www.amazon.com/Trigger-Adjustable-Voltage-Module-Default/dp/B0BRNGKRDJ/ref=sr_1_5)
 
-![](usbctriggeramazon.fw.png)
+![](imgs/usbctriggeramazon.fw.png)
 
 Get one, solder a XT30 or XT60 connector on it. Bada-bing bada-boom.
 
-![](usbcxt30.jpg)
+![](imgs/usbcxt30.jpg)
 
-![](viflywithusbc.jpg)
+![](imgs/viflywithusbc.jpg)
 
 Your USB-C power adapter is probably capable of outputting 2A of current at 12A, that's only about 24W. Those USB-C soldering irons use something like 65W. Remember that the smoke stopper is only 1A or 2A anyways, so it's perfectly fine to use a USB-C power adapter for these tests.
 
@@ -86,22 +86,22 @@ IMPORTANT: The USB-C power adapter must be capable of USB-PD and capable of 30W 
 
 I have a SkyRC B6neo, it's a compact battery charger powered by USB-C.
 
-![](b6neo.fw.png)
+![](imgs/b6neo.fw.png)
 
 It has an extra function, you can use it to act as a adjustable voltage power supply, with a specified current limit. Here is how to access this feature (screen shot from user manual):
 
-![](b6neodcpower.fw.png)
+![](imgs/b6neodcpower.fw.png)
 
 If you are unsure about the settings, I suggest you use 12V and 1.0A as the setting, which approximates a 3S battery. The current should not be too high, so 1.0A is a nice setting.
 
 You will need to make adapter cables to use the charger this way. The end that goes into the charger must be a XT-60 female, and the other end should be the same as the connector that's already on your battery.
 
-![](xt60toxt30.jpg)
+![](imgs/xt60toxt30.jpg)
 
-![](b6neoused.jpg)
+![](imgs/b6neoused.jpg)
 
 If your circuit malfunctions and draws an unexpectedly large electrical current, the B6neo will show an error message and shutdown
 
-![](b6neoerrormsg.jpg)
+![](imgs/b6neoerrormsg.jpg)
 
 but it might also simply shutdown without showing an error message at all. It depends on how bad the failure really was. A full short circuit will cause a shutdown without an error message, probably because the power supply upstream from the B6neo has shutdown.

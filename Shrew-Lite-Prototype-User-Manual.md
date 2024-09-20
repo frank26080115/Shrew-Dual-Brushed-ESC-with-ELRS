@@ -70,7 +70,7 @@ For the set of prototypes of Shrew-Lite, you have been given a USB power adapter
 
 ![](docs/imgs/shrew-lite-proto-usb-adapter.jpg)
 
-When Shrew is powered, the LED should start blinking orange. Wait for about 60 seconds. Then the LED will start to go crazy (it's like a green-yellow fading animation). This means the Shrew-Zero has activated its own Wi-Fi access point.
+When Shrew is powered, the LED should start blinking orange. Wait for about 60 seconds. Then the LED will start to go crazy (it's like a green-yellow fading animation). This means the Shrew has activated its own Wi-Fi access point.
 
 Using your phone or computer, connect to the `ExpressLRS RX` Wi-Fi access point. The password is `expresslrs`.
 
@@ -84,7 +84,7 @@ Scroll down and edit the binding-phrase and then save it.
 
 ![](docs/imgs/wifiui-binding-phrase.png)
 
-Once you have done that, Shrew-Zero should be ready to use with default settings.
+Once you have done that, Shrew should be ready to use with default settings.
 
 **IMPORTANT:** The Shrew firmware disables the activation of binding mode by power cycling it 3 times. This is done to prevent accidental activation of binding mode.
 

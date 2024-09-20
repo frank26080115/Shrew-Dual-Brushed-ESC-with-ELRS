@@ -12,7 +12,7 @@ Shrew-Lite is a dual brushed motor ESC with an integrated ExpressLRS RC radio re
 
 ## Pin Map
 
-![](docs/imgs/shrew-lite-proto-pinout.png)
+![](docs/imgs/shrew-pro-pinout.png)
 
 Motor-A is assigned to channel 1. Motor-B is assigned to channel 2. These assignments cannot be changed.
 
