@@ -28,8 +28,8 @@
 <layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -202,8 +202,8 @@
 <text x="2.5" y="20.3" size="0.8128" layer="22" rot="MR180" align="center-left">RX</text>
 <text x="2.4" y="16.8" size="0.8128" layer="22" rot="MR180" align="center-left">#22</text>
 <text x="2.5" y="14.2" size="0.8128" layer="22" rot="MR180" align="center-left">#19</text>
-<text x="2.5" y="15.3" size="0.8128" layer="22" rot="MR180" align="center-left">P1</text>
-<text x="2.4" y="17.9" size="0.8128" layer="22" rot="MR180" align="center-left">P2</text>
+<text x="2.5" y="15.3" size="0.8128" layer="22" rot="MR180" align="center-left">P3</text>
+<text x="2.4" y="17.9" size="0.8128" layer="22" rot="MR180" align="center-left">P4</text>
 <text x="2.5" y="21.8" size="0.8128" layer="22" rot="MR180" align="center-left">#1</text>
 <text x="2.5" y="19.1" size="0.8128" layer="22" rot="MR180" align="center-left">#3</text>
 <text x="17.1" y="14.2" size="1" layer="22" font="vector" ratio="10" rot="MR90" align="center-left">SHREW-PRO</text>
@@ -222,8 +222,8 @@
 <text x="2.7" y="20.4" size="0.8128" layer="21" align="center-left">RX</text>
 <text x="2.7" y="17.2" size="0.8128" layer="21" align="center-left">#22</text>
 <text x="2.5" y="13.8" size="0.8128" layer="21" align="center-left">#19</text>
-<text x="2.6" y="15.6" size="0.8128" layer="21" align="center-left">P1</text>
-<text x="2.5" y="18.2" size="0.8128" layer="21" align="center-left">P2</text>
+<text x="2.6" y="15.6" size="0.8128" layer="21" align="center-left">P3</text>
+<text x="2.5" y="18.2" size="0.8128" layer="21" align="center-left">P4</text>
 <text x="2.6" y="21.9" size="0.8128" layer="21" align="center-left">#1</text>
 <text x="2.7" y="19.4" size="0.8128" layer="21" align="center-left">#3</text>
 <text x="17.1" y="14.2" size="1" layer="21" font="vector" ratio="10" rot="R90" align="center-left">SHREW-PRO</text>
