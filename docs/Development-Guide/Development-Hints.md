@@ -12,6 +12,8 @@ The firmware is multitasking, but it is not using RTOS threads. FreeRTOS is avai
 
 The firmware has some core functionality, which handles how the transmitter and receiver communicates. The other functions are implemented as "Devices", which are individual state machines.
 
+The build process is taken care of by PlatformIO but there are some Python scripts that are used to pack all the HTML files and JSON files into the firmware.
+
 NOTE: web pages being served by the Wi-Fi mode are not stored in file-system, they are actually compiled into the code with the help of some python scripting
 
 ## Cardinal Rules
