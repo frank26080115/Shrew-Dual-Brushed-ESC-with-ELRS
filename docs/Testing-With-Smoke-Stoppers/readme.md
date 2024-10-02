@@ -105,3 +105,5 @@ If your circuit malfunctions and draws an unexpectedly large electrical current,
 ![](imgs/b6neoerrormsg.jpg)
 
 but it might also simply shutdown without showing an error message at all. It depends on how bad the failure really was. A full short circuit will cause a shutdown without an error message, probably because the power supply upstream from the B6neo has shutdown.
+
+**IMPORTANT: I tried both the HOTA brand and the ToolKitRC brand chargers, they should not be used as a smoke stopper**. They have constant current implementations with (what appears to be) a PID loop modulating the voltage to keep the current constantly at whatever you've set. This means it will still attempt to leak power into a circuit that is failing, it will not stop the power completely, it will not show any error messages. **Although this does actually mean they are technically better chargers than the SkyRC one. In fact, the HOTA has both constant current and constant power if you need it.**
