@@ -42,7 +42,7 @@ Using GitHub Desktop, select the `ExpressLRS` repository, and then use the branc
 
 ![](imgs/checkout-shrew-branch.png)
 
-If the `shrew` branch is somehow not available, it means you did not perform the fork from the proper git repository.
+If the `shrew` branch is somehow not available, it means you did not perform the fork from the proper git repository, or you have multiple `ExpressLRS` projects and picked the wrong one with GitHub Desktop.
 
 ## 5. Opening the Project
 
