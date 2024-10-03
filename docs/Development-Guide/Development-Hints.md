@@ -18,13 +18,11 @@ NOTE: web pages being served by the Wi-Fi mode are not stored in file-system, th
 
 ## Cardinal Rules
 
-Do not use the multithreading features of FreeRTOS.
+Do not use the multithreading features of FreeRTOS. The ESP32 has two cores, and the firmware has already been written in a way that assigns tasks to each of the cores. Adding more threads will cause more unpredictable execution order.
 
-Do not let your code run in a long loop that blocks other code from running. Do not use delays. Do not write code that can cause the radio to miss a packet!
+Do not let your code run in a long loop that blocks other code from running. Do not use delays. Basically: do not write code that can cause the radio to miss a packet!
 
-Do not halt the timers that the core code depends on.
-
-Do not disable any interrupts.
+Do not halt the timers that the core code depends on. Do not disable any interrupts.
 
 All of the above pretty much means: please use state machines
 
