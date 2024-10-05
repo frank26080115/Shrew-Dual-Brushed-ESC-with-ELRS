@@ -1,16 +1,16 @@
-# Shrew-Pro User Manual
+# Shrew-Lite User Manual
 
-Shrew-Pro is a dual brushed motor ESC with an integrated ExpressLRS RC radio receiver.
+Shrew-Lite is a dual brushed motor ESC with an integrated ExpressLRS RC radio receiver.
 
- * Maximum voltage: 35V
- * Recommended battery voltage: 6V-30V (2S-7S lithium ion)
- * Current rating per brushed motor channel: 21A each, spikes to 40A
+ * Maximum voltage: 33V
+ * Recommended battery voltage: 6V-26V (2S-6S lithium ion)
+ * Current rating per brushed motor channel: 3.7A each
  * Has over-current protection and over-temperature protection
  * 4 digital outputs, capable of PWM, PWM-stretched, DShot, CRSF, SBUS
 
 ## Pin Map
 
-![](docs/imgs/shrew-pro-pinout.png)
+![](docs/imgs/shrew-lite-pinout.png)
 
 Motor-A is assigned to channel 1. Motor-B is assigned to channel 2. These assignments cannot be changed.
 
@@ -18,9 +18,9 @@ The `CHAN` number is the PWM channel number under default configuration. The `GP
 
 ## Dimensions
 
-27mm length by 18mm width
+24mm length by 15.5mm width
 
-![](docs/imgs/shrew-pro-dimensions.png)
+![](docs/imgs/shrew-lite-dimensions.png)
 
 ## LED Blink Meaning
 

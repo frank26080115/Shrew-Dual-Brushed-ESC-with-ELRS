@@ -40,7 +40,7 @@ Just in case you need it, here are some links to official ExpressLRS instruction
 
 **Important Note:** Your transmitter can run official ExpressLRS firmware, as long as it is version `3.3.0` and later. **You can use ExpressLRS Configurator to update your transmitter**
 
-**Important Note Continued:** The Shrew-Zero firmware is not official ExpressLRS firmware, and does not have to match to the transmitter firmware. **Do not use the ExpressLRS Configurator to update Shrew-Zero**.
+**Important Note Continued:** The Shrew firmware is not official ExpressLRS firmware, and does not have to match to the transmitter firmware. **Do not use the ExpressLRS Configurator to update Shrew-Zero**.
 
 I hope you have followed the instructions above and have access to the ExpressLRS Lua script on your transmitter. Run the `ExpressLRS` script, scroll down and select `WiFi Connectivity`, and then select `Enable WiFi`.
 
@@ -62,7 +62,7 @@ Once you have saved it, **turn off the radio**, or at least exit Wi-Fi mode.
 
 ## First Time Binding
 
-Connect the Shrew-Zero to a power source. Shrew-Zero is designed to be directly connected to a battery, no pre-conditioning (such as a BEC) is required. The LED should start blinking orange. Wait for about 60 seconds. Then the LED will start to go crazy (it's like a green-yellow fading animation). This means the Shrew-Zero has activated its own Wi-Fi access point.
+Connect the Shrew to a power source. Shrew is designed to be directly connected to a battery, no pre-conditioning (such as a BEC) is required. The LED should start blinking orange. Wait for about 60 seconds. Then the LED will start to go crazy (it's like a green-yellow fading animation). This means the Shrew has activated its own Wi-Fi access point.
 
 Using your phone or computer, connect to the `ExpressLRS RX` Wi-Fi access point. The password is `expresslrs`.
 
@@ -76,7 +76,7 @@ Scroll down and edit the binding-phrase and then save it.
 
 ![](docs/imgs/wifiui-binding-phrase.png)
 
-Once you have done that, Shrew-Zero should be ready to use with default settings.
+Once you have done that, Shrew should be ready to use with default settings.
 
 **IMPORTANT:** The Shrew firmware disables the activation of binding mode by power cycling it 3 times. This is done to prevent accidental activation of binding mode.
 
@@ -147,7 +147,7 @@ I recommend you activate this option:
 
 ![](docs/imgs/wifiui-packet-rate.png)
 
-In the previous steps, I have asked you to set the packet-rate to 100Hz already. Locking it on Shrew-Zero will allow for it to reconnect a bit faster.
+In the previous steps, I have asked you to set the packet-rate to 100Hz already. Locking it on Shrew will allow for it to reconnect a bit faster.
 
 #### AM32 Configurator
 
