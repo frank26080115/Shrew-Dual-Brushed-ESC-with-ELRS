@@ -74,3 +74,26 @@ NOTE: the files are minified and gzip compressed automatically, so don't worry t
 If you need additional backend handling of HTTP requests, you will need to add handlers to the actual source code. The file you are interested in is `ExpressLRS/src/lib/WIFI/devWIFI.cpp`. The firmware uses the `ESPAsyncWebServer` library extensively. If you know how to use this library then you will have the skills to add backend functionality, it's documentation is here: https://github.com/me-no-dev/ESPAsyncWebServer
 
 If you do not want to add code to `devWIFI.cpp` itself, then write functions that can take the `server` object as a parameter and add the handlers to that object.
+
+## Git Repo Branches
+
+The branch `shrew-dev` is the actively work-in-progress branch. The code is not considered released and is likely not bug-free.
+
+The branch `shrew` is a release branch. All the firmware being distributed or preloaded will come from this branch.
+
+Once in a while, you probably want to update your own branch to be in-sync with my `shrew` branch. To do so:
+
+ 1. make a temporary branch: `git checkout -b temp-branch upstream/shrew`
+ 2. go back to your own branch: `git checkout your-branch-name`
+ 3. perform merge: `git merge temp-branch`
+ 4. resolve any merge conflicts
+ 5. delete temporary branch: `git branch -d temp-branch`
+
+To sync with a particular version tag, go through these steps (example uses the tag `3.5.0` from the parent ExpressLRS repo):
+
+ 1. update local tags metadata: `git fetch upstream --tags`
+ 2. make a temporary branch: `git checkout -b temp-branch 3.5.0`
+ 3. go back to your own branch: `git checkout your-branch-name`
+ 4. perform merge: `git merge temp-branch`
+ 5. resolve any merge conflicts
+ 6. delete temporary branch: `git branch -d temp-branch`
