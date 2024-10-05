@@ -63,7 +63,7 @@ The neat thing about the `ServoOutput` module is that it contains code that is c
 Web pages and other files that needs to be served are stored in the `ExpressLRS/src/html` directory. They are not automatically included. You need to also:
 
  * edit `ExpressLRS/src/lib/WIFI/devWIFI.cpp`, look for a variable called `files[]`, and add your file to the list
- * edit `ExpressLRS/src/python/build_html.py`, look for a function named `build_common`, and add your file to the list
+ * edit `ExpressLRS/src/python/build_html.py`, look for a function named `build_common`, and add your file to the list, make sure the parameters match the parameters from the previous step
 
 The files can have pre-processor actions. I suggest you read the existing files to see how those are used. The pre-processor directives use the `@@` symbol.
 
