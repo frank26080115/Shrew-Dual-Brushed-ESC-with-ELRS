@@ -29,6 +29,12 @@ Safety and reliability is on the top of my priority list
  * RGB LED on it is indicative of control inputs, not just connection state
  * Top quality TCXO and a ceramic antenna for a balance between high RF performance and durability.
 
+## User Manuals
+
+ * [Shrew-Pro User Manual](Shrew-Pro-User-Manual.md)
+ * [Shrew-Lite User Manual](Shrew-Lite-User-Manual.md)
+ * [Shrew-Zero User Manual](Shrew-Zero-User-Manual.md)
+
 ## Open Source Notes
 
 All of the circuitry is designed using CadSoft EAGLE v7. This is NOT Autodesk EAGLE, but Autodesk EAGLE can open the files.
