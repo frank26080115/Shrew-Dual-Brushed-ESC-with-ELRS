@@ -75,6 +75,12 @@ If you need additional backend handling of HTTP requests, you will need to add h
 
 If you do not want to add code to `devWIFI.cpp` itself, then write functions that can take the `server` object as a parameter and add the handlers to that object.
 
+## Debug Logging
+
+If you edit `user_defines.txt` and uncomment the flag `-DDEBUG_LOG`, then the UART serial port will output all the printable items that are in the code using functions such as `DBG()` and `DBGLN()`, see the file `logging.h` for a list of available debug message functions (and read the source code to see examples of how they are used).
+
+To view the messages, you will need to open the serial port using some sort of terminal software, with the baud rate 115200. I think you can use the `monitor` option of PlatformIO. There are also a few Visual Studio Code extensions that are serial terminals.
+
 ## Git Repo Branches
 
 The branch `shrew-dev` is the actively work-in-progress branch. The code is not considered released and is likely not bug-free.
