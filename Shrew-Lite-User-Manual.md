@@ -5,6 +5,7 @@ Shrew-Lite is a dual brushed motor ESC with an integrated ExpressLRS RC radio re
  * Maximum voltage: 33V
  * Recommended battery voltage: 6V-26V (2S-6S lithium ion)
  * Current rating per brushed motor channel: 3.7A each
+ * See this document: [Motor Driver Specs](docs/Motor-Driver-Specs.md)
  * Has over-current protection and over-temperature protection
  * 4 digital outputs, capable of PWM, PWM-stretched, DShot, CRSF, SBUS
 

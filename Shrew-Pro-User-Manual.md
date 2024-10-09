@@ -5,6 +5,7 @@ Shrew-Pro is a dual brushed motor ESC with an integrated ExpressLRS RC radio rec
  * Maximum voltage: 40V continuous operation, unknown maximum spike
  * Recommended battery voltage: 6V-35V (2S-8S lithium ion)
  * Current rating per brushed motor channel: 21A each, spikes to 40A
+ * See this document: [Motor Driver Specs](docs/Motor-Driver-Specs.md)
  * Has over-current protection and over-temperature protection
  * 4 digital outputs, capable of PWM, PWM-stretched, DShot, CRSF, SBUS
 
