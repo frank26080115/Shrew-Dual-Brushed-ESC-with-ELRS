@@ -36,7 +36,9 @@ For Shrew, the two files are `ShrewESC.json` and `Shrew-Zero.json` depending on 
 
 For all other ExpressLRS hardware, you need to read through `targets.json` under the directory `ExpressLRS/src/hardware` to figure out which file should be edited.
 
-For Shrew-Lite and Shrew-Pro (which uses the term `ShrewESC` in the code), the pin assignments for the H-bridge inputs are hard-coded in the source code, not in the JSON files.
+For Shrew-Lite and Shrew-Pro (which uses the term `ShrewESC` in the code), the pin assignments for the H-bridge inputs are hard-coded in the source code, not in the JSON files. These pins are `GPIO9`, `GPIO10`, `GPIO13`, and `GPIO27`.
+
+**IMPORTANT**: If you are using pins for purposes other than PWM output, please remember to remove them from the list of PWM pins!!! You can do this through editing these JSON files. You might need to also remove it as the RX and TX pin.
 
 ## How to Set Default User Options
 
@@ -74,6 +76,24 @@ NOTE: the files are minified and gzip compressed automatically, so don't worry t
 If you need additional backend handling of HTTP requests, you will need to add handlers to the actual source code. The file you are interested in is `ExpressLRS/src/lib/WIFI/devWIFI.cpp`. The firmware uses the `ESPAsyncWebServer` library extensively. If you know how to use this library then you will have the skills to add backend functionality, it's documentation is here: https://github.com/me-no-dev/ESPAsyncWebServer
 
 If you do not want to add code to `devWIFI.cpp` itself, then write functions that can take the `server` object as a parameter and add the handlers to that object.
+
+## Adding a LED Strip
+
+Open `ShrewESC.json` or `Shrew-Zero.json`, depending on which one you want to use, look for the block of code that looks like
+
+    "led_rgb": 5,
+    "led_rgb_isgrb": true,
+    "ledidx_rgb_status": [0],
+    "ledidx_rgb_boot": [0],
+
+`led_rgb` is the pin number, change it however you need to. Remember to remove it from other functions, such as PWM.
+
+To make the LED strip 8 LEDs long, then make the block look like
+
+    "led_rgb": 5,
+    "led_rgb_isgrb": true,
+    "ledidx_rgb_status": [0, 1, 2, 3, 4, 5, 6, 7],
+    "ledidx_rgb_boot": [0, 1, 2, 3, 4, 5, 6, 7],
 
 ## Debug Logging
 
