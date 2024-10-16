@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShrewSX1280TestBenchApp", "ShrewSX1280TestBenchApp.csproj", "{B6D2E26C-AA51-415D-BB00-142188AF9448}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6D2E26C-AA51-415D-BB00-142188AF9448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D2E26C-AA51-415D-BB00-142188AF9448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D2E26C-AA51-415D-BB00-142188AF9448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D2E26C-AA51-415D-BB00-142188AF9448}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C0AD70D-BB53-44DE-B4FD-4708B66B2968}
+	EndGlobalSection
+EndGlobal
