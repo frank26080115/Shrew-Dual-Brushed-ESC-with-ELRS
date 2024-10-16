@@ -15,19 +15,25 @@ namespace ShrewSX1280TestBenchApp
 {
     public partial class Form1 : Form
     {
+        private string lastSelectedPort = null;
         public Form1()
         {
             InitializeComponent();
+            Program.LogTextBox = txtLog;
             this.Text = Application.ProductName;
             PopulateSerialPorts();
+            Program.Log("program launched");
         }
 
         private void PopulateSerialPorts()
         {
-            string oldItem = string.Empty;
             if (dropSerialPorts.Items.Count > 0)
             {
-                oldItem = (string)dropSerialPorts.SelectedItem;
+                string oldItem = (string)dropSerialPorts.SelectedItem;
+                if (string.IsNullOrWhiteSpace(oldItem) == false)
+                {
+                    lastSelectedPort = oldItem;
+                }
             }
             dropSerialPorts.Items.Clear();
 
@@ -36,9 +42,12 @@ namespace ShrewSX1280TestBenchApp
                 string portInfo = GetPortInformation(port);
                 dropSerialPorts.Items.Add(portInfo);
             }
-            if (oldItem.Length > 0)
+            if (string.IsNullOrWhiteSpace(lastSelectedPort) == false)
             {
-                SelectClosestMatch(dropSerialPorts, oldItem);
+                if (lastSelectedPort.Length > 0)
+                {
+                    SelectClosestMatch(dropSerialPorts, lastSelectedPort);
+                }
             }
             else if (dropSerialPorts.Items.Count > 0)
             {
@@ -128,9 +137,89 @@ namespace ShrewSX1280TestBenchApp
             return d[s1.Length, s2.Length];
         }
 
+        private string GetCurrentSerialPort()
+        {
+            if (dropSerialPorts.SelectedIndex < 0)
+            {
+                return null;
+            }
+            string s = (string)dropSerialPorts.SelectedItem;
+            if (string.IsNullOrEmpty(s))
+            {
+                return null;
+            }
+            if (s.Contains('-'))
+            {
+                string[] parts = s.Split('-');
+                s = parts[0];
+            }
+            s = s.Trim();
+            if (s.Length <= 0)
+            {
+                return null;
+            }
+            return s;
+        }
+
         private void btnLoadFirmware_Click(object sender, EventArgs e)
         {
+            string port = GetCurrentSerialPort();
+            if (string.IsNullOrWhiteSpace(port))
+            {
+                Program.Log("error: no serial port selected");
+                return;
+            }
+            Program.Log("loading firmware using serial port " + port);
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (dropSerialPorts.Items.Count == 0)
+            {
+                PopulateSerialPorts();
+            }
+        }
+
+        private void btnToneStart_Click(object sender, EventArgs e)
+        {
+            string port = GetCurrentSerialPort();
+            if (string.IsNullOrWhiteSpace(port))
+            {
+                Program.Log("error: no serial port selected");
+                return;
+            }
+            Program.Log("starting continuous wave test");
+            int freq = Convert.ToInt32(numFrequency.Value);
+            Program.Log($"freq: {freq} ; port: \"{port}\"");
+            btnToneStart.Enabled = false;
+            btnToneStop.Enabled = true;
+            numFrequency.Enabled = false;
+        }
+
+        private void btnToneStop_Click(object sender, EventArgs e)
+        {
+            Program.Log("stopping continuous wave test");
+            btnToneStart.Enabled = true;
+            btnToneStop.Enabled = false;
+            numFrequency.Enabled = true;
+            string port = GetCurrentSerialPort();
+            if (string.IsNullOrWhiteSpace(port))
+            {
+                Program.Log("error: no serial port selected");
+                return;
+            }
+        }
+
+        private void dropSerialPorts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (dropSerialPorts.Items.Count > 0)
+            {
+                string oldItem = (string)dropSerialPorts.SelectedItem;
+                if (string.IsNullOrWhiteSpace(oldItem) == false)
+                {
+                    lastSelectedPort = oldItem;
+                }
+            }
         }
     }
 }
