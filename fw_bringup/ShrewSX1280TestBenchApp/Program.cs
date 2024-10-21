@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -46,6 +48,18 @@ namespace ShrewSX1280TestBenchApp
         public static TextBox LogTextBox
         {
             get; set;
+        }
+
+        public static void EnsureFileFromResource(string filePath, byte[] resourceContent)
+        {
+            if (!File.Exists(filePath))
+            {
+                using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+                {
+                    Log($"unpacking file / 解压缩文件 \"{filePath}\"");
+                    fileStream.Write(resourceContent, 0, resourceContent.Length);
+                }
+            }
         }
     }
 }

@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace ShrewSX1280TestBenchApp
 {
@@ -20,10 +21,23 @@ namespace ShrewSX1280TestBenchApp
         public Form1()
         {
             InitializeComponent();
+
+            groupBox1.Text += "/串口";
+            groupBox2.Text += "/笔记";
+            groupBox3.Text += "/连续波检查";
+            btnLoadTestFirmware.Text += "\n写闪存实验固件";
+            btnLoadProdFirmware.Text += "\n写闪存产品固件";
+            btnToneStart.Text += "\n开始";
+            btnToneStop.Text += "\n停止";
+
             Program.LogTextBox = txtLog;
             this.Text = Application.ProductName;
             PopulateSerialPorts();
-            Program.Log("program launched");
+            Program.Log("program launched/软件开始");
+
+            Program.EnsureFileFromResource("esptool.exe", Resource1.esptool);
+            Program.EnsureFileFromResource("shrew_firmware_test.bin", Resource1.shrew_firmware_test);
+            Program.EnsureFileFromResource("shrew_firmware_product.bin", Resource1.shrew_firmware_product);
         }
 
         private void PopulateSerialPorts()
@@ -104,7 +118,7 @@ namespace ShrewSX1280TestBenchApp
             }
             catch (Exception ex)
             {
-                info += " - Info not available";
+                info += " - info not available";
             }
 
             return info;
@@ -175,10 +189,10 @@ namespace ShrewSX1280TestBenchApp
             string port = GetCurrentSerialPort();
             if (string.IsNullOrWhiteSpace(port))
             {
-                Program.Log("error: no serial port selected");
+                Program.Log("ERROR/错误: no serial port selected / 没有串口");
                 return;
             }
-            Program.Log("starting continuous wave test");
+            Program.Log("starting continuous wave test / 开始");
             int freq = Convert.ToInt32(numFrequency.Value);
             //Program.Log($"freq: {freq} ; port: \"{port}\"");
             //btnToneStart.Enabled = false;
@@ -189,14 +203,14 @@ namespace ShrewSX1280TestBenchApp
 
         private void btnToneStop_Click(object sender, EventArgs e)
         {
-            Program.Log("stopping continuous wave test");
+            Program.Log("stopping continuous wave test / 停止");
             //btnToneStart.Enabled = true;
             //btnToneStop.Enabled = false;
             //numFrequency.Enabled = true;
             string port = GetCurrentSerialPort();
             if (string.IsNullOrWhiteSpace(port))
             {
-                Program.Log("error: no serial port selected");
+                Program.Log("ERROR/错误: no serial port selected / 没有串口");
                 return;
             }
             SendSerialMessage("reboot");
@@ -218,7 +232,7 @@ namespace ShrewSX1280TestBenchApp
         {
             if (string.IsNullOrWhiteSpace(GetCurrentSerialPort()))
             {
-                Program.Log("ERROR: no serial port selected");
+                Program.Log("ERROR/错误: no serial port selected / 没有串口");
                 return;
             }
 
@@ -235,7 +249,7 @@ namespace ShrewSX1280TestBenchApp
             process.StartInfo.CreateNoWindow = false;
 
             // Start the process
-            Program.Log("running CMD: " + command);
+            Program.Log("running CMD / 运行命令: " + command);
             process.Start();
             process.WaitForExit();
         }
@@ -254,7 +268,7 @@ namespace ShrewSX1280TestBenchApp
         {
             if (string.IsNullOrWhiteSpace(GetCurrentSerialPort()))
             {
-                Program.Log("ERROR: no serial port selected");
+                Program.Log("ERROR/错误: no serial port selected / 没有串口");
                 return;
             }
             SerialPort port = null;
@@ -263,11 +277,11 @@ namespace ShrewSX1280TestBenchApp
                 port = new SerialPort(GetCurrentSerialPort(), 115200);
                 port.Open();
                 port.Write("\n" + message + "\n");
-                Program.Log("serial sent: " + message);
+                Program.Log("serial sent (写): " + message);
             }
             catch (Exception ex)
             {
-                Program.Log("ERROR during serial send: " + ex.Message);
+                Program.Log("ERROR/错误 during serial send: " + ex.Message);
             }
             finally
             {

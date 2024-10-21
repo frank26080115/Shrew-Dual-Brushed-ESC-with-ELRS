@@ -33,6 +33,7 @@
             this.dropSerialPorts = new System.Windows.Forms.ComboBox();
             this.btnLoadTestFirmware = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnLoadProdFirmware = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnToneStop = new System.Windows.Forms.Button();
             this.btnToneStart = new System.Windows.Forms.Button();
@@ -42,7 +43,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtLog = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnLoadProdFirmware = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -82,7 +83,7 @@
             // 
             this.btnLoadTestFirmware.Location = new System.Drawing.Point(12, 76);
             this.btnLoadTestFirmware.Name = "btnLoadTestFirmware";
-            this.btnLoadTestFirmware.Size = new System.Drawing.Size(157, 40);
+            this.btnLoadTestFirmware.Size = new System.Drawing.Size(157, 64);
             this.btnLoadTestFirmware.TabIndex = 1;
             this.btnLoadTestFirmware.Text = "Load Testing Firmware";
             this.btnLoadTestFirmware.UseVisualStyleBackColor = true;
@@ -105,18 +106,29 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainer1.Size = new System.Drawing.Size(654, 535);
-            this.splitContainer1.SplitterDistance = 267;
+            this.splitContainer1.Size = new System.Drawing.Size(654, 638);
+            this.splitContainer1.SplitterDistance = 318;
             this.splitContainer1.TabIndex = 2;
+            // 
+            // btnLoadProdFirmware
+            // 
+            this.btnLoadProdFirmware.Location = new System.Drawing.Point(175, 76);
+            this.btnLoadProdFirmware.Name = "btnLoadProdFirmware";
+            this.btnLoadProdFirmware.Size = new System.Drawing.Size(157, 64);
+            this.btnLoadProdFirmware.TabIndex = 3;
+            this.btnLoadProdFirmware.Text = "Load Product Firmware";
+            this.btnLoadProdFirmware.UseVisualStyleBackColor = true;
+            this.btnLoadProdFirmware.Click += new System.EventHandler(this.btnLoadProdFirmware_Click);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.btnToneStop);
             this.groupBox3.Controls.Add(this.btnToneStart);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.numFrequency);
-            this.groupBox3.Location = new System.Drawing.Point(12, 122);
+            this.groupBox3.Location = new System.Drawing.Point(12, 146);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(390, 74);
             this.groupBox3.TabIndex = 2;
@@ -146,7 +158,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(147, 21);
+            this.label2.Location = new System.Drawing.Point(147, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 2;
@@ -163,7 +175,7 @@
             // 
             // numFrequency
             // 
-            this.numFrequency.Location = new System.Drawing.Point(55, 19);
+            this.numFrequency.Location = new System.Drawing.Point(55, 34);
             this.numFrequency.Maximum = new decimal(new int[] {
             2500,
             0,
@@ -189,7 +201,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(654, 264);
+            this.groupBox2.Size = new System.Drawing.Size(654, 316);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Log";
@@ -205,7 +217,7 @@
             this.txtLog.Name = "txtLog";
             this.txtLog.ReadOnly = true;
             this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtLog.Size = new System.Drawing.Size(648, 245);
+            this.txtLog.Size = new System.Drawing.Size(648, 297);
             this.txtLog.TabIndex = 0;
             // 
             // timer1
@@ -214,21 +226,20 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnLoadProdFirmware
+            // label3
             // 
-            this.btnLoadProdFirmware.Location = new System.Drawing.Point(175, 76);
-            this.btnLoadProdFirmware.Name = "btnLoadProdFirmware";
-            this.btnLoadProdFirmware.Size = new System.Drawing.Size(157, 40);
-            this.btnLoadProdFirmware.TabIndex = 3;
-            this.btnLoadProdFirmware.Text = "Load Product Firmware";
-            this.btnLoadProdFirmware.UseVisualStyleBackColor = true;
-            this.btnLoadProdFirmware.Click += new System.EventHandler(this.btnLoadProdFirmware_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "射频:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 535);
+            this.ClientSize = new System.Drawing.Size(654, 638);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -262,6 +273,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numFrequency;
         private System.Windows.Forms.Button btnLoadProdFirmware;
+        private System.Windows.Forms.Label label3;
     }
 }
 
