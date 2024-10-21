@@ -16,6 +16,8 @@ When Shrew powers up again, activate Wi-Fi mode again, connect to it, and then v
 
 Make sure to save at the end.
 
+**IMPORTANT:** If you want to change a PWM pin back into a serial pin, make sure you remove it from the list of PWM pins. If you are doing some advanced hacking, you probably don't want your pin to exist in any of the lists where it's not supposed to be in.
+
 ## The Other Method
 
 Read the [development guide](Development-Guide) to see how to edit the hardware JSON files, which will become a part of a new firmware file if you rebuild the firmware. The entries in the JSON file for `serial_rx` and `serial_tx` must be blank, and then the pins `, 1, 3` must be added to the `pwm_outputs` array.
