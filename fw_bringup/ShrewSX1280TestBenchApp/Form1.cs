@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 namespace ShrewSX1280TestBenchApp
 {
@@ -161,17 +162,6 @@ namespace ShrewSX1280TestBenchApp
             return s;
         }
 
-        private void btnLoadFirmware_Click(object sender, EventArgs e)
-        {
-            string port = GetCurrentSerialPort();
-            if (string.IsNullOrWhiteSpace(port))
-            {
-                Program.Log("error: no serial port selected");
-                return;
-            }
-            Program.Log("loading firmware using serial port " + port);
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (dropSerialPorts.Items.Count == 0)
@@ -190,24 +180,26 @@ namespace ShrewSX1280TestBenchApp
             }
             Program.Log("starting continuous wave test");
             int freq = Convert.ToInt32(numFrequency.Value);
-            Program.Log($"freq: {freq} ; port: \"{port}\"");
-            btnToneStart.Enabled = false;
-            btnToneStop.Enabled = true;
-            numFrequency.Enabled = false;
+            //Program.Log($"freq: {freq} ; port: \"{port}\"");
+            //btnToneStart.Enabled = false;
+            //btnToneStop.Enabled = true;
+            //numFrequency.Enabled = false;
+            SendSerialMessage($"testtone 4 {freq}");
         }
 
         private void btnToneStop_Click(object sender, EventArgs e)
         {
             Program.Log("stopping continuous wave test");
-            btnToneStart.Enabled = true;
-            btnToneStop.Enabled = false;
-            numFrequency.Enabled = true;
+            //btnToneStart.Enabled = true;
+            //btnToneStop.Enabled = false;
+            //numFrequency.Enabled = true;
             string port = GetCurrentSerialPort();
             if (string.IsNullOrWhiteSpace(port))
             {
                 Program.Log("error: no serial port selected");
                 return;
             }
+            SendSerialMessage("reboot");
         }
 
         private void dropSerialPorts_SelectedIndexChanged(object sender, EventArgs e)
@@ -218,6 +210,76 @@ namespace ShrewSX1280TestBenchApp
                 if (string.IsNullOrWhiteSpace(oldItem) == false)
                 {
                     lastSelectedPort = oldItem;
+                }
+            }
+        }
+
+        private void LoadFirmware(string firmware)
+        {
+            if (string.IsNullOrWhiteSpace(GetCurrentSerialPort()))
+            {
+                Program.Log("ERROR: no serial port selected");
+                return;
+            }
+
+            string command = $"esptool.exe --chip esp32 --port {GetCurrentSerialPort()} --baud 921600 write_flash -z 0x1000 {firmware}";
+            //string command = "esptool.exe";
+
+            // Create a new process
+            Process process = new Process();
+            process.StartInfo.FileName = "cmd.exe";
+            process.StartInfo.Arguments = $"/K \"{command}\"";
+            process.StartInfo.UseShellExecute = false;
+            //process.StartInfo.RedirectStandardOutput = true;
+            //process.StartInfo.RedirectStandardError = true;
+            process.StartInfo.CreateNoWindow = false;
+
+            // Start the process
+            Program.Log("running CMD: " + command);
+            process.Start();
+            process.WaitForExit();
+        }
+
+        private void btnLoadTestFirmware_Click(object sender, EventArgs e)
+        {
+            LoadFirmware("shrew_firmware_test.bin");
+        }
+
+        private void btnLoadProdFirmware_Click(object sender, EventArgs e)
+        {
+            LoadFirmware("shrew_firmware_product.bin");
+        }
+
+        private void SendSerialMessage(string message)
+        {
+            if (string.IsNullOrWhiteSpace(GetCurrentSerialPort()))
+            {
+                Program.Log("ERROR: no serial port selected");
+                return;
+            }
+            SerialPort port = null;
+            try
+            {
+                port = new SerialPort(GetCurrentSerialPort(), 115200);
+                port.Open();
+                port.Write("\n" + message + "\n");
+                Program.Log("serial sent: " + message);
+            }
+            catch (Exception ex)
+            {
+                Program.Log("ERROR during serial send: " + ex.Message);
+            }
+            finally
+            {
+                if (port != null)
+                {
+                    try
+                    {
+                        port.Close();
+                    }
+                    catch
+                    {
+                    }
                 }
             }
         }
