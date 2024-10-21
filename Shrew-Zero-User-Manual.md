@@ -205,5 +205,6 @@ If you want to learn how to make super short connectors, [check out this guide](
 
 ## Appendix
 
+ * [Reassigning Pins](docs/Reassigning-Pins.md)
  * [Digital Protocols for ESC Control](docs/Digital-Protocols-for-ESC-Control.md), and why they are better
  * [No-Pulse Failsafe Mode](docs/No-Pulse-Failsafe-Mode.md), and why it's safer

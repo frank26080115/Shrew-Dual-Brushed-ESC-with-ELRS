@@ -206,5 +206,6 @@ Notice that I do not put the wires through the holes, the wires are soldered to 
 
 ## Appendix
 
+ * [Reassigning Pins](docs/Reassigning-Pins.md)
  * [Digital Protocols for ESC Control](docs/Digital-Protocols-for-ESC-Control.md), and why they are better
  * [No-Pulse Failsafe Mode](docs/No-Pulse-Failsafe-Mode.md), and why it's safer

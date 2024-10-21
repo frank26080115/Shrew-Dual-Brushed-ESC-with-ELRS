@@ -30,6 +30,8 @@ Do not use pins that are forbidden to be used on the ESP32 (there are some inter
 
 ## How to Change Pin Assignments
 
+Please also see the page on [Reassigning Pins](../Reassigning-Pins.md), which shows some of the pins that can be reassigned and also extra pins such as a +3.3V power supply pin.
+
 The majority of pin assignments are defined in a set of JSON files under the `ExpressLRS/src/hardware/RX` directory.
 
 For Shrew, the two files are `ShrewESC.json` and `Shrew-Zero.json` depending on which variation of Shrew you want to use.
