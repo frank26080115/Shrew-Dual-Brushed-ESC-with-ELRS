@@ -38,12 +38,11 @@
             this.btnToneStop = new System.Windows.Forms.Button();
             this.btnToneStart = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblFrequency = new System.Windows.Forms.Label();
             this.numFrequency = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtLog = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -107,7 +106,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
             this.splitContainer1.Size = new System.Drawing.Size(654, 638);
-            this.splitContainer1.SplitterDistance = 318;
+            this.splitContainer1.SplitterDistance = 317;
             this.splitContainer1.TabIndex = 2;
             // 
             // btnLoadProdFirmware
@@ -122,11 +121,10 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.btnToneStop);
             this.groupBox3.Controls.Add(this.btnToneStart);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.lblFrequency);
             this.groupBox3.Controls.Add(this.numFrequency);
             this.groupBox3.Location = new System.Drawing.Point(12, 146);
             this.groupBox3.Name = "groupBox3";
@@ -158,24 +156,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(147, 36);
+            this.label2.Location = new System.Drawing.Point(160, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "MHz";
             // 
-            // label1
+            // lblFrequency
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Freq:";
+            this.lblFrequency.AutoSize = true;
+            this.lblFrequency.Location = new System.Drawing.Point(6, 21);
+            this.lblFrequency.Name = "lblFrequency";
+            this.lblFrequency.Size = new System.Drawing.Size(31, 13);
+            this.lblFrequency.TabIndex = 1;
+            this.lblFrequency.Text = "Freq:";
             // 
             // numFrequency
             // 
-            this.numFrequency.Location = new System.Drawing.Point(55, 34);
+            this.numFrequency.Location = new System.Drawing.Point(68, 25);
             this.numFrequency.Maximum = new decimal(new int[] {
             2500,
             0,
@@ -201,7 +199,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(654, 316);
+            this.groupBox2.Size = new System.Drawing.Size(654, 317);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Log";
@@ -210,14 +208,14 @@
             // 
             this.txtLog.BackColor = System.Drawing.Color.Black;
             this.txtLog.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtLog.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLog.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLog.ForeColor = System.Drawing.Color.Lime;
             this.txtLog.Location = new System.Drawing.Point(3, 16);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
             this.txtLog.ReadOnly = true;
             this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtLog.Size = new System.Drawing.Size(648, 297);
+            this.txtLog.Size = new System.Drawing.Size(648, 298);
             this.txtLog.TabIndex = 0;
             // 
             // timer1
@@ -225,15 +223,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 45);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "射频:";
             // 
             // Form1
             // 
@@ -270,10 +259,9 @@
         private System.Windows.Forms.Button btnToneStop;
         private System.Windows.Forms.Button btnToneStart;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFrequency;
         private System.Windows.Forms.NumericUpDown numFrequency;
         private System.Windows.Forms.Button btnLoadProdFirmware;
-        private System.Windows.Forms.Label label3;
     }
 }
 

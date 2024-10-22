@@ -63,9 +63,39 @@ namespace ShrewSX1280TestBenchApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] boot_app0 {
+            get {
+                object obj = ResourceManager.GetObject("boot_app0", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] bootloader {
+            get {
+                object obj = ResourceManager.GetObject("bootloader", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] esptool {
             get {
                 object obj = ResourceManager.GetObject("esptool", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] partitions {
+            get {
+                object obj = ResourceManager.GetObject("partitions", resourceCulture);
                 return ((byte[])(obj));
             }
         }
