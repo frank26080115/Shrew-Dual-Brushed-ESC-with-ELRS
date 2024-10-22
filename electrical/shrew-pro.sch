@@ -4766,6 +4766,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="139.7" y1="66.04" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C31" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
+<junction x="134.62" y="66.04"/>
 </segment>
 </net>
 <net name="N$6" class="0">
