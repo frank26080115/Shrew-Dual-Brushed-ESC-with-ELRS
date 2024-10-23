@@ -26,12 +26,22 @@ namespace ShrewSX1280TestBenchApp
 
             groupBox1.Text += "/串口";
             groupBox2.Text += "/笔记";
-            groupBox3.Text += "/连续波检查";
+            tabPage1.Text += "/固件";
+            tabPage2.Text += "/测试";
             btnLoadTestFirmware.Text += "\n写闪存实验固件";
             btnLoadProdFirmware.Text += "\n写闪存产品固件";
             btnToneStart.Text += "\n开始";
             btnToneStop.Text += "\n停止";
             lblFrequency.Text += "\n射频:";
+            lblPower.Text += "\n力量:";
+            lblMode.Text += "\n模式:";
+            lblPacketRate.Text += "\n数据包率:";
+            lblPacketsPerSecond.Text += "\r\n数据包每秒";
+
+            dropTestMode.Items.Add("Continuous Wave/连续波");
+            dropTestMode.Items.Add("Random Hop/随机频道跳");
+            dropTestMode.Items.Add("Sequencial Hop/顺序频道跳");
+            dropTestMode.Items.Add("Spacing Hop (2 channels)/两个频道跳");
 
             Program.LogTextBox = txtLog;
             this.Text = Application.ProductName;
@@ -198,18 +208,22 @@ namespace ShrewSX1280TestBenchApp
                 Program.Log("ERROR/错误: no serial port selected / 没有串口");
                 return;
             }
-            Program.Log("starting continuous wave test / 开始");
+            int testMode = dropTestMode.SelectedIndex;
+            if (testMode < 0)
+            {
+                Program.Log("ERROR/错误: no mode selected / 没有选择模式");
+                return;
+            }
+            Program.Log("starting test / 开始");
             int freq = Convert.ToInt32(numFrequency.Value);
-            //Program.Log($"freq: {freq} ; port: \"{port}\"");
-            //btnToneStart.Enabled = false;
-            //btnToneStop.Enabled = true;
-            //numFrequency.Enabled = false;
-            SendSerialMessage($"testtone 4 {freq}", "testtone command success");
+            int pwr = Convert.ToInt32(numRfPower.Value);
+            int rate = Convert.ToInt32(numPacketRate.Value);
+            SendSerialMessage($"teststart 4 {pwr} {testMode} {freq} {rate}", "teststart command success");
         }
 
         private void btnToneStop_Click(object sender, EventArgs e)
         {
-            Program.Log("stopping continuous wave test / 停止");
+            Program.Log("stopping test / 停止");
             //btnToneStart.Enabled = true;
             //btnToneStop.Enabled = false;
             //numFrequency.Enabled = true;
@@ -322,6 +336,35 @@ namespace ShrewSX1280TestBenchApp
                     {
                     }
                 }
+            }
+        }
+
+        private void dropTestMode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int i = dropTestMode.SelectedIndex;
+            if (i == 1 || i == 2)
+            {
+                lblFrequency.Visible = false;
+                lblMhz.Visible = false;
+                numFrequency.Visible = false;
+            }
+            else
+            {
+                lblFrequency.Visible = true;
+                lblMhz.Visible = true;
+                numFrequency.Visible = true;
+            }
+            if (i == 0)
+            {
+                lblPacketRate.Visible = false;
+                lblPacketsPerSecond.Visible = false;
+                numPacketRate.Visible = false;
+            }
+            else
+            {
+                lblPacketRate.Visible = true;
+                lblPacketsPerSecond.Visible = true;
+                numPacketRate.Visible = true;
             }
         }
     }
