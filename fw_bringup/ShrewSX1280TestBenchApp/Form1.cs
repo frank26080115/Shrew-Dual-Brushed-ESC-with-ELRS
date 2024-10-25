@@ -42,6 +42,7 @@ namespace ShrewSX1280TestBenchApp
             dropTestMode.Items.Add("Random Hop/随机频道跳");
             dropTestMode.Items.Add("Sequencial Hop/顺序频道跳");
             dropTestMode.Items.Add("Spacing Hop (2 channels)/两个频道跳");
+            dropTestMode.SelectedIndex = 0;
 
             Program.LogTextBox = txtLog;
             this.Text = Application.ProductName;
@@ -215,18 +216,19 @@ namespace ShrewSX1280TestBenchApp
                 return;
             }
             Program.Log("starting test / 开始");
-            int freq = Convert.ToInt32(numFrequency.Value);
+            int freq = Convert.ToInt32(numFrequency.Value * 10);
             int pwr = Convert.ToInt32(numRfPower.Value);
             int rate = Convert.ToInt32(numPacketRate.Value);
-            SendSerialMessage($"teststart 4 {pwr} {testMode} {freq} {rate}", "teststart command success");
+            if (SendSerialMessage($"teststart 4 {pwr} {testMode} {freq} {rate}", "teststart command success"))
+            {
+                btnToneStart.Enabled = false;
+            }
         }
 
         private void btnToneStop_Click(object sender, EventArgs e)
         {
             Program.Log("stopping test / 停止");
-            //btnToneStart.Enabled = true;
-            //btnToneStop.Enabled = false;
-            //numFrequency.Enabled = true;
+            btnToneStart.Enabled = true;
             string port = GetCurrentSerialPort();
             if (string.IsNullOrWhiteSpace(port))
             {
@@ -284,12 +286,13 @@ namespace ShrewSX1280TestBenchApp
             LoadFirmware("shrew_firmware_product.bin");
         }
 
-        private void SendSerialMessage(string message, string confirm)
+        private bool SendSerialMessage(string message, string confirm)
         {
+            bool success = false;
             if (string.IsNullOrWhiteSpace(GetCurrentSerialPort()))
             {
                 Program.Log("ERROR/错误: no serial port selected / 没有串口");
-                return;
+                return false;
             }
             SerialPort port = null;
             try
@@ -300,7 +303,6 @@ namespace ShrewSX1280TestBenchApp
                 port.Write("\n" + message + "\n");
                 Program.Log("serial sent (写): " + message);
                 string reply = "";
-                bool success = false;
                 for (int i = 0; i < 10; i++)
                 {
                     Thread.Sleep(100);
@@ -337,6 +339,7 @@ namespace ShrewSX1280TestBenchApp
                     }
                 }
             }
+            return success;
         }
 
         private void dropTestMode_SelectedIndexChanged(object sender, EventArgs e)

@@ -171,9 +171,15 @@
             // 
             // numFrequency
             // 
+            this.numFrequency.DecimalPlaces = 1;
+            this.numFrequency.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            65536});
             this.numFrequency.Location = new System.Drawing.Point(68, 22);
             this.numFrequency.Maximum = new decimal(new int[] {
-            2500,
+            2480,
             0,
             0,
             0});
@@ -284,7 +290,7 @@
             // 
             this.numRfPower.Location = new System.Drawing.Point(68, 65);
             this.numRfPower.Maximum = new decimal(new int[] {
-            12,
+            13,
             0,
             0,
             0});
@@ -297,7 +303,7 @@
             this.numRfPower.Size = new System.Drawing.Size(86, 20);
             this.numRfPower.TabIndex = 5;
             this.numRfPower.Value = new decimal(new int[] {
-            12,
+            13,
             0,
             0,
             0});
@@ -346,11 +352,6 @@
             this.numPacketRate.Location = new System.Drawing.Point(93, 151);
             this.numPacketRate.Maximum = new decimal(new int[] {
             1000,
-            0,
-            0,
-            0});
-            this.numPacketRate.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
