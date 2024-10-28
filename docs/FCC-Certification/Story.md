@@ -105,6 +105,28 @@ I spent some time writing a GUI so that operating the EUTs is simple, it would m
 
 and it was explained to me that ideally, expose every single option, especially output power, even if you have a firmware-fixed output power. If your device fails a particular test, adjusting the output power might instantly make it pass.
 
-I had a quick video call with the lab's account manager, this was actually just to walk through the items on the invoice. The next day we also met in the lab for another pre-scan. During this meet I talked with both the account manager and a group of engineers first, we discussed frequency hopping, and it was determined that if it does do frequency hopping, then it can be reclasiffied as FHSS instead of DTS, and it would not incur any additional testing costs, which was the most important point here.
+I had a quick video call with the lab's account manager, this was actually just to walk through the items on the invoice. The next day we also met in the lab for another pre-test. During this meet I talked with both the account manager and a group of engineers first, we discussed frequency hopping, and it was determined that if it does do frequency hopping, then it can be reclasiffied as FHSS instead of DTS, and it would not incur any additional testing costs, which was the most important point here.
 
-Shrew is usually a receiver, it hops frequencies but listens only, and sends off a telemetry packet every second or so. Normally this would not really be called frequency hopping. Most of the frequency hopping tests are making sure you are not hogging any frequency for too long, and obviously this infrequent telemetry packet would not even come close to violating those rules. But... Shrew is also capable of using ELRS's Airport mode, meaning if Shrew had to send back a large packet, then it would be divided into many small packets and sent following the hop pattern. If testing the frequency hopping would've costed too much money, I probably would consider disabling the Airport mode.
+Shrew is usually acting as a receiver, it hops frequencies but listens only, and sends off a battery status telemetry packet every second or so. Normally this would not really be called frequency hopping. Most of the frequency hopping tests are making sure you are not hogging any frequency for too long, and obviously this infrequent telemetry packet would not even come close to violating those rules. But... Shrew is also capable of using ELRS's Airport mode, meaning if Shrew had to send back a large packet, then it would be divided into many small packets and sent following the hop pattern. If testing the frequency hopping would've costed too much money, I probably would consider disabling the Airport mode.
+
+With that confusion out of the way, we went to the actual lab for another pre-test. First we verified that the new SMA connectors I soldered on actually works. Their equipment measured about +15 dBm for the Wi-Fi port and +8 dBm for the LoRa port. This was about 2 dBm lower than expected after accounting for the 2 dBm loss from the cables. The engineer commented that, while this passes radiation limits, most of their other customers would find this loss unacceptable and investigate. But Shrew is a primarily a receiver and so I accepted this result. If I wanted to improve this result, it would take another PCB redesign with a proper coax connector.
+
+Then we went into an actual anechoic RF chamber for a set of EMC tests, which was super cool. The antenna inside can be remotely moved and rotated, and the table that the EUT sits on can also be rotated. Based on my own at-my-desk testing with my RF Explorer, I thought the tests would pass...
+
+NOPE
+
+![](imgs/first_emc_pretest.png)
+
+Apparently the lab is not allowed to tell me how to do any redesigns, kind of like legal advice...
+
+So now I'm actually kind of scared, those are not small fails that might be fixed by another capacitor or so. Something is seriously wrong here. Do I suck that much at PCB design?
+
+I've examined some of the RadioMaster receivers I've got on hand, particularly the ER4 again
+
+![](imgs/radiomaster_er4_emc_results.png)
+
+and I noticed that the ER4's capacitor placements were not optimal, they were arranged very neatly. This is a red flag to me, I used to be a firmware engineer for wireless headphones and the one time we trialed a ODM who laid out a PCB with "neat" component placements, that headset hissed and we rejected the contract. Capacitor placements are important enough that you can't just have the board look like a neat grid all the time.
+
+Yet the ER4 still passed the EMC test, so there's hope for me yet. Assuming that I'm not actually a dumbass, I think this result is because of how I'm powering the Shrew with my laptop, with 5V, via an unshielded cable. I guess that still makes me a dumbass? In my own defense, I was not told about having a EMC pre-test done today, nor about how to prep the power supply cable.
+
+The new plan is to use a shielded cable to power the Shrew, and also to use a very high supply voltage, 36V from 4x 9V batteries. The Shrew uses a buck converter to generate its main 3.3V bus, so if the supply voltage is higher, then there's less current moving through the long power cable, which I'm suspecting as an unintentional antenna. At this point, I do need to learn how to use the RF Explorer properly and do a before and after comparison to verify that my theory about the cable is correct.
