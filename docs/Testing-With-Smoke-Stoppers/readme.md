@@ -24,6 +24,7 @@ There is literally only one smoke stopper that I can recommend: the ViFly Short 
 
 ![](imgs/vifly.jpg)
 
+ * [Repeat Robotics Store](https://repeat-robotics.com/buy/vifly-shortsaver-v2-smart-smoke-stopper/)
  * [Amazon Link](https://www.amazon.com/VIFLY-ShortSaver-Electronic-Short-Circuit-Available/dp/B088TVVNVM/ref=sr_1_4)
  * [Get FPV Store](https://www.getfpv.com/vifly-shortsaver-2-smart-smoke-stopper-xt60-xt30.html)
  * [Pyrodrone Store](https://pyrodrone.com/products/vifly-short-saver-2)
@@ -78,7 +79,7 @@ Get one, solder a XT30 or XT60 connector on it. Bada-bing bada-boom.
 
 ![](imgs/viflywithusbc.jpg)
 
-Your USB-C power adapter is probably capable of outputting 2A of current at 12A, that's only about 24W. Those USB-C soldering irons use something like 65W. Remember that the smoke stopper is only 1A or 2A anyways, so it's perfectly fine to use a USB-C power adapter for these tests.
+Your USB-C power adapter is probably capable of outputting 2A of current at 12V, that's only about 24W. Those USB-C soldering irons use something like 65W. Remember that the smoke stopper is only 1A or 2A anyways, so it's perfectly fine to use a USB-C power adapter for these tests.
 
 IMPORTANT: The USB-C power adapter must be capable of USB-PD and capable of 30W or more. If you can run a soldering iron with it, then it should work.
 
