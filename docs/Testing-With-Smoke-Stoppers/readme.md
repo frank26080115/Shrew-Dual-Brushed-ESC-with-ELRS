@@ -78,7 +78,7 @@ Get one, solder a XT30 or XT60 connector on it. Bada-bing bada-boom.
 
 ![](imgs/viflywithusbc.jpg)
 
-Your USB-C power adapter is probably capable of outputting 2A of current at 12A, that's only about 24W. Those USB-C soldering irons use something like 65W. Remember that the smoke stopper is only 1A or 2A anyways, so it's perfectly fine to use a USB-C power adapter for these tests.
+Your USB-C power adapter is probably capable of outputting 2A of current at 12V, that's only about 24W. Those USB-C soldering irons use something like 65W. Remember that the smoke stopper is only 1A or 2A anyways, so it's perfectly fine to use a USB-C power adapter for these tests.
 
 IMPORTANT: The USB-C power adapter must be capable of USB-PD and capable of 30W or more. If you can run a soldering iron with it, then it should work.
 
