@@ -117,9 +117,11 @@ NOPE
 
 ![](imgs/first_emc_pretest.png)
 
-Apparently the lab is not allowed to tell me how to do any redesigns, kind of like legal advice...
+Apparently the lab is not allowed to give me any design advice, kind of like legal advice.
 
-So now I'm actually kind of scared, those are not small fails that might be fixed by another capacitor or so. Something is seriously wrong here. Do I suck that much at PCB design?
+Because of this snaffu, I'm actually kind of scared, those are not small fails that might be fixed by another capacitor or so. Something is seriously wrong here. Do I suck that much at PCB design?
+
+But hey apparently other companies would spend weeks in this lab troubleshooting if they to, I get to retry the pre-test before the real test as many times as I need until I can actually pass it. I'm so glad I picked a local lab.
 
 I've examined some of the RadioMaster receivers I've got on hand, particularly the ER4 again
 
@@ -129,4 +131,4 @@ and I noticed that the ER4's capacitor placements were not optimal, they were ar
 
 Yet the ER4 still passed the EMC test, so there's hope for me yet. Assuming that I'm not actually a dumbass, I think this result is because of how I'm powering the Shrew with my laptop, with 5V, via an unshielded cable. I guess that still makes me a dumbass? In my own defense, I was not told about having a EMC pre-test done today, nor about how to prep the power supply cable.
 
-The new plan is to use a shielded cable to power the Shrew, and also to use a very high supply voltage, 36V from 4x 9V batteries. The Shrew uses a buck converter to generate its main 3.3V bus, so if the supply voltage is higher, then there's less current moving through the long power cable, which I'm suspecting as an unintentional antenna. At this point, I do need to learn how to use the RF Explorer properly and do a before and after comparison to verify that my theory about the cable is correct.
+I redesigned my PCBs with three additional decoupling capacitors and re-routed about two traces to make existing capacitors more effective. I also purchased some shielded cabling, a metal box, and some 9V battery holders.
