@@ -3949,6 +3949,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C15" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
 <part name="C16" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
 <part name="GND4" library="shrew-common" deviceset="GND" device=""/>
+<part name="D2" library="shrew-common" deviceset="DIODE" device="SOD" value="C406049"/>
 </parts>
 <sheets>
 <sheet>
@@ -4012,9 +4013,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="P+6" gate="G$1" x="231.14" y="114.3"/>
 <instance part="GND9" gate="1" x="231.14" y="93.98"/>
 <instance part="C30" gate="G$1" x="88.9" y="-60.96" rot="R270"/>
-<instance part="X1" gate="G$1" x="45.72" y="180.34"/>
-<instance part="P+2" gate="1" x="38.1" y="185.42"/>
-<instance part="X2" gate="G$1" x="45.72" y="175.26"/>
+<instance part="X1" gate="G$1" x="50.8" y="180.34"/>
+<instance part="P+2" gate="1" x="35.56" y="187.96"/>
+<instance part="X2" gate="G$1" x="50.8" y="175.26"/>
 <instance part="GND1" gate="1" x="38.1" y="170.18"/>
 <instance part="C4" gate="G$1" x="190.5" y="162.56" smashed="yes">
 <attribute name="NAME" x="192.024" y="165.481" size="1.778" layer="95"/>
@@ -4063,6 +4064,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="C15" gate="G$1" x="167.64" y="104.14"/>
 <instance part="C16" gate="G$1" x="180.34" y="104.14"/>
 <instance part="GND4" gate="1" x="147.32" y="165.1"/>
+<instance part="D2" gate="G$1" x="40.64" y="180.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="38.1" y="179.8574" size="1.778" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4233,7 +4237,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="X2" gate="G$1" pin="P$1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="40.64" y1="175.26" x2="38.1" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="175.26" x2="38.1" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="175.26" x2="38.1" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4761,12 +4765,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="+24V" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="P$1"/>
-<pinref part="P+2" gate="1" pin="+24V"/>
-<wire x1="40.64" y1="180.34" x2="38.1" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="180.34" x2="38.1" y2="182.88" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="P+4" gate="1" pin="+24V"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="172.72" x2="190.5" y2="170.18" width="0.1524" layer="91"/>
@@ -4815,6 +4813,12 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="66.04" y1="175.26" x2="66.04" y2="190.5" width="0.1524" layer="91"/>
 <junction x="66.04" y="190.5"/>
 </segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="38.1" y1="180.34" x2="35.56" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="1" pin="+24V"/>
+<wire x1="35.56" y1="180.34" x2="35.56" y2="185.42" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -4837,6 +4841,13 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="104.14" y1="180.34" x2="114.3" y2="180.34" width="0.1524" layer="91"/>
 <junction x="114.3" y="180.34"/>
 <junction x="116.84" y="180.34"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="P$1"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="45.72" y1="180.34" x2="43.18" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
