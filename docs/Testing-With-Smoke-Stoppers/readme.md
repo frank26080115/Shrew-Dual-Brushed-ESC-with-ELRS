@@ -24,6 +24,7 @@ There is literally only one smoke stopper that I can recommend: the ViFly Short 
 
 ![](imgs/vifly.jpg)
 
+ * [Repeat Robotics Store](https://repeat-robotics.com/buy/vifly-shortsaver-v2-smart-smoke-stopper/)
  * [Amazon Link](https://www.amazon.com/VIFLY-ShortSaver-Electronic-Short-Circuit-Available/dp/B088TVVNVM/ref=sr_1_4)
  * [Get FPV Store](https://www.getfpv.com/vifly-shortsaver-2-smart-smoke-stopper-xt60-xt30.html)
  * [Pyrodrone Store](https://pyrodrone.com/products/vifly-short-saver-2)
