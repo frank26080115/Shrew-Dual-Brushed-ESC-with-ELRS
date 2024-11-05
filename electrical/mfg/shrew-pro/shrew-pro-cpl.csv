@@ -1,6 +1,6 @@
 Designator,Mid X,Mid Y,Layer,Rotation
-ANT1, 9.00,25.95,Bottom,270.0
-ANT2,13.40,25.95,Top,270.0
+ANT1, 9.00,25.95,Bottom,90.0
+ANT2,13.40,25.95,Top,90.0
 C1,10.60, 7.40,Bottom,270.0
 C2,12.90,11.12,Bottom,90.0
 C3, 6.00, 7.70,Bottom,90.0
