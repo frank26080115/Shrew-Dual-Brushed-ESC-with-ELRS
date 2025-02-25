@@ -86,9 +86,19 @@ Since it can communicate using serial on any pin, it means that it can reconfigu
 
 These features are not in the official ExpressLRS firmware yet (today is Feburary of 2025)! Currently Dshot only works with BLHeli32 and not AM32. The AM32 configurator is also not a part of the ExpressLRS project. I have written my own fork of the ExpressLRS firmware that makes Dshot work with AM32 and also adds the AM32 configurator. I have also added a ton of other features specifically tailored towards combat robotics.
 
-Please download the firmware here: TODO
+Please download the firmware here: [fw-bins directory, pick the latest one](fw-bins)
 
-To update, TODO
+To update, first get your XR2 into the Wi-Fi mode. Read ["How to get to the Web UI" from this guide](https://www.expresslrs.org/quick-start/webui/#how-to-get-to-the-web-ui).
+
+(Summary: once the receiver is powered ON, wait for 60 seconds until the Wi-Fi interface starts. Connect to the access point named `ExpressLRS RX`, with the password `expresslrs`. There will be no internet available through this access point and your smartphone or computer will need to be told to not disconnect from it.)
+
+![](imgs/elrsrxprep_connectwifi.jpg)
+
+Then go to the firmware update tab
+
+![](imgs/elrsrxprep_fwupdate.png)
+
+Use it to upload the file I provided. Ignore any warnings and then power cycle.
 
 WARNING: There is bad news, if you own a transmitter that does not support Gemini, then the XR2 is not able to achieve 1000 Hz packet rate, the highest rate will be 500 Hz. If you have your transmitter set to use 1000 Hz, which is the default, then the XR2 will fail to connect.
 
