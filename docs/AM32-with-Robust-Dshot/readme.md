@@ -34,7 +34,7 @@ So in the event of a singular noise spike, everything should work fine but we lo
 
 Or... so we thought...
 
-The code also does something else somewhat clever. It measures the time between the first pulse and last pulse, and if it's too long or too short, it rejects the packet.
+The code also does something else clever. It measures the time between the first pulse and last pulse, and if it's too long or too short, it rejects the packet.
 
 ![](imgs/dshot_time_measurement.png)
 
