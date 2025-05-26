@@ -38,7 +38,7 @@ The code also does something else clever. It measures the time between the first
 
 ![](imgs/dshot_time_measurement.png)
 
-This is quick, great, being quick does mean higher possible RPMs for the motor. BUT it means the reading function is extremely fast when it detects an error.
+This is quick, great, being quick does mean higher possible RPMs for the motor. BUT it means the reading function is extremely fast when it detects an error. It only does one subtraction operation, instead of all the iteration and CRC stuff.
 
 ![](imgs/dshot_faster_rejection_consequences.png)
 
