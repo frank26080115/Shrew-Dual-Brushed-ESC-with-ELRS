@@ -20,11 +20,13 @@ So what happens when there's a noise spike?
 
 ![](imgs/dshot_read_one_spike_assumed.png)
 
-The above diagram is how the main developer of AM32 told me what would happen. 
+The above diagram is how the main developer of AM32 told me what would happen.
 
-Notice how the time it takes to "read" is longer than the time for one pulse? The reading function does take some time to execute, it has to calculate if each pulse is a 1 or 0, and then do a CRC calculation.
+Notice how the time it takes to "read" is longer than the time for one pulse?
 
 ![](imgs/read_time_delay.png)
+
+The reading function does take some time to execute, it has to calculate if each pulse is a 1 or 0, and then do a CRC calculation.
 
 ![](imgs/dshot_read_still_normal.png)
 
