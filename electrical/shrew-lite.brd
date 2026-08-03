@@ -899,10 +899,13 @@ chip</description>
 <attribute name="COPYRIGHT" value="Copyright (C) 2024 Ultra Librarian. All rights reserved." x="9.3" y="18" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="SX1280IMLTRT" x="9.3" y="18" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="7.5728" y="17.365" size="0.8128" layer="27" font="vector" ratio="6" rot="SR0"/>
+<attribute name="JLC_ROTATION" value="-90" x="9.3" y="18" size="1.778" layer="27" display="off"/>
 </element>
 <element name="Y2" library="shrew-common" package="OSC_TG2016SMN_50.0000M-ECGNNMB" value="52MHz TCXO" x="5.3" y="15.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.75" y="15.21" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="7.05" y="14.71" size="0.8128" layer="27" font="vector" rot="R90" align="top-left"/>
+<attribute name="JLC_ROTATION" value="-90" x="5.3" y="15.9" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC" value="C22434896" x="5.3" y="15.9" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U1" library="shrew-core" package="PQFN50P700X700X104-49N" value="ESP32-PICO-D4" x="8.8" y="16" smashed="yes" rot="MR270">
 <attribute name="PRICE" value="None" x="8.8" y="16" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -915,13 +918,18 @@ chip</description>
 <attribute name="MP" value="ESP32-PICO-D4" x="8.8" y="16" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="NAME" x="4.8" y="19.5" size="1.27" layer="26" ratio="10" rot="MR270"/>
 <attribute name="VALUE" x="12.8" y="19.5" size="1.27" layer="28" ratio="10" rot="MR270" align="top-left"/>
+<attribute name="JLC_ROTATION" value="-90" x="8.8" y="16" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R1" library="shrew-common" package="0402-REV" value="10K" x="11.3" y="20.7" smashed="yes" rot="MR180">
 <attribute name="NAME" x="10.411" y="20.0015" size="0.4064" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="10.2205" y="21.843" size="0.4064" layer="28" rot="MR180"/>
+<attribute name="LCSC" value="C25744" x="11.3" y="20.7" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="ANT1" library="shrew-common" package="ANTENNA-CHIP2" value="74889302450" x="7.7" y="21.95" smashed="yes" rot="MR270"/>
-<element name="Y1" library="shrew-core" package="FIL_2450FM07D0034T" value="2450FM07D0034T" x="9.05" y="21.6" smashed="yes" rot="R90">
+<element name="ANT1" library="shrew-common" package="ANTENNA-CHIP2" value="2.4G / 1206" x="7.7" y="21.95" smashed="yes" rot="MR270">
+<attribute name="JLC_ROTATION" value="180" x="7.7" y="21.95" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="LCSC" value="C127620" x="7.7" y="21.95" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="Y1" library="shrew-core" package="FIL_2450FM07D0034T" value="2450FM07D0034001T" x="9.05" y="21.6" smashed="yes" rot="R90">
 <attribute name="PRICE" value="None" x="9.05" y="21.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value=" 2.4GHz ~ 2.5GHz Frequency - RF Filter (Radio Frequency) 100MHz Bandwidth 0.75dB 0402 (1005 Metric), 4 PC Pad " x="9.05" y="21.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Johanson Technology Inc." x="9.05" y="21.6" size="1.778" layer="27" rot="R90" display="off"/>
@@ -931,15 +939,20 @@ chip</description>
 <attribute name="PACKAGE" value="0402 Johanson Technology Inc." x="9.05" y="21.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MP" value="2450FM07D0034T" x="9.05" y="21.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="10.05" y="20.6" size="0.8128" layer="27" font="vector" rot="R90" align="top-left"/>
+<attribute name="LCSC" value="C6054595" x="9.05" y="21.6" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="ANT2" library="shrew-common" package="ANTENNA-CHIP2" value="74889302450" x="12.1" y="21.95" smashed="yes" rot="R90"/>
+<element name="ANT2" library="shrew-common" package="ANTENNA-CHIP2" value="2.4G / 1206" x="12.1" y="21.95" smashed="yes" rot="R90">
+<attribute name="LCSC" value="C127620" x="12.1" y="21.95" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="C20" library="shrew-common" package="0402-REV" value="1n" x="5.3" y="17.75" smashed="yes">
 <attribute name="NAME" x="4.711" y="18.3485" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="4.2205" y="16.607" size="0.8128" layer="27" font="vector"/>
+<attribute name="LCSC" value="C1523" x="5.3" y="17.75" size="1.778" layer="27" display="off"/>
 </element>
 <element name="L2" library="shrew-common" package="0805" value="15u" x="12.7" y="16" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.1745" y="17.638" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="14.097" y="14.984" size="0.8128" layer="27" font="vector" rot="R90"/>
+<attribute name="LCSC" value="C6364731" x="12.7" y="16" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C24" library="shrew-common" package="0402-REV" value="470n" x="13.5" y="13.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="14.389" y="13.0015" size="1.016" layer="25" font="vector" rot="R180"/>
@@ -947,29 +960,36 @@ chip</description>
 <element name="C19" library="shrew-common" package="0402-REV" value="10n" x="6" y="20.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="5.511" y="21.7985" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="4.857" y="21.6795" size="0.8128" layer="27" font="vector" rot="R270"/>
+<attribute name="LCSC" value="C15195" x="6" y="20.6" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C18" library="shrew-common" package="0402-REV" value="10n" x="4.7" y="20.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="4.989" y="22.8015" size="1.016" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="3.557" y="21.6795" size="0.8128" layer="27" font="vector" rot="R270"/>
+<attribute name="LCSC" value="C15195" x="4.7" y="20.6" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C23" library="shrew-common" package="0402-REV" value="100n" x="14.6" y="16.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="15.1015" y="17.411" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="15.743" y="15.1205" size="0.8128" layer="27" font="vector" rot="R90"/>
+<attribute name="LCSC" value="C1581" x="14.6" y="16.2" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C22" library="shrew-common" package="0402-REV" value="100n" x="10.5" y="14.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="11.289" y="14.0015" size="1.016" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="11.5795" y="15.743" size="0.8128" layer="27" font="vector" rot="R180"/>
+<attribute name="LCSC" value="C1581" x="10.5" y="14.6" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C21" library="shrew-common" package="0402-REV" value="100n" x="5.3" y="14" smashed="yes" rot="R180">
 <attribute name="NAME" x="4.389" y="14.4015" size="1.016" layer="25" font="vector" rot="R180"/>
+<attribute name="LCSC" value="C1581" x="5.3" y="14" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C12" library="shrew-common" package="0402-REV" value="100n" x="7.9" y="20.2" smashed="yes" rot="MR180">
 <attribute name="NAME" x="7.011" y="19.5015" size="0.4064" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="6.8205" y="21.343" size="0.4064" layer="28" rot="MR180"/>
+<attribute name="LCSC" value="C1581" x="7.9" y="20.2" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C13" library="shrew-common" package="0402-REV" value="100n" x="12.98" y="16.18" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.6785" y="15.291" size="0.4064" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="11.837" y="15.1005" size="0.4064" layer="28" rot="MR90"/>
+<attribute name="LCSC" value="C1581" x="12.98" y="16.18" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="LED1" library="shrew-core" package="SK6812-EC20" value="SK6812-EC20" x="4" y="11.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.2" y="10" size="1.016" layer="25" font="vector"/>
@@ -977,10 +997,12 @@ chip</description>
 <element name="R4" library="shrew-common" package="0402-REV" value="10K" x="13.95" y="10.91" smashed="yes" rot="MR0">
 <attribute name="NAME" x="14.839" y="11.6085" size="0.4064" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="15.0295" y="9.767" size="0.4064" layer="28" rot="MR0"/>
+<attribute name="LCSC" value="C25744" x="13.95" y="10.91" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R3" library="shrew-common" package="0402-REV" value="10K" x="12" y="10.9" smashed="yes" rot="MR0">
 <attribute name="NAME" x="12.889" y="11.5985" size="0.4064" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="13.0795" y="9.757" size="0.4064" layer="28" rot="MR0"/>
+<attribute name="LCSC" value="C25744" x="12" y="10.9" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C17" library="shrew-common" package="0402-REV" value="470n" x="13.95" y="12.05" smashed="yes" rot="MR180">
 <attribute name="NAME" x="13.061" y="11.3515" size="0.4064" layer="26" rot="MR180"/>
@@ -989,47 +1011,68 @@ chip</description>
 <element name="C11" library="shrew-common" package="0402-REV" value="100n" x="5.2" y="20.7" smashed="yes" rot="MR90">
 <attribute name="NAME" x="5.8985" y="19.811" size="0.4064" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="4.057" y="19.6205" size="0.4064" layer="28" rot="MR90"/>
+<attribute name="LCSC" value="C1581" x="5.2" y="20.7" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="C15" library="shrew-common" package="0402-REV" value="470n" x="14.8" y="20" smashed="yes" rot="MR90">
 <attribute name="NAME" x="15.4985" y="19.111" size="0.4064" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="13.657" y="18.9205" size="0.4064" layer="28" rot="MR90"/>
+<attribute name="LCSC" value="C7393859" x="14.8" y="20" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="JP2" library="shrew-common" package="1X05" value="" x="1.5" y="10.8" smashed="yes" rot="R90">
 <attribute name="VALUE" x="4.675" y="9.53" size="1.27" layer="27" rot="R90"/>
+<attribute name="DNP" value="1" x="1.5" y="10.8" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C14" library="shrew-common" package="0402-REV" value="10u" x="9.5" y="12.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="7.738" y="13.5255" size="1.016" layer="25" font="vector"/>
+<attribute name="LCSC" value="C15525" x="9.5" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C16" library="shrew-common" package="0402-CAP" value="DNP" x="13.6" y="13.75" smashed="yes" rot="MR0">
 <attribute name="NAME" x="14.489" y="14.4485" size="0.4064" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="14.6795" y="12.607" size="0.4064" layer="28" rot="MR0"/>
+<attribute name="DNP" value="1" x="13.6" y="13.75" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="U3" library="shrew-core" package="WSON8_DRV8231_TEX" value="DRV8231DSGR" x="4.25" y="5.4" smashed="yes" rot="R270">
 <attribute name="MFR_NAME" value="Texas Instruments" x="4.25" y="5.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="COPYRIGHT" value="Copyright (C) 2024 Ultra Librarian. All rights reserved." x="4.25" y="5.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="DRV8231DSGR" x="4.25" y="5.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="2.485" y="5.5234" size="1.016" layer="27" font="vector" ratio="6" rot="SR90"/>
+<attribute name="JLC_ROTATION" value="90" x="4.25" y="5.4" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U4" library="shrew-core" package="WSON8_DRV8231_TEX" value="DRV8231DSGR" x="12.04" y="5.4" smashed="yes" rot="R270">
 <attribute name="MFR_NAME" value="Texas Instruments" x="12.04" y="5.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="COPYRIGHT" value="Copyright (C) 2024 Ultra Librarian. All rights reserved." x="12.04" y="5.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="DRV8231DSGR" x="12.04" y="5.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="11.405" y="8.6766" size="1.016" layer="27" font="vector" ratio="6" rot="SR270"/>
+<attribute name="JLC_ROTATION" value="90" x="12.04" y="5.4" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="X7" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="2.4" y="1.6" smashed="yes"/>
-<element name="X5" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="6.1" y="1.6" smashed="yes"/>
-<element name="X8" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="10.2" y="1.6" smashed="yes"/>
-<element name="X6" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="13.9" y="1.6" smashed="yes"/>
+<element name="X7" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="2.4" y="1.6" smashed="yes">
+<attribute name="DNP" value="1" x="2.4" y="1.6" size="1.778" layer="27" display="off"/>
+</element>
+<element name="X5" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="6.1" y="1.6" smashed="yes">
+<attribute name="DNP" value="1" x="6.1" y="1.6" size="1.778" layer="27" display="off"/>
+</element>
+<element name="X8" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="10.2" y="1.6" smashed="yes">
+<attribute name="DNP" value="1" x="10.2" y="1.6" size="1.778" layer="27" display="off"/>
+</element>
+<element name="X6" library="shrew-core" package="PAD-1X-BIG" value="PIN-1X-BIG" x="13.9" y="1.6" smashed="yes">
+<attribute name="DNP" value="1" x="13.9" y="1.6" size="1.778" layer="27" display="off"/>
+</element>
 <element name="C25" library="shrew-common" package="0402-CAP" value="100n" x="4.5" y="3.39" smashed="yes" rot="R180">
 <attribute name="NAME" x="5.711" y="3.1085" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="5.5795" y="4.533" size="0.4064" layer="27" rot="R180"/>
+<attribute name="LCSC" value="C1581" x="4.5" y="3.39" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C26" library="shrew-common" package="0402-CAP" value="100n" x="12.3" y="3.39" smashed="yes" rot="R180">
 <attribute name="NAME" x="13.511" y="3.2085" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="13.3795" y="4.533" size="0.4064" layer="27" rot="R180"/>
+<attribute name="LCSC" value="C1581" x="12.3" y="3.39" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="X2" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="1.16" y="5.06" smashed="yes"/>
-<element name="X3" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="14.39" y="5.06" smashed="yes"/>
+<element name="X2" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="1.16" y="5.06" smashed="yes">
+<attribute name="DNP" value="1" x="1.16" y="5.06" size="1.778" layer="27" display="off"/>
+</element>
+<element name="X3" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="14.39" y="5.06" smashed="yes">
+<attribute name="DNP" value="1" x="14.39" y="5.06" size="1.778" layer="27" display="off"/>
+</element>
 <element name="C7" library="shrew-common" package="0805" value="10u" x="6.4" y="6" smashed="yes" rot="R90">
 <attribute name="NAME" x="6.8745" y="7.538" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="7.797" y="4.984" size="0.4064" layer="27" rot="R90"/>
@@ -1049,23 +1092,42 @@ chip</description>
 <element name="C2" library="shrew-common" package="0402-REV" value="10u" x="13.4" y="8.7" smashed="yes">
 <attribute name="NAME" x="12.038" y="9.6255" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="12.384" y="7.303" size="0.4064" layer="27"/>
+<attribute name="LCSC" value="C15525" x="13.4" y="8.7" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R2" library="shrew-common" package="0402-REV" value="68K" x="10.01" y="10.9" smashed="yes" rot="MR0">
 <attribute name="NAME" x="10.899" y="11.5985" size="1.016" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="11.0895" y="9.757" size="0.4064" layer="28" rot="MR0"/>
+<attribute name="LCSC" value="C2909379" x="10.01" y="10.9" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="X1" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="1.16" y="6.8"/>
-<element name="X4" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="14.39" y="6.8"/>
+<element name="X1" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="1.16" y="6.8">
+<attribute name="DNP" value="1" x="1.16" y="6.8" size="1.778" layer="27" display="off"/>
+</element>
+<element name="X4" library="shrew-core" package="PAD-1X-MED" value="PIN-1X-MED" x="14.39" y="6.8">
+<attribute name="DNP" value="1" x="14.39" y="6.8" size="1.778" layer="27" display="off"/>
+</element>
 <element name="IC1" library="shrew-core" package="SOT95P280X110-6N" value="AP63203WU" x="8" y="7.8" rot="MR0">
 <attribute name="PACKAGE" value="SOT-23-THN-6 Texas Instruments" x="8" y="7.8" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="JLC_ROTATION" value="180" x="8" y="7.8" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="L1" library="shrew-common" package="0805" value="10uH" x="4.3" y="7.5" rot="MR270"/>
-<element name="C1" library="shrew-common" package="0402-REV" value="100n" x="5.5" y="8.3" rot="MR270"/>
-<element name="C3" library="shrew-common" package="0402-REV" value="10u" x="13.4" y="9.9"/>
-<element name="JP1" library="shrew-common" package="1X01-1.0MM-TP" value="" x="12.5" y="9" rot="MR0"/>
-<element name="C4" library="shrew-common" package="0402-REV" value="10u" x="13.4" y="11.1"/>
-<element name="C5" library="shrew-common" package="0402-REV" value="10u" x="9.5" y="11.6" rot="R180"/>
-<element name="C6" library="shrew-common" package="0402-REV" value="10u" x="10.5" y="10.5"/>
+<element name="C1" library="shrew-common" package="0402-REV" value="100n" x="5.5" y="8.3" rot="MR270">
+<attribute name="LCSC" value="C1581" x="5.5" y="8.3" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="C3" library="shrew-common" package="0402-REV" value="10u" x="13.4" y="9.9">
+<attribute name="LCSC" value="C15525" x="13.4" y="9.9" size="1.778" layer="27" display="off"/>
+</element>
+<element name="JP1" library="shrew-common" package="1X01-1.0MM-TP" value="" x="12.5" y="9" rot="MR0">
+<attribute name="DNP" value="1" x="12.5" y="9" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="C4" library="shrew-common" package="0402-REV" value="10u" x="13.4" y="11.1">
+<attribute name="LCSC" value="C15525" x="13.4" y="11.1" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C5" library="shrew-common" package="0402-REV" value="10u" x="9.5" y="11.6" rot="R180">
+<attribute name="LCSC" value="C15525" x="9.5" y="11.6" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C6" library="shrew-common" package="0402-REV" value="10u" x="10.5" y="10.5">
+<attribute name="LCSC" value="C15525" x="10.5" y="10.5" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">

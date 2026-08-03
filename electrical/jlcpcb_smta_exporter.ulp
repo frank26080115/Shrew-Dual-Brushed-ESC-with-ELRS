@@ -30,8 +30,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 int layer_id_map[] = { 1, 16 };
 UL_ELEMENT selected_elements[];
 
+string strip_non_ascii(string s)
+{
+    int i, n;
+    string t;
+
+    for (i = 0; i < strlen(s); i++) {
+        if (s[i] >= 0 && s[i] < 128) {
+            t[n++] = s[i];
+        }
+    }
+
+    return t;
+}
+
 string replace_commas(string s)
 {
+    s = strip_non_ascii(s);
+
     while (strstr(s, ",") >= 0) {  // convert commas to spaces
         string substitution_string = " ";
         sprintf(s, "%s%s%s", strsub(s, 0, strstr(s, ",")), substitution_string, strsub(s, strstr(s, ",")+1));
@@ -84,7 +100,7 @@ string strip(string s)
 string get_lcsc_part(UL_ELEMENT E)
 {
     E.attributes(A) {
-        if (A.name == "LCSC_PART" || A.name == "LCSC") {
+        if (A.name == "LCSC_PART" || A.name == "LCSC" || A.name == "JLCPARTNUM") {
             return replace_commas(A.value);
         }
     }
@@ -93,14 +109,33 @@ string get_lcsc_part(UL_ELEMENT E)
 
 int is_dnp(UL_ELEMENT E)
 {
+    int has_jlc_partnum = 0;
+    int has_dnp = 0;
+
     E.attributes(A) {
-        if (A.name == "DNP") {
-            return 1;
+        if (A.name == "JLCPARTNUM") {
+            has_jlc_partnum = 1;
         }
-        if (A.value == "DNP") {
-            return 1;
+
+        if (A.name == "JLC-DNP") {
+            has_dnp = 1;
+        }
+
+        if (A.name == "DNP") {
+            has_dnp = 1;
         }
     }
+
+    if (has_jlc_partnum) {
+        //return 0;
+    }
+    if (has_dnp) {
+        return 1;
+    }
+    if (strstr(E.name, "SJ") == 0) {
+        return 1;
+    }
+
     return 0;
 }
 
@@ -127,8 +162,8 @@ if (board) board(B) {
     string base_path = (output_dir + "/" + 
         strsub(filename(B.name), 0, strlen(filename(B.name)) - 4));
 
-    string cpl_filename = base_path + "_cpl.csv";
-    string bom_filename = base_path + "_bom.csv";
+    string cpl_filename = base_path + "-cpl.csv";
+    string bom_filename = base_path + "-bom-jlc.csv";
 
     output(cpl_filename) {
         printf("Designator,Mid X,Mid Y,Layer,Rotation\n");
@@ -150,7 +185,7 @@ if (board) board(B) {
             }
 
             printf("%s,%5.2f,%5.2f,%s,%.1f\n",
-                E.name, u2mm(E.x), u2mm(E.y),
+                replace_commas(E.name), u2mm(E.x), u2mm(E.y),
                 layer,
                 angle_mod(angle));
         }

@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="14" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="14" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -3704,78 +3704,146 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </class>
 </classes>
 <parts>
-<part name="U2" library="shrew-core" deviceset="SX1280IMLTRT" device=""/>
+<part name="U2" library="shrew-core" deviceset="SX1280IMLTRT" device="">
+<attribute name="JLC_ROTATION" value="-90"/>
+</part>
 <part name="GND13" library="shrew-common" deviceset="GND" device=""/>
 <part name="GND17" library="shrew-common" deviceset="GND" device=""/>
 <part name="GND20" library="shrew-common" deviceset="GND" device=""/>
 <part name="GND16" library="shrew-common" deviceset="GND" device=""/>
-<part name="Y2" library="shrew-common" deviceset="OSCILLATOR" device="-TG2016SMN" value="52MHz TCXO"/>
-<part name="U1" library="shrew-core" deviceset="ESP32-PICO-D4" device=""/>
+<part name="Y2" library="shrew-common" deviceset="OSCILLATOR" device="-TG2016SMN" value="52MHz TCXO">
+<attribute name="JLC_ROTATION" value="-90"/>
+<attribute name="LCSC" value="C22434896"/>
+</part>
+<part name="U1" library="shrew-core" deviceset="ESP32-PICO-D4" device="">
+<attribute name="JLC_ROTATION" value="-90"/>
+</part>
 <part name="P+6" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="GND8" library="shrew-common" deviceset="GND" device=""/>
 <part name="GND9" library="shrew-common" deviceset="GND" device=""/>
-<part name="R1" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="10K"/>
+<part name="R1" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="10K">
+<attribute name="LCSC" value="C25744"/>
+</part>
 <part name="P+8" library="shrew-common" deviceset="3.3V" device=""/>
-<part name="ANT1" library="shrew-common" deviceset="ANTENNA2" device="SMD" value="74889302450"/>
-<part name="Y1" library="shrew-core" deviceset="2450FM07D0034T" device=""/>
-<part name="ANT2" library="shrew-common" deviceset="ANTENNA2" device="SMD" value="74889302450"/>
-<part name="C20" library="shrew-common" deviceset="CAP" device="0402-REV" value="1n"/>
+<part name="ANT1" library="shrew-common" deviceset="ANTENNA2" device="SMD" value="2.4G / 1206">
+<attribute name="JLC_ROTATION" value="180"/>
+<attribute name="LCSC" value="C127620"/>
+</part>
+<part name="Y1" library="shrew-core" deviceset="2450FM07D0034T" device="" value="2450FM07D0034001T">
+<attribute name="LCSC" value="C6054595"/>
+</part>
+<part name="ANT2" library="shrew-common" deviceset="ANTENNA2" device="SMD" value="2.4G / 1206">
+<attribute name="LCSC" value="C127620"/>
+</part>
+<part name="C20" library="shrew-common" deviceset="CAP" device="0402-REV" value="1n">
+<attribute name="LCSC" value="C1523"/>
+</part>
 <part name="GND18" library="shrew-common" deviceset="GND" device=""/>
 <part name="P+11" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="P+13" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="P+12" library="shrew-common" deviceset="3.3V" device=""/>
-<part name="L2" library="shrew-common" deviceset="INDUCTOR" device="0805" value="15u"/>
+<part name="L2" library="shrew-common" deviceset="INDUCTOR" device="0805" value="15u">
+<attribute name="LCSC" value="C6364731"/>
+</part>
 <part name="C24" library="shrew-common" deviceset="CAP" device="0402-REV" value="470n"/>
 <part name="GND23" library="shrew-common" deviceset="GND" device=""/>
-<part name="C19" library="shrew-common" deviceset="CAP" device="0402-REV" value="10n"/>
+<part name="C19" library="shrew-common" deviceset="CAP" device="0402-REV" value="10n">
+<attribute name="LCSC" value="C15195"/>
+</part>
 <part name="GND15" library="shrew-common" deviceset="GND" device=""/>
-<part name="C18" library="shrew-common" deviceset="CAP" device="0402-REV" value="10n"/>
+<part name="C18" library="shrew-common" deviceset="CAP" device="0402-REV" value="10n">
+<attribute name="LCSC" value="C15195"/>
+</part>
 <part name="GND14" library="shrew-common" deviceset="GND" device=""/>
-<part name="C23" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
-<part name="C22" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
+<part name="C23" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n">
+<attribute name="LCSC" value="C1581"/>
+</part>
+<part name="C22" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n">
+<attribute name="LCSC" value="C1581"/>
+</part>
 <part name="GND21" library="shrew-common" deviceset="GND" device=""/>
 <part name="GND22" library="shrew-common" deviceset="GND" device=""/>
-<part name="C21" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
+<part name="C21" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n">
+<attribute name="LCSC" value="C1581"/>
+</part>
 <part name="GND19" library="shrew-common" deviceset="GND" device=""/>
-<part name="C12" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
-<part name="C13" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
+<part name="C12" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n">
+<attribute name="LCSC" value="C1581"/>
+</part>
+<part name="C13" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n">
+<attribute name="LCSC" value="C1581"/>
+</part>
 <part name="GND5" library="shrew-common" deviceset="GND" device=""/>
 <part name="LED1" library="shrew-core" deviceset="SK6812" device="-EC20"/>
 <part name="P+10" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="GND11" library="shrew-common" deviceset="GND" device=""/>
-<part name="R4" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="10K"/>
-<part name="R3" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="10K"/>
+<part name="R4" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="10K">
+<attribute name="LCSC" value="C25744"/>
+</part>
+<part name="R3" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="10K">
+<attribute name="LCSC" value="C25744"/>
+</part>
 <part name="GND12" library="shrew-common" deviceset="GND" device=""/>
 <part name="C17" library="shrew-common" deviceset="CAP" device="0402-REV" value="470n"/>
-<part name="C11" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
-<part name="C15" library="shrew-common" deviceset="CAP" device="0402-REV" value="470n"/>
+<part name="C11" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n">
+<attribute name="LCSC" value="C1581"/>
+</part>
+<part name="C15" library="shrew-common" deviceset="CAP" device="0402-REV" value="470n">
+<attribute name="LCSC" value="C7393859"/>
+</part>
 <part name="GND7" library="shrew-common" deviceset="GND" device=""/>
-<part name="JP2" library="shrew-common" deviceset="M05" device="PTH"/>
+<part name="JP2" library="shrew-common" deviceset="M05" device="PTH">
+<attribute name="DNP" value="1"/>
+</part>
 <part name="GND24" library="shrew-common" deviceset="GND" device=""/>
 <part name="GND10" library="shrew-common" deviceset="GND" device=""/>
-<part name="C14" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u"/>
+<part name="C14" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u">
+<attribute name="LCSC" value="C15525"/>
+</part>
 <part name="P+7" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="GND6" library="shrew-common" deviceset="GND" device=""/>
-<part name="C16" library="shrew-common" deviceset="CAP" device="0402-CAP" value="DNP"/>
-<part name="U3" library="shrew-core" deviceset="DRV8231DSGR" device=""/>
-<part name="U4" library="shrew-core" deviceset="DRV8231DSGR" device=""/>
+<part name="C16" library="shrew-common" deviceset="CAP" device="0402-CAP" value="DNP">
+<attribute name="DNP" value="1"/>
+</part>
+<part name="U3" library="shrew-core" deviceset="DRV8231DSGR" device="">
+<attribute name="JLC_ROTATION" value="90"/>
+</part>
+<part name="U4" library="shrew-core" deviceset="DRV8231DSGR" device="">
+<attribute name="JLC_ROTATION" value="90"/>
+</part>
 <part name="P+17" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="P+16" library="shrew-common" deviceset="3.3V" device=""/>
 <part name="P+14" library="shrew-common" deviceset="+24V" device=""/>
 <part name="P+15" library="shrew-common" deviceset="+24V" device=""/>
 <part name="GND26" library="shrew-common" deviceset="GND" device=""/>
 <part name="GND25" library="shrew-common" deviceset="GND" device=""/>
-<part name="X7" library="shrew-core" deviceset="PIN-1X" device="-BIG"/>
-<part name="X5" library="shrew-core" deviceset="PIN-1X" device="-BIG"/>
-<part name="X8" library="shrew-core" deviceset="PIN-1X" device="-BIG"/>
-<part name="X6" library="shrew-core" deviceset="PIN-1X" device="-BIG"/>
-<part name="C25" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n"/>
-<part name="C26" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n"/>
-<part name="X2" library="shrew-core" deviceset="PIN-1X" device="-MED" value="PIN-1X-MED"/>
+<part name="X7" library="shrew-core" deviceset="PIN-1X" device="-BIG">
+<attribute name="DNP" value="1"/>
+</part>
+<part name="X5" library="shrew-core" deviceset="PIN-1X" device="-BIG">
+<attribute name="DNP" value="1"/>
+</part>
+<part name="X8" library="shrew-core" deviceset="PIN-1X" device="-BIG">
+<attribute name="DNP" value="1"/>
+</part>
+<part name="X6" library="shrew-core" deviceset="PIN-1X" device="-BIG">
+<attribute name="DNP" value="1"/>
+</part>
+<part name="C25" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n">
+<attribute name="LCSC" value="C1581"/>
+</part>
+<part name="C26" library="shrew-common" deviceset="CAP" device="0402-CAP" value="100n">
+<attribute name="LCSC" value="C1581"/>
+</part>
+<part name="X2" library="shrew-core" deviceset="PIN-1X" device="-MED" value="PIN-1X-MED">
+<attribute name="DNP" value="1"/>
+</part>
 <part name="P+2" library="shrew-common" deviceset="+24V" device=""/>
 <part name="P+1" library="shrew-common" deviceset="+24V" device=""/>
 <part name="P+3" library="shrew-common" deviceset="3.3V" device=""/>
-<part name="X3" library="shrew-core" deviceset="PIN-1X" device="-MED" value="PIN-1X-MED"/>
+<part name="X3" library="shrew-core" deviceset="PIN-1X" device="-MED" value="PIN-1X-MED">
+<attribute name="DNP" value="1"/>
+</part>
 <part name="GND3" library="shrew-common" deviceset="GND" device=""/>
 <part name="C7" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
 <part name="C8" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
@@ -3783,22 +3851,44 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="P+4" library="shrew-common" deviceset="+24V" device=""/>
 <part name="GND4" library="shrew-common" deviceset="GND" device=""/>
 <part name="C10" library="shrew-common" deviceset="CAP" device="0805" value="10u"/>
-<part name="C2" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u"/>
+<part name="C2" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u">
+<attribute name="LCSC" value="C15525"/>
+</part>
 <part name="GND2" library="shrew-common" deviceset="GND" device=""/>
-<part name="R2" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="68K"/>
-<part name="X1" library="shrew-core" deviceset="PIN-1X" device="-MED" value="PIN-1X-MED"/>
-<part name="X4" library="shrew-core" deviceset="PIN-1X" device="-MED" value="PIN-1X-MED"/>
+<part name="R2" library="shrew-common" deviceset="RESISTOR" device="0402-REV" value="68K">
+<attribute name="LCSC" value="C2909379"/>
+</part>
+<part name="X1" library="shrew-core" deviceset="PIN-1X" device="-MED" value="PIN-1X-MED">
+<attribute name="DNP" value="1"/>
+</part>
+<part name="X4" library="shrew-core" deviceset="PIN-1X" device="-MED" value="PIN-1X-MED">
+<attribute name="DNP" value="1"/>
+</part>
 <part name="P+9" library="shrew-common" deviceset="+24V" device=""/>
-<part name="IC1" library="shrew-core" deviceset="AP63203WU" device=""/>
+<part name="IC1" library="shrew-core" deviceset="AP63203WU" device="">
+<attribute name="JLC_ROTATION" value="180"/>
+</part>
 <part name="GND1" library="shrew-common" deviceset="GND" device=""/>
 <part name="L1" library="shrew-common" deviceset="INDUCTOR" device="0805" value="10uH"/>
-<part name="C1" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n"/>
-<part name="C3" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u"/>
-<part name="JP1" library="shrew-common" deviceset="M01" device="-1.0MM-TP" value=""/>
+<part name="C1" library="shrew-common" deviceset="CAP" device="0402-REV" value="100n">
+<attribute name="LCSC" value="C1581"/>
+</part>
+<part name="C3" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u">
+<attribute name="LCSC" value="C15525"/>
+</part>
+<part name="JP1" library="shrew-common" deviceset="M01" device="-1.0MM-TP" value="">
+<attribute name="DNP" value="1"/>
+</part>
 <part name="P+5" library="shrew-common" deviceset="3.3V" device=""/>
-<part name="C4" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u"/>
-<part name="C5" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u"/>
-<part name="C6" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u"/>
+<part name="C4" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u">
+<attribute name="LCSC" value="C15525"/>
+</part>
+<part name="C5" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u">
+<attribute name="LCSC" value="C15525"/>
+</part>
+<part name="C6" library="shrew-common" deviceset="CAP" device="0402-REV" value="10u">
+<attribute name="LCSC" value="C15525"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -3813,27 +3903,45 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND17" gate="1" x="355.6" y="111.76"/>
 <instance part="GND20" gate="1" x="335.28" y="93.98"/>
 <instance part="GND16" gate="1" x="256.54" y="114.3"/>
-<instance part="Y2" gate="G$1" x="220.98" y="119.38"/>
+<instance part="Y2" gate="G$1" x="220.98" y="119.38">
+<attribute name="LCSC" x="220.98" y="119.38" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U1" gate="G$1" x="88.9" y="66.04"/>
 <instance part="P+6" gate="G$1" x="114.3" y="114.3"/>
 <instance part="GND8" gate="1" x="45.72" y="38.1"/>
 <instance part="GND9" gate="1" x="114.3" y="20.32"/>
-<instance part="R1" gate="G$1" x="48.26" y="83.82" rot="R90"/>
+<instance part="R1" gate="G$1" x="48.26" y="83.82" rot="R90">
+<attribute name="LCSC" x="48.26" y="83.82" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="P+8" gate="G$1" x="48.26" y="91.44"/>
-<instance part="ANT1" gate="G$1" x="134.62" y="73.66"/>
-<instance part="Y1" gate="G$1" x="368.3" y="121.92"/>
-<instance part="ANT2" gate="G$1" x="381" y="134.62"/>
-<instance part="C20" gate="G$1" x="241.3" y="121.92" rot="R90"/>
+<instance part="ANT1" gate="G$1" x="134.62" y="73.66">
+<attribute name="LCSC" x="134.62" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="Y1" gate="G$1" x="368.3" y="121.92">
+<attribute name="LCSC" x="368.3" y="121.92" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="ANT2" gate="G$1" x="381" y="134.62">
+<attribute name="LCSC" x="381" y="134.62" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C20" gate="G$1" x="241.3" y="121.92" rot="R90">
+<attribute name="LCSC" x="241.3" y="121.92" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND18" gate="1" x="236.22" y="106.68"/>
 <instance part="P+11" gate="G$1" x="205.74" y="124.46"/>
 <instance part="P+13" gate="G$1" x="358.14" y="99.06"/>
 <instance part="P+12" gate="G$1" x="254" y="104.14"/>
-<instance part="L2" gate="G$1" x="309.88" y="81.28" rot="R90"/>
+<instance part="L2" gate="G$1" x="309.88" y="81.28" rot="R90">
+<attribute name="LCSC" x="309.88" y="81.28" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="C24" gate="G$1" x="299.72" y="76.2" rot="R180"/>
 <instance part="GND23" gate="1" x="299.72" y="66.04"/>
-<instance part="C19" gate="G$1" x="271.78" y="142.24" rot="R180"/>
+<instance part="C19" gate="G$1" x="271.78" y="142.24" rot="R180">
+<attribute name="LCSC" x="271.78" y="142.24" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND15" gate="1" x="271.78" y="132.08"/>
-<instance part="C18" gate="G$1" x="261.62" y="142.24" rot="R180"/>
+<instance part="C18" gate="G$1" x="261.62" y="142.24" rot="R180">
+<attribute name="LCSC" x="261.62" y="142.24" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND14" gate="1" x="261.62" y="132.08"/>
 <instance part="C23" gate="G$1" x="358.14" y="91.44" rot="R180"/>
 <instance part="C22" gate="G$1" x="254" y="96.52" rot="R180"/>
@@ -3847,14 +3955,22 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="LED1" gate="G$1" x="86.36" y="-10.16"/>
 <instance part="P+10" gate="G$1" x="104.14" y="-2.54"/>
 <instance part="GND11" gate="1" x="104.14" y="-20.32"/>
-<instance part="R4" gate="G$1" x="48.26" y="-38.1" rot="R90"/>
-<instance part="R3" gate="G$1" x="48.26" y="-22.86" rot="R90"/>
+<instance part="R4" gate="G$1" x="48.26" y="-38.1" rot="R90">
+<attribute name="LCSC" x="48.26" y="-38.1" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R3" gate="G$1" x="48.26" y="-22.86" rot="R90">
+<attribute name="LCSC" x="48.26" y="-22.86" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND12" gate="1" x="48.26" y="-50.8"/>
 <instance part="C17" gate="G$1" x="27.94" y="-38.1"/>
 <instance part="C11" gate="G$1" x="129.54" y="104.14"/>
-<instance part="C15" gate="G$1" x="40.64" y="71.12" rot="R180"/>
+<instance part="C15" gate="G$1" x="40.64" y="71.12" rot="R180">
+<attribute name="LCSC" x="40.64" y="71.12" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND7" gate="1" x="40.64" y="60.96"/>
-<instance part="JP2" gate="G$1" x="218.44" y="30.48" rot="R180"/>
+<instance part="JP2" gate="G$1" x="218.44" y="30.48" rot="R180">
+<attribute name="DNP" x="218.44" y="30.48" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND24" gate="1" x="208.28" y="20.32"/>
 <instance part="GND10" gate="1" x="48.26" y="15.24"/>
 <instance part="C14" gate="G$1" x="170.18" y="104.14"/>
@@ -3862,6 +3978,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND6" gate="1" x="170.18" y="93.98"/>
 <instance part="C16" gate="G$1" x="38.1" y="20.32" smashed="yes" rot="R270">
 <attribute name="VALUE" x="35.941" y="18.796" size="1.778" layer="96" rot="R270"/>
+<attribute name="DNP" x="38.1" y="20.32" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="U3" gate="A" x="266.7" y="35.56"/>
 <instance part="U4" gate="A" x="342.9" y="35.56"/>
@@ -3871,17 +3988,29 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="P+15" gate="1" x="342.9" y="48.26"/>
 <instance part="GND26" gate="1" x="383.54" y="17.78"/>
 <instance part="GND25" gate="1" x="307.34" y="17.78"/>
-<instance part="X7" gate="G$1" x="322.58" y="33.02"/>
-<instance part="X5" gate="G$1" x="322.58" y="45.72"/>
-<instance part="X8" gate="G$1" x="398.78" y="33.02"/>
-<instance part="X6" gate="G$1" x="398.78" y="45.72"/>
+<instance part="X7" gate="G$1" x="322.58" y="33.02">
+<attribute name="DNP" x="322.58" y="33.02" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="X5" gate="G$1" x="322.58" y="45.72">
+<attribute name="DNP" x="322.58" y="45.72" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="X8" gate="G$1" x="398.78" y="33.02">
+<attribute name="DNP" x="398.78" y="33.02" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="X6" gate="G$1" x="398.78" y="45.72">
+<attribute name="DNP" x="398.78" y="45.72" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C25" gate="G$1" x="314.96" y="38.1"/>
 <instance part="C26" gate="G$1" x="391.16" y="38.1"/>
-<instance part="X2" gate="G$1" x="137.16" y="149.86"/>
+<instance part="X2" gate="G$1" x="137.16" y="149.86">
+<attribute name="DNP" x="137.16" y="149.86" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+2" gate="1" x="129.54" y="160.02"/>
 <instance part="P+1" gate="1" x="-30.48" y="170.18"/>
 <instance part="P+3" gate="G$1" x="53.34" y="157.48"/>
-<instance part="X3" gate="G$1" x="137.16" y="144.78"/>
+<instance part="X3" gate="G$1" x="137.16" y="144.78">
+<attribute name="DNP" x="137.16" y="144.78" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND3" gate="1" x="129.54" y="134.62"/>
 <instance part="C7" gate="G$1" x="152.4" y="144.78" smashed="yes">
 <attribute name="NAME" x="153.924" y="147.701" size="1.778" layer="95"/>
@@ -3899,16 +4028,24 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </instance>
 <instance part="C2" gate="G$1" x="53.34" y="144.78"/>
 <instance part="GND2" gate="1" x="53.34" y="134.62"/>
-<instance part="R2" gate="G$1" x="48.26" y="-10.16" rot="R90"/>
-<instance part="X1" gate="G$1" x="137.16" y="152.4"/>
-<instance part="X4" gate="G$1" x="137.16" y="142.24"/>
+<instance part="R2" gate="G$1" x="48.26" y="-10.16" rot="R90">
+<attribute name="LCSC" x="48.26" y="-10.16" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="X1" gate="G$1" x="137.16" y="152.4">
+<attribute name="DNP" x="137.16" y="152.4" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="X4" gate="G$1" x="137.16" y="142.24">
+<attribute name="DNP" x="137.16" y="142.24" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+9" gate="1" x="48.26" y="0"/>
 <instance part="IC1" gate="G$1" x="-5.08" y="152.4"/>
 <instance part="GND1" gate="1" x="-25.4" y="134.62"/>
 <instance part="L1" gate="G$1" x="35.56" y="154.94" rot="R90"/>
 <instance part="C1" gate="G$1" x="20.32" y="165.1" rot="R90"/>
 <instance part="C3" gate="G$1" x="63.5" y="144.78"/>
-<instance part="JP1" gate="G$1" x="33.02" y="132.08" rot="R180"/>
+<instance part="JP1" gate="G$1" x="33.02" y="132.08" rot="R180">
+<attribute name="DNP" x="33.02" y="132.08" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="P+5" gate="G$1" x="22.86" y="134.62"/>
 <instance part="C4" gate="G$1" x="73.66" y="144.78"/>
 <instance part="C5" gate="G$1" x="83.82" y="144.78"/>
